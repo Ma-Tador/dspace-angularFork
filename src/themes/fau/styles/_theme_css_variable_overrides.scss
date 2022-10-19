@@ -1,0 +1,13 @@
+// Override or add CSS variables for your theme here
+
+:root {
+  //modified steli, for header to be biger
+  //--ds-header-logo-height: 40px; ORG
+  --ds-header-logo-height: 90px;
+  //changed steli, bec home-news FAU image was too darkened
+  --ds-banner-text-background: rgba(117, 174, 224, 0.45);
+  --ds-banner-background-gradient-width: 300px;
+  --ds-home-news-link-color: #{$green};
+  --ds-home-news-link-hover-color: #{darken($green, 15%)};
+}
+

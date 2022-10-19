@@ -1,0 +1,12 @@
+<div class="simple-view-element" [class.d-none]="hideIfNoTextContent && content.textContent.trim().length === 0">
+  <h5 class="simple-view-element-header" *ngIf="label">{{ label }}</h5>
+  <div #content class="simple-view-element-body">
+
+  <ds-truncatable [id]="id" >
+    <ds-truncatable-part [id]="id" [minLines]="6">
+      <ng-content></ng-content>
+    </ds-truncatable-part>
+  </ds-truncatable>
+
+  </div>
+</div>

@@ -1,0 +1,38 @@
+@media screen and (min-width: map-get($grid-breakpoints, md)) {
+  nav.navbar {
+    display: none;
+  }
+  .header {
+    background-color: var(--ds-header-bg);
+  }
+}
+
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: none !important;
+  line-height: 1.5;
+  //color: var(--bs-link-color);
+  color: #04316a
+}
+
+// org
+// .navbar-brand img {
+//   @media screen and (max-width: map-get($grid-breakpoints, md)) {
+//     height: var(--ds-header-logo-height-xs);
+//   }
+// }
+
+.navbar-brand img {
+  @media screen and (max-width: map-get($grid-breakpoints, md)) {
+    max-height: var(--ds-header-logo-height-xs);
+  }
+  height: 90px;
+  width: 180px;
+}
+
+//to override style defined in other .css page
+// ::ng-deep {
+//   .a.navbar-brand img{
+//     max-height: 90px 
+//   }
+//  }

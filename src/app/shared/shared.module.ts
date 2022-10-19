@@ -324,6 +324,7 @@ import {
 } from '../item-page/simple/field-components/specific-field/title/item-page-title-field.component';
 import { MarkdownPipe } from './utils/markdown.pipe';
 import { GoogleRecaptchaModule } from '../core/google-recaptcha/google-recaptcha.module';
+import { TruncatableMetadataFieldWrapperComponent } from '../item-page/field-components/truncatable-metadata-field-wrapper/truncatable-metadata-field-wrapper.component';
 
 const MODULES = [
   CommonModule,
@@ -590,7 +591,8 @@ const SHARED_ITEM_PAGE_COMPONENTS = [
   GenericItemPageFieldComponent,
   MetadataRepresentationListComponent,
   RelatedItemsComponent,
-  DsoPageOrcidButtonComponent
+  DsoPageOrcidButtonComponent,
+  TruncatableMetadataFieldWrapperComponent
 
 ];
 

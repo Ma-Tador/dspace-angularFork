@@ -1,0 +1,19 @@
+{
+    "name": "DSpace",
+    "short_name": "DSpace",
+    "icons": [
+        {
+            "src": "favicon-180x180.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "favicon-apple-touch.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#091119",
+    "background_color": "#091119",
+    "display": "standalone"
+}
