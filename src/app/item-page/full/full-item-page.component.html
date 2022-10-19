@@ -20,12 +20,23 @@
         <div class="table-responsive">
           <table class="table  table-striped">
             <tbody>
+            <!-- ORG
             <ng-container *ngFor="let mdEntry of (metadata$ | async) | keyvalue">
               <tr *ngFor="let mdValue of mdEntry.value">
                 <td>{{mdEntry.key}}</td>
                 <td>{{mdValue.value}}</td>
                 <td>{{mdValue.language}}</td>
               </tr>
+            </ng-container>
+          -->
+
+            <ng-container *ngFor="let mdEntry of (metadata$ | async) | keyvalue">
+              <tr *ngFor="let mdValue of mdEntry.value">
+                <td>{{mdEntry.key | translate}}</td>
+                <td>{{mdValue.value}}</td>
+                <td>{{mdValue.language}}</td>
+              </tr>
+
             </ng-container>
             </tbody>
           </table>
