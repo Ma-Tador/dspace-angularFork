@@ -73,6 +73,25 @@
       [label]="'item.page.uri'">
     </ds-item-page-uri-field>
     <ds-item-page-collections [item]="object"></ds-item-page-collections>
+
+    <ds-item-page-uri-field [item]="object" [fields]="['dc.rights.uri']" [label]="'item.page.rightsuri'">
+    </ds-item-page-uri-field>
+
+    <ds-item-page-uri-field [item]="object" [fields]="['local.identifier.urn']" [label]="'item.page.urn'">
+    </ds-item-page-uri-field>
+
+    <ds-item-page-uri-field [item]="object" [fields]="['local.identifier.doi', 'dc.identifier.doi']" [label]="'item.page.doi'">
+    </ds-item-page-uri-field>
+
+    <ds-item-page-uri-field [item]="object" [fields]="['local.identifier.url']" [label]="'item.page.url'">
+    </ds-item-page-uri-field>
+
+    <ds-item-page-uri-field [item]="object" [fields]="['local.identifier.cris-link']" [label]="'item.page.crislink'">
+    </ds-item-page-uri-field>
+
+    <ds-item-page-orcid-field [item]="object" [fields]="['dc.contributor.author', 'dc.contributor.other', 'dc.contributor.advisor', 'dc.contributor']" [label]="'item.page.orcid'">
+    </ds-item-page-orcid-field>
+
     <div>
       <a class="btn btn-outline-primary" [routerLink]="[itemPageRoute + '/full']" role="button">
         <i class="fas fa-info-circle"></i> {{"item.page.link.full" | translate}}

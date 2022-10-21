@@ -12,7 +12,9 @@ import { FeedbackComponent } from './feedback/feedback.component';
 import { FeedbackFormComponent } from './feedback/feedback-form/feedback-form.component';
 import { ThemedFeedbackComponent } from './feedback/themed-feedback.component';
 import { FeedbackGuard } from '../core/feedback/feedback.guard';
-
+import { InformationComponent } from './information/information.component';
+import { NgbAccordionModule
+ } from '@ng-bootstrap/ng-bootstrap';
 
 const DECLARATIONS = [
   EndUserAgreementComponent,
@@ -23,7 +25,8 @@ const DECLARATIONS = [
   ThemedPrivacyComponent,
   FeedbackComponent,
   FeedbackFormComponent,
-  ThemedFeedbackComponent
+  ThemedFeedbackComponent,
+  InformationComponent
 ];
 
 @NgModule({
@@ -31,6 +34,7 @@ const DECLARATIONS = [
     CommonModule,
     SharedModule,
     InfoRoutingModule,
+    NgbAccordionModule
   ],
   declarations: [
     ...DECLARATIONS

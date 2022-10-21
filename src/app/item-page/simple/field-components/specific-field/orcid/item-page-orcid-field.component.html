@@ -1,0 +1,8 @@
+<ds-metadata-field-wrapper [label]="label | translate" >
+    <div *ngFor="let personInfo of (orcid_query$ | async); let last=last;" >
+        <a href="{{'https://orcid.org/' + personInfo.orcid_id}}">
+            {{personInfo.value}} <img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16" />
+        </a>
+        <span *ngIf="!last" [innerHTML]="separator"></span>
+    </div>
+</ds-metadata-field-wrapper>

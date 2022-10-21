@@ -1,0 +1,1262 @@
+<accordion isAnimated="true" class="accordioninfo">
+    <!-- closeOthers="true" to close all tabs if other tab is opened-->
+
+    <h2>{{'info.chapter.general' | translate}} </h2>
+    <br />
+
+    <!-- <accordion-group [isOpen]="isOpenAcordion[0]" #groupval1 (isOpenChange)="checkCollapsed($event, 1)"> -->
+        <accordion-group [isOpen]="checkOpened(1)" #groupval1 (isOpenChange)="checkCollapsed($event, 1)" id="whatisopenaccess-1">
+        <div accordion-heading>
+            {{'info.subchapter.openaccess' | translate}}
+         <!--   OpenAccess > {{groupval1?.isOpen}}   -->
+            <i class="fas" [ngClass]="{'fa-caret-down': groupval1?.isOpen, 'fa-caret-up': !groupval1?.isOpen}"></i>
+        </div>
+        <div >
+            <p>
+                <a href="../../../assets/Veroeffentlichungsvertrag_UB.pdf" download="veroeffentlichungsvertrag">Download
+                DSpace-Publish-Contract</a>
+                <br/>
+                {{'info.paragraph.openaccess.p1' | translate}}
+                <br /><br />
+                {{'info.paragraph.openaccess.p2.0' | translate}}
+                <a href="https://nbn-resolving.org/urn:nbn:de:bvb:29-opus4-68651">
+                    {{'info.paragraph.openaccess.p2.1' | translate}}</a>{{'info.paragraph.openaccess.p2.2' | translate}}
+                {{'info.paragraph.openaccess.p3.0' | translate}}
+                <!-- <button type="button" class="btn btn-link"
+                    (click)="expandAcordion('policies-3', 3); $event.stopPropagation()">{{'info.paragraph.openaccess.p3.1' | translate}}
+                </button>. -->
+                <button type="button" class="btn btn-link"
+                (click)="expandAcordion(3); $event.stopPropagation()">
+                <a href="./info/faq#policies-3">{{'info.paragraph.openaccess.p3.1' | translate}}</a>
+                </button>.
+                <br /><br />
+                {{'info.paragraph.openaccess.p4.0' | translate}}
+                <a href="https://ub.fau.de/schreiben-publizieren/open-access/">
+                    https://ub.fau.de/schreiben-publizieren/open-access/</a>.
+                <br /><br />
+                {{'info.paragraph.openaccess.p5' | translate}}
+                <br /><br />
+                {{'info.paragraph.openaccess.p6' | translate}}
+                <a href="https://v2.sherpa.ac.uk/romeo/">https://v2.sherpa.ac.uk/romeo/</a>.
+                <br /><br />
+            </p>
+        </div>
+    </accordion-group>
+
+    <accordion-group [isOpen]="checkOpened(2)" #groupval2 (isOpenChange)="checkCollapsed($event, 2)" id="whyopus-2">
+        <div accordion-heading>
+            {{'info.subchapter.advantagespublication' | translate}}
+            <i class="fas" [ngClass]="{'fa-caret-down': groupval2?.isOpen, 'fa-caret-up': !groupval2?.isOpen}"></i>
+        </div>
+        <div >
+            <ul>
+                <li>
+                    <p align="justify">
+                        <b>{{"info.paragraph.advantagespublication.dissemination" | translate}}</b><br />
+                        {{"info.paragraph.advantagespublication.p1.0" | translate}}
+                        <a href="http://open-access.net/DE-EN/information-on-open-access/what-is-open-access/">
+                            {{"info.paragraph.advantagespublication.p1.1" | translate}}</a>
+                        {{"info.paragraph.advantagespublication.p1.2" | translate}}
+                    </p>
+                </li>
+                <li>
+                    <p align="justify"><b>{{"info.paragraph.advantagespublication.proofpubl" | translate}}</b><br />
+                        {{"info.paragraph.advantagespublication.p2" | translate}}
+                    </p>
+                </li>
+                <li>
+                    <p align="justify"><b>{{"info.paragraph.advantagespublication.archiving" | translate}}</b><br />
+                        {{"info.paragraph.advantagespublication.p3" | translate}}
+                    </p>
+                </li>
+                <li>
+                    <p align="justify"><b>{{"info.paragraph.advantagespublication.savingmoney" |translate}}</b><br />
+                        {{"info.paragraph.advantagespublication.p4" | translate}}
+                    </p>
+                </li>
+                <li>
+                    <p align="justify"><b>{{"info.paragraph.advantagespublication.highcitation" |translate}}</b><br />
+                        {{"info.paragraph.advantagespublication.p5" | translate}}
+                        <a
+                            href="http://opcit.eprints.org/oacitation-biblio.html">opcit.eprints.org/oacitation-biblio.html</a>).
+                    </p>
+                </li>
+                <li>
+                    <p align="justify"><b>{{"info.paragraph.advantagespublication.openaire" |translate}}</b><br />
+                        {{"info.paragraph.advantagespublication.p6.0" | translate}}
+                        <a
+                            href="https://ub.fau.de/en/writing-publishing/open-access/open-access-policies-of-research-funding-organisations/#collapse_2">
+                            https://ub.fau.de/en/writing-publishing/open-access/open-access-policies-of-research-funding-organisations/#collapse_2</a>).
+                        {{"info.paragraph.advantagespublication.p6.1" | translate}}
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </accordion-group>
+   
+    <accordion-group [isOpen]="checkOpened(3)" #groupval3 (isOpenChange)="checkCollapsed($event, 3)" id="policies-3">
+        <div accordion-heading>
+            {{'info.subchapter.guidelines' | translate}}
+       <!--     Policies > {{groupval3?.isOpen}}   -->
+            <i class="fas" [ngClass]="{'fa-caret-down': groupval3?.isOpen, 'fa-caret-up': !groupval3?.isOpen}"></i>
+        </div>
+        <div >
+            <h5> {{'info.paragraph.guidelines.h1' | translate}} </h5>
+            <p align="justify">
+                {{'info.paragraph.guidelines.p1.0' | translate}}
+                <!-- <button type="button" class="btn btn-link"
+                 (click)="expandAcordion('whatisopenaccess-1', 1); $event.stopPropagation()">{{'info.paragraph.guidelines.p1.1' | translate}}
+                </button>. -->
+                <button type="button" class="btn btn-link"
+                (click)="expandAcordion(1); $event.stopPropagation()">
+                <a href="./info/faq#whatisopenaccess-1">{{'info.paragraph.guidelines.p1.1' | translate}}</a>
+                </button>.
+                <br />
+                {{'info.paragraph.guidelines.p2' | translate}}
+                <br />
+                {{'info.paragraph.guidelines.p2' | translate}}
+            </p>
+            <h5>{{'info.paragraph.guidelines.h2' | translate}}</h5>
+            <p align="justify">
+                {{'info.paragraph.guidelines.h3' | translate}}
+            </p>
+            <ul>
+                <li>
+                    <p align="justify">{{'info.paragraph.guidelines.h4' | translate}}</p>
+                </li>
+                <li>
+                    <p align="justify">
+                        {{'info.paragraph.guidelines.h5' | translate}}
+                    </p>
+                </li>
+                <li>
+                    <p align="justify">
+                        {{'info.paragraph.guidelines.h6' | translate}}
+                    </p>
+                </li>
+                <li>
+                    <p align="justify">
+                        {{'info.paragraph.guidelines.h7' | translate}}
+                    </p>
+                </li>
+                <li>
+                    <p align="justify">
+                        {{'info.paragraph.guidelines.h8' | translate}}
+                    </p>
+                </li>
+                <li>
+                  <p align="justify">
+                    {{'info.paragraph.guidelines.h9.0' | translate}}
+                    <button type="button" class="btn btn-link" (click)="expandAcordion(11); $event.stopPropagation()">
+                    <a href="./info/faq#rulesfordiss-11">{{'info.paragraph.guidelines.h9.1' | translate}}</a>
+                    </button>.
+                  </p>
+                </li>
+            </ul>
+            <p align="justify">
+                {{'info.paragraph.guidelines.h10' | translate}}
+            </p>
+            <h5> {{'info.paragraph.guidelines.h11' | translate}}</h5>
+            <p align="justify">
+                {{'info.paragraph.guidelines.h12' | translate}}
+            </p>
+            <ul>
+                <li>
+                    <p align="justify">
+                        {{'info.paragraph.guidelines.h13' | translate}}
+                    </p>
+                </li>
+                <li>
+                    <p align="justify">
+                        {{'info.paragraph.guidelines.h14' | translate}}
+                    </p>
+                </li>
+            </ul>
+            <p align="justify">
+                {{'info.paragraph.guidelines.h15' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.guidelines.h16' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.guidelines.h17' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.guidelines.h18' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.guidelines.h19' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.guidelines.h20' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.guidelines.h21' | translate}}
+            </p>
+            <ul>
+                <li>
+                    <p align="justify">
+                        {{'info.paragraph.guidelines.h22' | translate}}
+                    </p>
+                </li>
+                <li>
+                    <p align="justify">
+                        {{'info.paragraph.guidelines.h23' | translate}}
+                    </p>
+                </li>
+                <li>
+                    <p align="justify">
+                        {{'info.paragraph.guidelines.h24' | translate}}
+                    </p>
+                </li>
+                <li>
+                    <p align="justify">
+                        {{'info.paragraph.guidelines.h25' | translate}}
+                    </p>
+                </li>
+                <li>
+                    <p align="justify">
+                        {{'info.paragraph.guidelines.h26' | translate}}
+                    </p>
+                </li>
+            </ul>
+            <p align="justify">
+                {{'info.paragraph.guidelines.h27.0' | translate}}
+                <a
+                    href="http://www.university-press.fau.de/pdf/ordnung-wiss-beirat.pdf">http://www.university-press.fau.de/pdf/ordnung-wiss-beirat.pdf</a>
+                {{'info.paragraph.guidelines.h27.1' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.subchapter.guidelines.headline4' | translate}}
+            </h5>
+            <ul>
+                <li>
+                    <p align="justify">
+                        {{'info.paragraph.guidelines.h28' | translate}}
+                    </p>
+                </li>
+                <li>
+                    <p align="justify">
+                        {{'info.paragraph.guidelines.h29' | translate}}
+                    </p>
+                </li>
+                <li>
+                    <p align="justify">
+                        {{'info.paragraph.guidelines.h30' | translate}}
+                    </p>
+                </li>
+                <li>
+                    <p align="justify">
+                        {{'info.paragraph.guidelines.h31' | translate}}
+                    </p>
+                </li>
+                <li>
+                    <p align="justify">
+                        {{'info.paragraph.guidelines.h32' | translate}}
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </accordion-group>
+
+    <accordion-group [isOpen]="checkOpened(4)" (isOpenChange)="checkCollapsed($event, 4)" #groupval4 id="whocan-4">
+        <div accordion-heading>
+            {{'info.subchapter.documentscollected' | translate}}
+            <i class="fas" [ngClass]="{'fa-caret-down': groupval4?.isOpen, 'fa-caret-up': !groupval4?.isOpen}"></i>
+        </div>
+        <div >
+            <p>
+                {{'info.paragraph.guidelines.h33.0' | translate}}
+                <button type="button" class="btn btn-link" (click)="expandAcordion(3); $event.stopPropagation()">
+                <a href="./info/faq#policies-3">{{'info.paragraph.guidelines.h33.1' | translate}}</a>
+                </button>.
+                {{'info.paragraph.guidelines.h34' | translate}}
+            </p>
+            <ul>
+                <li>
+                    <p align="justify">
+                        {{'info.paragraph.guidelines.h35' | translate}}
+                    </p>
+                </li>
+                <li>
+                    <p align="justify">
+                        {{'info.paragraph.guidelines.h36' | translate}}
+                    </p>
+                </li>
+                <li>
+                    <p align="justify">
+                        {{'info.paragraph.guidelines.h37' | translate}}
+                    </p>
+                </li>
+            </ul>
+            <p align="justify">
+                {{'info.paragraph.guidelines.h38.0' | translate}}
+                <button type="button" class="btn btn-link" (click)="expandAcordion(17); $event.stopPropagation()">
+                <a href="./info/faq#documenttypes-17">{{'info.paragraph.guidelines.h38.1' | translate}}</a>
+                </button>.
+            </p>
+        </div>
+    </accordion-group>
+
+    <accordion-group [isOpen]="checkOpened(5)" (isOpenChange)="checkCollapsed($event, 5)" #groupval5 id="contact-5">
+        <div accordion-heading>
+            {{'info.subchapter.contacts' | translate}}
+            <i class="fas" [ngClass]="{'fa-caret-down': groupval5?.isOpen, 'fa-caret-up': !groupval5?.isOpen}"></i>
+        </div>
+        <div >
+            <p>
+                Gerlint Straub<br />
+                Tel.: 09131/85-29377<br />
+                Fax: 09131/85-29309<br />
+                <a href="mailto:ub-opus(at)fau.de">ub-opus(at)fau.de</a>
+                <br />
+                <br />
+                Kim Patrick Weiß<br />
+                Phone: +49 (0)9131 85 29377<br />
+                Fax: +49 (0)9131 85 29309<br />
+                <a href="mailto:ub-opus(at)fau.de">ub-opus(at)fau.de</a>
+                <br />
+                <br />
+                Thesis and Dissertations Office<br />
+                Main Library, Room 2.018<br />
+                Universitätsstr. 4<br />
+                91054 Erlangen<br />
+                Mo-Fr 8:30-12:00
+            </p>
+            <br />
+            <h5>Post:</h5>
+            <p align="justify">Universitätsbibliothek Erlangen-Nürnberg<br />
+                Dissertationen- und Pflichtstelle<br />
+                Universitätsstraße 4<br />
+                91054 Erlangen
+            </p>
+        </div>
+    </accordion-group>
+
+    <accordion-group [isOpen]="checkOpened(6)" (isOpenChange)="checkCollapsed($event, 6)" #groupval6 id="searchtipps-6">
+        <div accordion-heading>
+            {{'info.subchapter.tipsbrowse' | translate}}
+            <i class="fas" [ngClass]="{'fa-caret-down': groupval6?.isOpen, 'fa-caret-up': !groupval6?.isOpen}"></i>
+        </div>
+        <br />
+        <div >
+            <h5>
+                {{'info.paragraph.tipsbrowse39' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.tipsbrowse40' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.tipsbrowse41' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.tipsbrowse42' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.tipsbrowse43' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.tipsbrowse44' | translate}}
+            </p>
+            <ul>
+                <li>
+                    {{'info.paragraph.tipsbrowse45' | translate}}
+                </li>
+                <li>
+                    {{'info.paragraph.tipsbrowse46' | translate}}
+                </li>
+                <li>
+                    {{'info.paragraph.tipsbrowse47' | translate}}
+                </li>
+                <li>
+                    {{'info.paragraph.tipsbrowse48' | translate}}
+                </li>
+                <li>
+                    {{'info.paragraph.tipsbrowse49' | translate}}
+                </li>
+            </ul>
+        </div>
+    </accordion-group>
+
+    <accordion-group [isOpen]="checkOpened(7)" (isOpenChange)="checkCollapsed($event, 7)" #groupval7 id="howtocite-7">
+        <div accordion-heading>
+            {{'info.subchapter.citing' | translate}}
+            <i class="fas" [ngClass]="{'fa-caret-down': groupval7?.isOpen, 'fa-caret-up': !groupval7?.isOpen}"></i>
+        </div>
+        <div >
+            <p>
+                {{'info.paragraph.citation.h50' | translate}}
+                <a href="https://publikationen.sulb.uni-saarland.de/help/SULB/zitieren.jsp">
+                    SciDok</a>.
+                <i>
+                    {{'info.paragraph.citation.h51' | translate}}
+                </i>
+            </p>
+            <br />
+            <h5>URN</h5>
+            <p align="justify">
+                {{'info.paragraph.citation.h52' | translate}}
+                <a href="https://nbn-resolving.org/">https://nbn-resolving.org/</a>.
+                {{'info.paragraph.citation.h53' | translate}}
+            </p>
+            <p align="justify"><i>URN: urn:nbn:de:bvb:29-opus-31810<br />
+                    in https://nbn-resolving.org/urn:nbn:de:bvb:29-opus-31810</i>
+            </p>
+        </div>
+    </accordion-group>
+
+    <hr />
+    <h2>{{'info.chapter.publishing' | translate}}</h2>
+    <br />
+
+    <accordion-group [isOpen]="checkOpened(8)" (isOpenChange)="checkCollapsed($event, 8)" #groupval8 id="publicationprocess-8">
+        <div accordion-heading>
+            {{'info.subchapter.publicationprocess' | translate}}
+            <i class="fas" [ngClass]="{'fa-caret-down': groupval8?.isOpen, 'fa-caret-up': !groupval8?.isOpen}"></i>
+        </div>
+        <div >
+            <p>
+                {{'info.paragraph.publishing.h54.0' | translate}}
+                <button type="button" class="btn btn-link" (click)="expandAcordion(3); $event.stopPropagation()">
+                <a href="./info/faq#policies-3">{{'info.paragraph.publishing.h54.1' | translate}}</a>
+                </button>.
+
+                {{'info.paragraph.publishing.h55' | translate}}
+                {{'info.paragraph.publishing.h56.0' | translate}}
+                <a href="../../../assets/Veroeffentlichungsvertrag_UB.pdf" download="veroeffentlichungsvertrag">Download
+                   {{'info.paragraph.publishing.h56.1' | translate}} >  DSpace-Publish-Contract </a>
+                <!-- <a href="https://ub.fau.de/wp-content/uploads/2020/12/Vertrag_DE_2020-12.pdf">publication
+                    {{'info.paragraph.publishing.h56.1' | translate}}
+                </a> -->
+                {{'info.paragraph.publishing.h56.2' | translate}}
+            </p>
+            <ul>
+                <li>
+                    <p align="justify">
+                        {{'info.paragraph.publishing.h57' | translate}}
+                    </p>
+                </li>
+                <li>
+                    <p align="justify">
+                        {{'info.paragraph.publishing.h58' | translate}}
+                    </p>
+                </li>
+            </ul>
+            <p align="justify">
+                {{'info.paragraph.publishing.h59.0' | translate}}
+                <a
+                    href="https://creativecommons.org/licenses/?lang=en">https://creativecommons.org/licenses/?lang=en</a>.
+                {{'info.paragraph.publishing.h59.1' | translate}}
+                {{'info.paragraph.publishing.h60' | translate}}
+                <br />
+            </p>
+        </div>
+    </accordion-group>
+
+
+    <accordion-group [isOpen]="checkOpened(9)"  (isOpenChange)="checkCollapsed($event, 9)" #groupval9 id="designspecs-9">
+        <div accordion-heading>
+            {{'info.subchapter.layoutrequirements' | translate}}
+            <i class="fas" [ngClass]="{'fa-caret-down': groupval9?.isOpen, 'fa-caret-up': !groupval9?.isOpen}"></i>
+        </div>
+        <div >
+            <p>
+                {{'info.paragraph.publishing.h62' | translate}}
+            </p>
+        </div>
+    </accordion-group>
+    
+    <accordion-group [isOpen]="checkOpened(10)" (isOpenChange)="checkCollapsed($event, 10)" #groupval10 id="technicalspecs-10">
+        <div accordion-heading>
+            {{'info.subchapter.techrequirements' | translate}}
+            <i class="fas" [ngClass]="{'fa-caret-down': groupval10?.isOpen, 'fa-caret-up': !groupval10?.isOpen}"></i>
+        </div>
+        <div >
+            <p>
+                {{'info.paragraph.publishing.h64' | translate}}
+            </p>
+            <br />
+            <h5>Details</h5>
+            <ul>
+                <li>
+                    <p align="justify">
+                        {{'info.paragraph.publishing.h65' | translate}}
+                    </p>
+                </li>
+                <li>
+                    <p align="justify">
+                        {{'info.paragraph.publishing.h66' | translate}}
+                        <a href="https://faubox.rrze.uni-erlangen.de/">FAUbox</a>.
+                    </p>
+                </li>
+                <li>
+                    <p align="justify">
+                        {{'info.paragraph.publishing.h67' | translate}}
+                    </p>
+                </li>
+                <li>
+                    <p align="justify">
+                        {{'info.paragraph.publishing.h68' | translate}}
+                    </p>
+                </li>
+                <li>
+                    <p align="justify">
+                        {{'info.paragraph.publishing.h69' | translate}}
+                    </p>
+                </li>
+                <li>
+                    <p align="justify">
+                        {{'info.paragraph.publishing.h70' | translate}}
+                        <a href="mailto:ub-opus(at)fau.de">ub-opus(at)fau.de</a>.
+                    </p>
+                </li>
+            </ul>
+            <br />
+            <h5>
+                {{'info.paragraph.publishing.h71' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.publishing.h72' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.publishing.h73' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.publishing.h74' | translate}}
+                <a
+                    href="https://www.pdfa.org/resource/pdfa-in-a-nutshell-2-0/">https://www.pdfa.org/resource/pdfa-in-a-nutshell-2-0/</a>.
+            </p>
+            <p align="justify">
+                {{'info.paragraph.publishing.h75' | translate}}
+            </p>
+        </div>
+    </accordion-group>
+
+
+    <accordion-group [isOpen]="checkOpened(11)" (isOpenChange)="checkCollapsed($event, 11)" #groupval11 id="rulesfordiss-11">
+        <div accordion-heading>
+            {{'info.subchapter.regulationsdoctoral' | translate}}
+            <i class="fas" [ngClass]="{'fa-caret-down': groupval11?.isOpen, 'fa-caret-up': !groupval11?.isOpen}"></i>
+        </div>
+        <div >
+            <p>
+                {{'info.paragraph.regulationsdoctoral.h76.0' | translate}}
+                <a
+                    href="https://www.fau.de/graduiertenzentrum/promotion/">https://www.fau.de/graduiertenzentrum/promotion/</a>
+                {{'info.paragraph.regulationsdoctoral.h76.1' | translate}}
+            </p>
+            <br />
+            <h5>Upload in OPUS FAU:</h5>
+            <p align="justify">
+                {{'info.paragraph.regulationsdoctoral.h77' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.regulationsdoctoral.h78' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.regulationsdoctoral.h79' | translate}}
+            </p>
+            <ul>
+                <li>
+                    <p align="justify">
+                        {{'info.paragraph.regulationsdoctoral.h80' | translate}}
+                    </p>
+                </li>
+                <li>
+                    <p align="justify">
+                        {{'info.paragraph.regulationsdoctoral.h81' | translate}}
+                    </p>
+                </li>
+            </ul>
+            <p align="justify">
+                {{'info.paragraph.regulationsdoctoral.h82' | translate}}
+            </p>
+            <p align="justify">
+                {{'info.paragraph.regulationsdoctoral.h83.0' | translate}}
+                <a href="mailto:petra.heermann@fau.de">petra.heermann@fau.de</a>
+                {{'info.paragraph.regulationsdoctoral.h83.1' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.regulationsdoctoral.h84' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.regulationsdoctoral.h85.0' | translate}}
+
+                {{'info.paragraph.regulationsdoctoral.h85.1' | translate}}
+
+                {{'info.paragraph.regulationsdoctoral.h85.2' | translate}}
+            </p>
+            <p align="justify">
+                {{'info.paragraph.regulationsdoctoral.h86.0' | translate}}
+                <button type="button" class="btn btn-link" (click)="expandAcordion(3); $event.stopPropagation()">
+                <a href="./info/faq#policies-3">{{'info.paragraph.publishing.h54.1' | translate}}</a>
+                </button>.
+
+                {{'info.paragraph.regulationsdoctoral.h86.2' | translate}}
+            </p>
+            <p align="justify">
+                {{'info.paragraph.regulationsdoctoral.h87.0' | translate}}
+                <a href="mailto:ub-opus(at)fau.de">
+                    {{'info.paragraph.regulationsdoctoral.h87.1' | translate}}
+                </a>
+                {{'info.paragraph.regulationsdoctoral.h87.2' | translate}}
+            </p>
+            <p align="justify">
+                {{'info.paragraph.regulationsdoctoral.h88.0' | translate}}
+                <a href="https://ub.fau.de/wp-content/uploads/2020/12/Vertrag_DE_2020-12.pdf">publication
+                    {{'info.paragraph.regulationsdoctoral.h88.1' | translate}}
+                </a>
+                {{'info.paragraph.regulationsdoctoral.h88.2' | translate}}
+            </p>
+            <p align="justify">Doctoral theses service Main Library<br />
+                Altbau, Room 2.018<br />
+                Universitätsstr. 4<br />
+                91054 Erlangen,<br />
+                Tel. 09131/85-29377<br />
+                Fax: 09131/85-29309<br />
+                E-mail: <a href="mailto:ub-opus@fau.de">ub-opus(at)fau.de</a>
+            </p>
+            <p align="justify">
+                Monday-Friday 08.30 am - 12.00 am<br />
+            </p>
+            {{'info.paragraph.regulationsdoctoral.h89' | translate}}
+            <br />
+            <h5>ProQuest Dissertations and Theses (PQDT)</h5>
+            <p align="justify">
+                {{'info.paragraph.regulationsdoctoral.h90.0' | translate}}
+                <a href="mailto:disspub@proquest.com">disspub@proquest.com</a>
+                {{'info.paragraph.regulationsdoctoral.h90.1' | translate}}
+                <a href="mailto:disspub@proquest.com">disspub@proquest.com</a>
+                {{'info.paragraph.regulationsdoctoral.h90.2' | translate}}
+                <a href="mailto:ub-opus@fau.de">ub-opus@fau.de</a>
+                {{'info.paragraph.regulationsdoctoral.h90.3' | translate}}
+            </p>
+            <p align="justify">
+                {{'info.paragraph.regulationsdoctoral.h91.0' | translate}}
+                <a href="https://dissexpress.proquest.com/search.html">https://dissexpress.proquest.com/search.html</a>
+                {{'info.paragraph.regulationsdoctoral.h91.1' | translate}}
+                <a
+                    href="https://support.proquest.com/articledetail?id=kA23r0000007E8zCAE">https://support.proquest.com/articledetail?id=kA23r0000007E8zCAE</a>.
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.regulationsdoctoral.h92' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.regulationsdoctoral.h93.0' | translate}}
+                <a
+                    href="https://www.doc.zuv.fau.de//L1/Promotion_und_Habilitation/Rahmenpromotionsordnung/konsolidierte_Fassungen/RPromO_20130121_idF_20211201.pdf">https://www.doc.zuv.fau.de//L1/Promotion_und_Habilitation/Rahmenpromotionsordnung/konsolidierte_Fassungen/RPromO_20130121_idF_20211201.pdf</a>
+                {{'info.paragraph.regulationsdoctoral.h93.1' | translate}}
+            </p>
+            <p align="justify">
+                {{'info.paragraph.regulationsdoctoral.h94' | translate}}
+            </p>
+        </div>
+        <br />
+    </accordion-group>
+
+
+    <accordion-group [isOpen]="checkOpened(12)" (isOpenChange)="checkCollapsed($event, 12)" #groupval12 id="publication_agreement-12">
+        <div accordion-heading>
+            {{'info.subchapter.publagreements' | translate}}
+            <i class="fas" [ngClass]="{'fa-caret-down': groupval12?.isOpen, 'fa-caret-up': !groupval12?.isOpen}"></i>
+        </div>
+        <br />
+        <div >
+            <h5>
+                {{'info.paragraph.publagreements.h95' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.publagreements.h96.0' | translate}}
+                <a
+                    href="https://ub.fau.de/wp-content/uploads/2020/12/Vertrag_DE_2020-12.pdf">https://ub.fau.de/wp-content/uploads/2020/12/Vertrag_DE_2020-12.pdf</a>.
+                {{'info.paragraph.publagreements.h96.1' | translate}}
+                <a
+                    href="https://ub.fau.de/wp-content/uploads/2020/12/Vertrag_EN_2020-12.pdf">https://ub.fau.de/wp-content/uploads/2020/12/Vertrag_EN_2020-12.pdf</a>.
+                {{'info.paragraph.publagreements.h96.2' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.publagreements.h97' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.publagreements.h98.0' | translate}}
+                <a href="https://ub.fau.de/wp-content/uploads/2020/12/Vertrag_DE_2020-12.pdf">
+                    {{'info.paragraph.publagreements.h98.1' | translate}}
+                </a>
+                {{'info.paragraph.publagreements.h98.2' | translate}}
+                <a href="mailto:ub-opus@fau.de">ub-opus@fau.de</a>
+                {{'info.paragraph.publagreements.h98.3' | translate}}
+                <a
+                    href="https://ub.fau.de/wp-content/uploads/2021/01/Sperrvermerk.pdf">https://ub.fau.de/wp-content/uploads/2021/01/Sperrvermerk.pdf</a>
+                {{'info.paragraph.publagreements.h98.4' | translate}}
+                <a
+                    href="https://ub.fau.de/wp-content/uploads/2021/01/blocking_notice.pdf">https://ub.fau.de/wp-content/uploads/2021/01/blocking_notice.pdf</a>
+            </p>
+        </div>
+    </accordion-group>
+
+
+    <accordion-group [isOpen]="checkOpened(13)" (isOpenChange)="checkCollapsed($event, 13)" #groupval13 id="rulesforpreprints-13">
+        <div accordion-heading>
+            {{'info.subchapter.regulationsprepostprint' | translate}}
+            <i class="fas" [ngClass]="{'fa-caret-down': groupval13?.isOpen, 'fa-caret-up': !groupval13?.isOpen}"></i>
+        </div>
+        <div >
+            <p align="justify">
+                {{'info.paragraph.regulationsprepostprint.h99' | translate}}
+                (<a
+                    href="http://opcit.eprints.org/oacitation-biblio.html">opcit.eprints.org/oacitation-biblio.html</a>).
+            </p>
+            <p align="justify">
+                <a href="https://nbn-resolving.org/urn:nbn:de:bvb:29-opus4-68651">FAU Open Access policy</a>
+                {{'info.paragraph.regulationsprepostprint.h100.0' | translate}}
+                <a href="https://v2.sherpa.ac.uk/romeo/">SHERPA/RoMEO list</a>.
+                {{'info.paragraph.regulationsprepostprint.h100.1' | translate}}
+                <button type="button" class="btn btn-link" (click)="expandAcordion(8); $event.stopPropagation()">
+                <a href="./info/faq#publicationprocess-8">{{'info.paragraph.regulationsprepostprint.h100.2' | translate}}</a>
+                </button>.
+
+                {{'info.paragraph.regulationsprepostprint.h100.3' | translate}}
+            </p>
+        </div>
+    </accordion-group>
+
+
+    <accordion-group [isOpen]="checkOpened(14)" (isOpenChange)="checkCollapsed($event, 14)" #groupval14 id="changedocument-14">
+        <div accordion-heading>
+            {{'info.subchapter.changedeletedoc' | translate}}
+            <i class="fas" [ngClass]="{'fa-caret-down': groupval14?.isOpen, 'fa-caret-up': !groupval14?.isOpen}"></i>
+        </div>
+        <div >
+            <p>
+                {{'info.paragraph.changedeletedoc.h101' | translate}}
+            </p>
+        </div>
+    </accordion-group>
+
+
+    <accordion-group [isOpen]="checkOpened(15)" (isOpenChange)="checkCollapsed($event, 15)" #groupval15 id="vgwort-15">
+        <div accordion-heading>
+            {{'info.subchapter.vg' | translate}}
+            <i class="fas" [ngClass]="{'fa-caret-down': groupval15?.isOpen, 'fa-caret-up': !groupval15?.isOpen}"></i>
+        </div>
+        <div >
+            <p align="justify">
+                {{'info.paragraph.vg.h102.0' | translate}}
+                <a href="https://tom.vgwort.de/portal/index">https://tom.vgwort.de/portal/index</a>.
+                {{'info.paragraph.vg.h102.1' | translate}}
+                <a href="http://www.kobv.de">http://www.kobv.de</a>
+                {{'info.paragraph.vg.h102.2' | translate}}
+                <a href="http://opus4.kobv.de/opus4-fau/home">http://opus4.kobv.de/opus4-fau/home</a>
+                {{'info.paragraph.vg.h102.3' | translate}}
+            </p>
+        </div>
+    </accordion-group>
+    <hr />
+
+    <h2>{{'info.chapter.publicationform' | translate}}</h2>
+    <br />
+
+
+    <accordion-group [isOpen]="checkOpened(16)" (isOpenChange)="checkCollapsed($event, 16)" #groupval16 id="formfield-16">
+        <div accordion-heading>
+            {{'info.subchapter.geninfopublform' | translate}}
+            <i class="fas" [ngClass]="{'fa-caret-down': groupval16?.isOpen, 'fa-caret-up': !groupval16?.isOpen}"></i>
+        </div>
+        <div >
+            <p>
+                {{'info.paragraph.geninfopublform.h103' | translate}}
+            </p>
+        </div>
+    </accordion-group>
+
+
+    <accordion-group [isOpen]="checkOpened(17)" (isOpenChange)="checkCollapsed($event, 17)" #groupval17 id="documenttypes">
+        <div accordion-heading>
+            {{'info.subchapter.doctypes' | translate}}
+            <i class="fas" [ngClass]="{'fa-caret-down': groupval17?.isOpen, 'fa-caret-up': !groupval17?.isOpen}"></i>
+        </div>
+        <br />
+        <div >
+            <h5>
+                {{'info.paragraph.doctypes.h104' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.doctypes.h105' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.doctypes.h106' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.doctypes.h107.0' | translate}}
+                <button type="button" class="btn btn-link" (click)="expandAcordion(3); $event.stopPropagation()">
+                <a href="./info/faq#policies-3">{{'info.paragraph.doctypes.h107.1' | translate}}</a>
+                </button>.
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.doctypes.h108' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.doctypes.h109' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.doctypes.h110' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.doctypes.h111' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.doctypes.h112' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.doctypes.h113' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.doctypes.h114' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.doctypes.h115' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.doctypes.h116' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.doctypes.h117' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.doctypes.h118' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.doctypes.h119' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.doctypes.h120' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.doctypes.h121' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.doctypes.h122' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.doctypes.h123' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.doctypes.h124' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.doctypes.h125' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.doctypes.h126' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.doctypes.h127' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.doctypes.h128' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.doctypes.h129' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.doctypes.h130' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.doctypes.h131' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.doctypes.h132' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.doctypes.h133' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.doctypes.h134' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.doctypes.h135' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.doctypes.h136' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.doctypes.h137' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.doctypes.h138' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.doctypes.h139' | translate}}
+            </p>
+        </div>
+    </accordion-group>
+
+
+    <accordion-group [isOpen]="checkOpened(18)" (isOpenChange)="checkCollapsed($event, 18)" #groupval18 id="elements-18">
+        <div accordion-heading>
+            {{'info.subchapter.elementspublform' | translate}}
+            <i class="fas" [ngClass]="{'fa-caret-down': groupval18?.isOpen, 'fa-caret-up': !groupval18?.isOpen}"></i>
+        </div>
+        <br />
+        <div >
+            <h5>
+                {{'info.paragraph.elementspublform.h140' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.elementspublform.h141' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.elementspublform.h142' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.elementspublform.h143' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.elementspublform.h144' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.elementspublform.h145' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.elementspublform.h146' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.elementspublform.h147' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.elementspublform.h148' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.elementspublform.h149' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.elementspublform.h150' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.elementspublform.h151' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.elementspublform.h152' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.elementspublform.h153' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.elementspublform.h154' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.elementspublform.h155' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.elementspublform.h156' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.elementspublform.h157' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.elementspublform.h158' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.elementspublform.h159' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.elementspublform.h160' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.elementspublform.h161' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.elementspublform.h162' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.elementspublform.h163' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.elementspublform.h164' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.elementspublform.h165' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.elementspublform.h166' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.elementspublform.h167' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.elementspublform.h168' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.elementspublform.h169' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.elementspublform.h170' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.elementspublform.h171' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.elementspublform.h172' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.elementspublform.h173' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.elementspublform.h174' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.elementspublform.h175' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.elementspublform.h176' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.elementspublform.h177' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.elementspublform.h178' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.elementspublform.h179' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.elementspublform.h180' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.elementspublform.h181.0' | translate}}
+                <a href="https://ub.fau.de/wp-content/uploads/2020/12/Vertrag_DE_2020-12.pdf">publication
+                    {{'info.paragraph.elementspublform.h181.1' | translate}}
+                </a>
+                {{'info.paragraph.elementspublform.h181.2' | translate}}
+            </p>
+            <p align="justify">
+                {{'info.paragraph.elementspublform.h182' | translate}}
+            </p>
+        </div>
+    </accordion-group>
+    <hr />
+
+
+    <h2>{{'info.chapter.legalinfo' | translate}}</h2>
+    <br />
+
+
+    <accordion-group [isOpen]="checkOpened(19)" (isOpenChange)="checkCollapsed($event, 19)" #groupval19 id="legal_copyright-19">
+        <div accordion-heading>
+            {{'info.subchapter.copyright' | translate}}
+            <i class="fas" [ngClass]="{'fa-caret-down': groupval19?.isOpen, 'fa-caret-up': !groupval19?.isOpen}"></i>
+        </div>
+        <div >
+            <p align="justify">
+                {{'info.paragraph.copyright.h183.0' | translate}}
+                <a
+                    href="http://www.gesetze-im-internet.de/urhg/index.html">http://www.gesetze-im-internet.de/urhg/index.html</a>.
+                {{'info.paragraph.copyright.h183.1' | translate}}
+            </p>
+            <p align="justify">
+                {{'info.paragraph.copyright.h184' | translate}}
+                <a href="https://v2.sherpa.ac.uk/romeo/">https://v2.sherpa.ac.uk/romeo/</a>.
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.copyright.h185' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.copyright.h186' | translate}}
+            </p>
+        </div>
+    </accordion-group>
+
+
+    <accordion-group [isOpen]="checkOpened(20)" (isOpenChange)="checkCollapsed($event, 20)" #groupval20 id="legal_agreement-20">
+        <div accordion-heading>
+            {{'info.subchapter.publicationagreement' | translate}}
+            <i class="fas" [ngClass]="{'fa-caret-down': groupval20?.isOpen, 'fa-caret-up': !groupval20?.isOpen}"></i>
+        </div>
+        <div >
+            <p align="justify">
+                {{'info.paragraph.publicationagreement.h187.0' | translate}}
+                <a
+                    href="https://ub.fau.de/wp-content/uploads/2020/12/Vertrag_DE_2020-12.pdf">https://ub.fau.de/wp-content/uploads/2020/12/Vertrag_DE_2020-12.pdf</a>.
+                {{'info.paragraph.publicationagreement.h187.1' | translate}}
+                <a
+                    href="https://ub.fau.de/wp-content/uploads/2020/12/Vertrag_EN_2020-12.pdf">https://ub.fau.de/wp-content/uploads/2020/12/Vertrag_EN_2020-12.pdf</a>.
+                {{'info.paragraph.publicationagreement.h187.2' | translate}}
+            </p>
+        </div>
+    </accordion-group>
+
+
+    <accordion-group [isOpen]="checkOpened(21)" (isOpenChange)="checkCollapsed($event, 21)" #groupval21 id="legal_license-21">
+        <div accordion-heading>
+            {{'info.subchapter.cclicense' | translate}}
+            <i class="fas" [ngClass]="{'fa-caret-down': groupval21?.isOpen, 'fa-caret-up': !groupval21?.isOpen}"></i>
+        </div>
+        <div >
+            <p align="justify">
+                {{'info.paragraph.cclicense.h188.0' | translate}}
+                <a href="mailto:petra.heermann@fau.de">Petra.Heermann@fau.de</a>
+                {{'info.paragraph.cclicense.h188.1' | translate}}
+            </p>
+            <img src="https://www.e-learning.tu-darmstadt.de/media/elc/__relaunch/02_services_angebote/rechtsfragen_1/creative_commons_1/cc-lizenzen_ueberblick_ueberarb08022018_ZumDownload.png"
+                height="60%" width="60%">
+            <p align="justify"><small>Source/Quelle:
+                    https://www.e-learning.tu-darmstadt.de/media/elc/__relaunch/02_services_angebote/rechtsfragen_1/creative_commons_1/cc-lizenzen_ueberblick_ueberarb08022018_ZumDownload.png</small><br />
+            </p>
+            <p align="justify">
+                {{'info.paragraph.cclicense.h189' | translate}}
+                <a
+                    href="https://creativecommons.org/licenses/?lang=en">https://creativecommons.org/licenses/?lang=en</a>
+            </p>
+            <p align="justify">
+                {{'info.paragraph.cclicense.h190' | translate}}
+                <a
+                    href="https://ub.fau.de/wp-content/uploads/2020/12/Vertrag_DE_2020-12.pdf">https://ub.fau.de/wp-content/uploads/2020/12/Vertrag_DE_2020-12.pdf</a>.
+                {{'info.paragraph.cclicense.h191' | translate}}
+                <a
+                    href="https://ub.fau.de/wp-content/uploads/2020/12/Vertrag_EN_2020-12.pdf">https://ub.fau.de/wp-content/uploads/2020/12/Vertrag_EN_2020-12.pdf</a>)
+        </div>
+    </accordion-group>
+    <hr />
+
+
+    <h2>{{'info.chapter.other' | translate}}</h2>
+    <br />
+
+
+    <accordion-group [isOpen]="checkOpened(22)" (isOpenChange)="checkCollapsed($event, 22)" #groupval22 id="documentation-22">
+        <div accordion-heading>
+            {{'info.subchapter.documentation' | translate}}
+            <i class="fas" [ngClass]="{'fa-caret-down': groupval22?.isOpen, 'fa-caret-up': !groupval22?.isOpen}"></i>
+        </div>
+        <div >
+            <p align="justify">
+                {{'info.paragraph.documentation.h192' | translate}}
+                <a href="http://www.opus-repository.org/" target="_blank">https://www.opus-repository.org/</a>.
+            </p>
+        </div>
+    </accordion-group>
+
+
+    <accordion-group [isOpen]="checkOpened(23)" (isOpenChange)="checkCollapsed($event, 23)" #groupval23 id="imprint-23">
+        <div accordion-heading>
+            {{'info.subchapter.publisherinfo' | translate}}
+            <i class="fas" [ngClass]="{'fa-caret-down': groupval23?.isOpen, 'fa-caret-up': !groupval23?.isOpen}"></i>
+        </div>
+        <div >
+            <p align="justify">
+                {{'info.paragraph.publisherinfo.h193' | translate}}
+            </p>
+            <p align="justify">University Library Erlangen-N&uuml;rnberg<br />
+                Universit&auml;tsstra&szlig;e 4, 91054 Erlangen<br />
+                Postal address: Universit&auml;tsbibliothek Erlangen-N&uuml;rnberg, 91051 Erlangen<br />
+                Phone: + 49 (0)9131 85 22151<br />
+                Fax: + 49 (0)9131 85 29309<br />
+                E-mail: <a href="mailto:ub-direktion(at)fau.de">ub-direktion(at)fau.de</a></p>
+            <p align="justify">
+                {{'info.paragraph.publisherinfo.h194' | translate}}
+            </p>
+            <p align="justify">Web office:<br />
+                Manager: Ingrid Schenker<br />
+                Developers: Gisela Glaeser, Brigitte Preller, Karin Denzler<br />
+                E-mail: <a href="mailto:ub-webmaster(at)fau.de">ub-webmaster(at)fau.de</a>
+            </p>
+        </div>
+    </accordion-group>
+
+
+    <accordion-group [isOpen]="checkOpened(24)" (isOpenChange)="checkCollapsed($event, 24)" #groupval24 id="disclaimer-24">
+        <div accordion-heading>
+            {{'info.subchapter.exclusionliability' | translate}}
+            <i class="fas" [ngClass]="{'fa-caret-down': groupval24?.isOpen, 'fa-caret-up': !groupval24?.isOpen}"></i>
+        </div>
+        <div >
+            <p align="justify">
+                {{'info.paragraph.exclusionliability.h195' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.exclusionliability.h196' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.exclusionliability.h197' | translate}}
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.exclusionliability.h198' | translate}}
+            </h5>
+            <p align="justify">
+                {{'info.paragraph.exclusionliability.h199' | translate}}
+                <a href="https://ub.fau.de/en/privacy/">https://ub.fau.de/en/privacy/</a>
+            </p>
+            <br />
+            <h5>
+                {{'info.paragraph.exclusionliability.h200' | translate}}
+            </h5>
+
+            <p align="justify">
+                {{'info.paragraph.exclusionliability.h201' | translate}}
+            </p>
+            <br />
+            <h5>Cookies</h5>
+            <p align="justify">
+                {{'info.paragraph.exclusionliability.h202' | translate}}
+            </p>
+            <br />
+            <h5>JavaScript</h5>
+            <p align="justify">
+                {{'info.paragraph.exclusionliability.h203' | translate}}
+            </p>
+        </div>
+    </accordion-group>
+    <hr />
+
+</accordion>

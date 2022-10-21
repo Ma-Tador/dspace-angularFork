@@ -42,5 +42,9 @@ export const collectionFormModels: DynamicFormControlModel[] = [
   new DynamicTextAreaModel({
     id: 'license',
     name: 'dc.rights.license',
+  }),
+  new DynamicInputModel({
+    id: 'enableViewAsSerie',
+    name: 'local.series.showVolNr',
   })
 ];

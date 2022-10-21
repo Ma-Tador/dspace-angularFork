@@ -9,6 +9,7 @@ import { environment } from '../../environments/environment';
   templateUrl: 'footer.component.html'
 })
 export class FooterComponent {
+
   dateObj: number = Date.now();
 
   /**

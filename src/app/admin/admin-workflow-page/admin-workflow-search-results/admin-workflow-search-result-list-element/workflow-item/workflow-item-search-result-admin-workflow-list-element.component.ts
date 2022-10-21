@@ -31,7 +31,9 @@ export class WorkflowItemSearchResultAdminWorkflowListElementComponent extends S
    */
   public item$: Observable<Item>;
 
-  constructor(private linkService: LinkService,
+  constructor(
+              //private linkService: LinkService,
+              protected linkService: LinkService,
               protected truncatableService: TruncatableService,
               protected dsoNameService: DSONameService,
               @Inject(APP_CONFIG) protected appConfig: AppConfig

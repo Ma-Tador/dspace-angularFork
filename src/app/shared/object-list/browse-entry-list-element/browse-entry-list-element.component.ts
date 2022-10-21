@@ -27,6 +27,12 @@ export class BrowseEntryListElementComponent extends AbstractListableElementComp
    */
   queryParams$: Observable<Params>;
 
+  // Keeps the document type to display as label @Steli
+  browseByDocType = [
+    'article', 'movingimage', 'bachelorthesis', 'book', 'bookpart', 'conferenceobject', 'coursematerial', 'dataset', 'doctoralthesis', 'habilitation',
+    'journalissue', 'masterthesis', 'periodicalpart', 'postprint', 'preprint', 'report', 'review', 'software', 'studythesis', 'workingpaper'
+  ];
+
   constructor(private paginationService: PaginationService, private routeService: RouteService) {
     super();
   }

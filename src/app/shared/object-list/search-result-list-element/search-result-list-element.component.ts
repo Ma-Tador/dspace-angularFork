@@ -9,6 +9,8 @@ import { TruncatableService } from '../../truncatable/truncatable.service';
 import { Metadata } from '../../../core/shared/metadata.utils';
 import { DSONameService } from '../../../core/breadcrumbs/dso-name.service';
 import { APP_CONFIG, AppConfig } from '../../../../config/app-config.interface';
+import { ActivatedRoute } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'ds-search-result-list-element',
@@ -23,7 +25,10 @@ export class SearchResultListElementComponent<T extends SearchResult<K>, K exten
 
   public constructor(protected truncatableService: TruncatableService,
                      protected dsoNameService: DSONameService,
-                     @Inject(APP_CONFIG) protected appConfig?: AppConfig) {
+                     @Inject(APP_CONFIG) protected appConfig?: AppConfig,
+                     protected route?: ActivatedRoute,
+                     protected translateService?: TranslateService,
+                     ) {
     super();
   }
 
