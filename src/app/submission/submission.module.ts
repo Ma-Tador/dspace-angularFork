@@ -63,6 +63,7 @@ import {
 import {
   MetadataInformationComponent
 } from './sections/sherpa-policies/metadata-information/metadata-information.component';
+import {SubmissionSectionIdentifiersComponent} from './sections/identifiers/section-identifiers.component';
 
 const ENTRY_COMPONENTS = [
   // put only entry components that use custom decorator
@@ -72,6 +73,7 @@ const ENTRY_COMPONENTS = [
   SubmissionSectionCcLicensesComponent,
   SubmissionSectionAccessesComponent,
   SubmissionSectionSherpaPoliciesComponent,
+  SubmissionSectionIdentifiersComponent,
 ];
 
 const DECLARATIONS = [
@@ -100,6 +102,7 @@ const DECLARATIONS = [
   PublisherPolicyComponent,
   PublicationInformationComponent,
   MetadataInformationComponent,
+  SubmissionSectionIdentifiersComponent,
 ];
 
 @NgModule({

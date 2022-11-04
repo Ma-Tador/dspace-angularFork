@@ -27,7 +27,8 @@ import {
   ITEM_EDIT_PRIVATE_PATH,
   ITEM_EDIT_PUBLIC_PATH,
   ITEM_EDIT_REINSTATE_PATH,
-  ITEM_EDIT_WITHDRAW_PATH
+  ITEM_EDIT_WITHDRAW_PATH,
+  ITEM_EDIT_REGISTER_DOI_PATH
 } from './edit-item-page.routing-paths';
 import { ItemPageReinstateGuard } from './item-page-reinstate.guard';
 import { ItemPageWithdrawGuard } from './item-page-withdraw.guard';
@@ -38,6 +39,9 @@ import { ItemPageBitstreamsGuard } from './item-page-bitstreams.guard';
 import { ItemPageRelationshipsGuard } from './item-page-relationships.guard';
 import { ItemPageVersionHistoryGuard } from './item-page-version-history.guard';
 import { ItemPageCollectionMapperGuard } from './item-page-collection-mapper.guard';
+
+import { ItemRegisterDoiComponent } from './item-register-doi/item-registerdoi.component';
+import { ItemPageRegisterDoiGuard } from './item-page-registerdoi.guard';
 
 /**
  * Routing module that handles the routing for the Edit Item page administrator functionality
@@ -142,6 +146,14 @@ import { ItemPageCollectionMapperGuard } from './item-page-collection-mapper.gua
             component: ItemMoveComponent,
             data: { title: 'item.edit.move.title' },
           },
+          
+          {
+            path: ITEM_EDIT_REGISTER_DOI_PATH,
+            component: ItemRegisterDoiComponent,
+            //canActivate: [ItemPageRegisterDoiGuard],
+            data: { title: 'item.edit.registerdoi.title' },
+          },
+          
           {
             path: ITEM_EDIT_AUTHORIZATIONS_PATH,
             children: [
@@ -186,6 +198,7 @@ import { ItemPageCollectionMapperGuard } from './item-page-collection-mapper.gua
     ItemPageRelationshipsGuard,
     ItemPageVersionHistoryGuard,
     ItemPageCollectionMapperGuard,
+    ItemPageRegisterDoiGuard,
   ]
 })
 export class EditItemPageRoutingModule {

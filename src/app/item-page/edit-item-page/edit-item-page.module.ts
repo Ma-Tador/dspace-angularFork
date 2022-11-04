@@ -37,6 +37,9 @@ import { ItemAuthorizationsComponent } from './item-authorizations/item-authoriz
 import { ObjectValuesPipe } from '../../shared/utils/object-values-pipe';
 import { ResourcePoliciesModule } from '../../shared/resource-policies/resource-policies.module';
 
+import {IdentifierDataService} from '../../core/data/identifier-data.service';
+import {IdentifierDataComponent} from '../../shared/object-list/identifier-data/identifier-data.component';
+import {ItemRegisterDoiComponent} from './item-register-doi/item-registerdoi.component';
 
 /**
  * Module that contains all components related to the Edit Item page administrator functionality
@@ -79,11 +82,14 @@ import { ResourcePoliciesModule } from '../../shared/resource-policies/resource-
     ItemMoveComponent,
     ItemEditBitstreamDragHandleComponent,
     VirtualMetadataComponent,
-    ItemAuthorizationsComponent
+    ItemAuthorizationsComponent,
+    IdentifierDataComponent,
+    ItemRegisterDoiComponent
   ],
   providers: [
     BundleDataService,
-    ObjectValuesPipe
+    ObjectValuesPipe,
+    IdentifierDataService,
   ],
   exports: [
     EditInPlaceFieldComponent,

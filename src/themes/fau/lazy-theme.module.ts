@@ -56,7 +56,13 @@ import {
 import { ComcolModule } from '../../app/shared/comcol/comcol.module';
 import { RootModule } from '../../app/root.module';
 
+import { AdminSidebarComponent } from './app/admin/admin-sidebar/admin-sidebar.component';
+
+
 const DECLARATIONS = [
+
+	AdminSidebarComponent,
+
 ];
 
 @NgModule({
