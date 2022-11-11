@@ -146,14 +146,14 @@ import { ItemPageRegisterDoiGuard } from './item-page-registerdoi.guard';
             component: ItemMoveComponent,
             data: { title: 'item.edit.move.title' },
           },
-          
+
           {
             path: ITEM_EDIT_REGISTER_DOI_PATH,
             component: ItemRegisterDoiComponent,
-            //canActivate: [ItemPageRegisterDoiGuard],
+            canActivate: [ItemPageRegisterDoiGuard],
             data: { title: 'item.edit.registerdoi.title' },
           },
-          
+
           {
             path: ITEM_EDIT_AUTHORIZATIONS_PATH,
             children: [

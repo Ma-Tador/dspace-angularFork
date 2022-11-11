@@ -1,3 +1,7 @@
+<!-- comented out till ORCID bug fix -->
+
+<div *ngIf="false">
+
 <ds-metadata-field-wrapper [label]="label | translate" >
     <div *ngFor="let personInfo of (orcid_query$ | async); let last=last;" >
         <a href="{{'https://orcid.org/' + personInfo.orcid_id}}">
@@ -6,3 +10,6 @@
         <span *ngIf="!last" [innerHTML]="separator"></span>
     </div>
 </ds-metadata-field-wrapper>
+
+
+</div>

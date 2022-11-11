@@ -35,7 +35,7 @@
 
   "error-page.description.404": "page not found",
 
-  "error-page.orcid.generic-error": "An error occurred during login via ORCID. Make sure you have shared your ORCID account email address with DSpace. If the error persists, contact the administrator",
+  "error-page.orcid.generic-error": "An error occurred during login via ORCID. Make sure you have shared your ORCID account email address with FAU-Repositorium. If the error persists, contact the administrator",
 
   "access-status.embargo.listelement.badge": "Embargo",
 
@@ -147,7 +147,7 @@
 
   "admin.registries.metadata.breadcrumbs": "Metadata registry",
 
-  "admin.registries.metadata.description": "The metadata registry maintains a list of all metadata fields available in the repository. These fields may be divided amongst multiple schemas. However, DSpace requires the qualified Dublin Core schema.",
+  "admin.registries.metadata.description": "The metadata registry maintains a list of all metadata fields available in the repository. These fields may be divided amongst multiple schemas. However, FAU-Repositorium requires the qualified Dublin Core schema.",
 
   "admin.registries.metadata.form.create": "Create metadata schema",
 
@@ -1385,7 +1385,7 @@
 
   "dso-selector.set-scope.community.head": "Select a search scope",
 
-  "dso-selector.set-scope.community.button": "Search all of DSpace",
+  "dso-selector.set-scope.community.button": "Search all of FAU-Repositorium",
 
   "dso-selector.set-scope.community.input-header": "Search for a community or collection",
 
@@ -1488,7 +1488,7 @@
 
   "footer.copyright": "copyright © 2002-{{ year }}",
 
-  "footer.link.dspace": "DSpace software",
+  "footer.link.dspace": "FAU-Repositorium software",
 
   "footer.link.lyrasis": "LYRASIS",
 
@@ -1707,7 +1707,7 @@
 
   "home.title": "Home",
 
-  "home.top-level-communities.head": "Communities in DSpace",
+  "home.top-level-communities.head": "Communities in FAU-Repositorium",
 
   "home.top-level-communities.help": "Select a community to browse its collections.",
 
@@ -1741,7 +1741,7 @@
 
   "info.feedback.title": "Feedback",
 
-  "info.feedback.info": "Thanks for sharing your feedback about the DSpace system. Your comments are appreciated!",
+  "info.feedback.info": "Thanks for sharing your feedback about the FAU-Repositorium system. Your comments are appreciated!",
 
   "info.feedback.email_help": "This address will be used to follow up on your feedback.",
 
@@ -2554,7 +2554,7 @@
 
   "login.form.forgot-password": "Have you forgotten your password?",
 
-  "login.form.header": "Please log in to DSpace",
+  "login.form.header": "Please log in to FAU-Repositorium",
 
   "login.form.new-user": "New user? Click here to register.",
 
@@ -2576,7 +2576,7 @@
 
 
 
-  "logout.form.header": "Log out from DSpace",
+  "logout.form.header": "Log out from FAU-Repositorium",
 
   "logout.form.submit": "Log out",
 
@@ -2614,7 +2614,7 @@
 
   "menu.section.browse_community_by_title": "By Title",
 
-  "menu.section.browse_global": "All of DSpace",
+  "menu.section.browse_global": "All of FAU-Repositorium",
 
   "menu.section.browse_global_by_author": "By Author",
 
@@ -2852,7 +2852,7 @@
 
 
 
-  "nav.browse.header": "All of DSpace",
+  "nav.browse.header": "All of FAU-Repositorium",
 
   "nav.community-browse.header": "By Community",
 
@@ -3236,7 +3236,7 @@
 
   "register-page.registration.header": "New user registration",
 
-  "register-page.registration.info": "Register an account to subscribe to collections for email updates, and submit new items to DSpace.",
+  "register-page.registration.info": "Register an account to subscribe to collections for email updates, and submit new items to FAU-Repositorium.",
 
   "register-page.registration.email": "Email Address *",
 
@@ -3313,9 +3313,9 @@
 
   "repository.image.logo": "Repository logo",
 
-  "repository.title.prefix": "DSpace Angular :: ",
+  "repository.title.prefix": "FAU-Repositorium Angular :: ",
 
-  "repository.title.prefixDSpace": "DSpace Angular ::",
+  "repository.title.prefixDSpace": "FAU-Repositorium Angular ::",
 
 
   "resource-policies.add.button": "Add",
@@ -3648,7 +3648,7 @@
 
   "search.form.search_dspace": "All repository",
 
-  "search.form.scope.all": "All of DSpace",
+  "search.form.scope.all": "All of FAU-Repositorium",
 
 
 
@@ -3791,7 +3791,7 @@
 
   "submission.import-external.title.none": "Import metadata from an external source",
 
-  "submission.import-external.page.hint": "Enter a query above to find items from the web to import in to DSpace.",
+  "submission.import-external.page.hint": "Enter a query above to find items from the web to import in to FAU-Repositorium.",
 
   "submission.import-external.back-to-my-dspace": "Back to MyDSpace",
 
@@ -4465,7 +4465,7 @@
 
 
 
-  "title": "DSpace",
+  "title": "FAU-Repositorium",
 
 
 
@@ -4808,24 +4808,24 @@
 
   "person.orcid.registry.auth": "ORCID Authorizations",
   "home.recent-submissions.head": "Recent Submissions",
-  
-  
+
+
   ///////////////////////////////////////////////////////////  FAU specific translation
-  
-  // "title": "DSpace",
+
+  // "title": "FAU-Repositorium",
   "title": "FAU-Repositorium",
-  
+
   "item.page.orcid":"Zugehörige ORCIDs",
 
-"item.page.rightsuri":"Document's Licence",   
+"item.page.rightsuri":"Document's Licence",
 
-"item.page.urn":"URN",         
+"item.page.urn":"URN",
 
 "item.page.doi":"DOI",
 
-"item.page.url":"URL",  
-              
-"item.page.crislink":"CRIS", 
+"item.page.url":"URL",
+
+"item.page.crislink":"CRIS",
 
 "browse.metadata.docType":"Document type",
 
@@ -4835,34 +4835,34 @@
 
 // "home.description": "",
   "home.description": "",
-  
+
   // "home.title": "DS Angular :: Home",
   "home.title": "Repository :: Home",
-  
+
   "info.end-user-agreement.p1": "Please read this End-User License Agreement carefully before clicking the -I Agree- button, downloading or using FAU Repositorium. The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural. For the purposes of this End-User License Agreement: -Agreement- means this End-User License Agreement that forms the entire agreement between You and the Company regarding the use of the Application. -Application- means the software program provided by the Company downloaded or used by You through an account to a Device, named FAU Repositoium. -Company- (referred to as either -the Company-, -We-, -Us- or -Our- in this Agreement) refers to Universitätsbibliothek, Erlangen-Nürnberg, Universitätsstraße 4, 91054 Erlangen. -Content- refers to content such as text, images, or other information that can be posted, uploaded, linked to or otherwise made available by You, regardless of the form of that content. -Country- refers to Germany. -Device- means any device that can access the Application such as a computer, a cellphone or a digital tablet. -Third-Party Services- means any services or content (including data, information, applications and other products services) provided by a third-party that may be displayed, included or made available by the Application. -You- means the individual accessing or using the Application or the company, or other legal entity on behalf of which such individual is accessing or using the Application, as applicable. By clicking the -I Agree- button, downloading or using the Application, You are agreeing to be bound by the terms and conditions of this Agreement. If You do not agree to the terms of this Agreement, do not click on the -I Agree- button, do not download or do not use the Application. This Agreement is a legal document between You and the Company and it governs your use of the Application made available to You by the Company. This Agreement is between You and the Company only and not with the Application Store. Therefore, the Company is solely responsible for the Application and its content. The Application is licensed, not sold, to You by the Company for use strictly in accordance with the terms of this Agreement. The Company grants You a revocable, non-exclusive, non-transferable, limited license to download, install and use the Application strictly in accordance with the terms of this Agreement. You may only use the Application on a Device that You own or control . The license that is granted to You by the Company is solely for your personal, non-commercial purposes strictly in accordance with the terms of this Agreement. You agree not to, and You will not permit others to: License, sell, rent, lease, assign, distribute, transmit, host, outsource, disclose or otherwise commercially exploit the Application or make the Application available to any third party. Remove, alter or obscure any proprietary notice (including any notice of copyright or trademark) of the Company or its affiliates, partners, suppliers or the licensors of the Application. The Application, including without limitation all copyrights, patents, trademarks, trade secrets and other intellectual property rights are, and shall remain, the sole and exclusive property of the Company. The Company shall not be obligated to indemnify or defend You with respect to any third party claim arising out of or relating to the Application. To the extent the Company is required to provide indemnification by applicable law, the Company shall be solely responsible for the investigation, defense, settlement and discharge of any claim that the Application or your use of it infringes any third party intellectual property rights. The Company reserves the right to modify, suspend or discontinue, temporarily or permanently, the Application or any service to which it connects, with or without notice and without liability to You. The Company may from time to time provide enhancements or improvements to the features/functionality of the Application, which may include patches, bug fixes, updates, upgrades and other modifications. Updates may modify or delete certain features and/or functionalities of the Application. You agree that the Company has no obligation to (i) provide any Updates, or (ii) continue to provide or enable any particular features and/or functionalities of the Application to You. You further agree that all updates or any other modifications will be (i) deemed to constitute an integral part of the Application, and (ii) subject to the terms and conditions of this Agreement. The Company does not provide any maintenance or support for the download and use of the Application. To the extent that any maintenance or support is required by applicable law, the Company shall be obligated to furnish any such maintenance or support. The Application may display, include or make available third-party content (including data, information, applications and other products services) or provide links to third-party websites or services. You acknowledge and agree that the Company shall not be responsible for any Third-party Services, including their accuracy, completeness, timeliness, validity, copyright compliance, legality, decency, quality or any other aspect thereof. The Company does not assume and shall not have any liability or responsibility to You or any other person or entity for any Third-party Services. ou must comply with applicable Third parties- Terms of agreement when using the Application. Third-party Services and links thereto are provided solely as a convenience to You and You access and use them entirely at your own risk and subject to such third parties- Terms and conditions. This Agreement shall remain in effect until terminated by You or the Company. The Company may, in its sole discretion, at any time and for any or no reason, suspend or terminate this Agreement with or without prior notice. This Agreement will terminate immediately, without prior notice from the Company, in the event that you fail to comply with any provision of this Agreement. You may also terminate this Agreement by deleting the Application and all copies thereof from your Device or from your computer. Upon termination of this Agreement, You shall cease all use of the Application and delete all copies of the Application from your Device. Termination of this Agreement will not limit any of the Company rights or remedies at law or in equity in case of breach by You (during the term of this Agreement) of any of your obligations under the present Agreement. You agree to indemnify and hold the Company and its parents, subsidiaries, affiliates, officers, employees, agents, partners and licensors (if any) harmless from any claim or demand, including reasonable attorneys- fees, due to or arising out of your: (a) use of the Application; (b) violation of this Agreement or any law or regulation; or (c) violation of any right of a third party. The Application is provided to You -AS IS- and -AS AVAILABLE- and with all faults and defects without warranty of any kind. To the maximum extent permitted under applicable law, the Company, on its own behalf and on behalf of its affiliates and its and their respective licensors and service providers, expressly disclaims all warranties, whether express, implied, statutory or otherwise, with respect to the Application, including all implied warranties of merchantability, fitness for a particular purpose, title and non-infringement, and warranties that may arise out of course of dealing, course of performance, usage or trade practice. Without limitation to the foregoing, the Company provides no warranty or undertaking, and makes no representation of any kind that the Application will meet your requirements, achieve any intended results, be compatible or work with any other software, applications, systems or services, operate without interruption, meet any performance or reliability standards or be error free or that any errors or defects can or will be corrected. Without limiting the foregoing, neither the Company nor any of the company provider makes any representation or warranty of any kind, express or implied: (i) as to the operation or availability of the Application, or the information, content, and materials or products included thereon; (ii) that the Application will be uninterrupted or error-free; (iii) as to the accuracy, reliability, or currency of any information or content provided through the Application; or (iv) that the Application, its servers, the content, or e-mails sent from or on behalf of the Company are free of viruses, scripts, trojan horses, worms, malware, timebombs or other harmful components. Some jurisdictions do not allow the exclusion of certain types of warranties or limitations on applicable statutory rights of a consumer, so some or all of the above exclusions and limitations may not apply to You. But in such a case the exclusions and limitations set forth in this section shall be applied to the greatest extent enforceable under applicable law. To the extent any warranty exists under law that cannot be disclaimed, the Company shall be solely responsible for such warranty. Notwithstanding any damages that You might incur, the entire liability of the Company and any of its suppliers under any provision of this Agreement and your exclusive remedy for all of the foregoing shall be limited to the amount actually paid by You for the Application. To the maximum extent permitted by applicable law, in no event shall the Company or its suppliers be liable for any special, incidental, indirect, or consequential damages whatsoever (including, but not limited to, damages for loss of profits, loss of data or other information, for business interruption, for personal injury, loss of privacy arising out of or in any way related to the use of or inability to use the Application, third-party software and/or third-party hardware used with the Application, or otherwise in connection with any provision of this Agreement), even if the Company or any supplier has been advised of the possibility of such damages and even if the remedy fails of its essential purpose. Some states/jurisdictions do not allow the exclusion or limitation of incidental or consequential damages, so the above limitation or exclusion may not apply to You. If any provision of this Agreement is held to be unenforceable or invalid, such provision will be changed and interpreted to accomplish the objectives of such provision to the greatest extent possible under applicable law and the remaining provisions will continue in full force and effect. Except as provided herein, the failure to exercise a right or to require performance of an obligation under this Agreement shall not effect a party ability to exercise such right or require such performance at any time thereafter nor shall the waiver of a breach constitute a waiver of any subsequent breach. The Company does not make any warranties concerning the Application. To the extent You have any claim arising from or relating to your use of the Application, the Company is responsible for addressing any such claims, which may include, but not limited to: (i) any product liability claims; (ii) any claim that the Application fails to conform to any applicable legal or regulatory requirement; and (iii) any claim arising under consumer protection, or similar legislation. The Company reserves the right, at its sole discretion, to modify or replace this Agreement at any time. What constitutes a material change will be determined at the sole discretion of the Company. By continuing to access or use the Application after any revisions become effective, You agree to be bound by the revised terms. If You do not agree to the new terms, You are no longer authorized to use the Application. The laws of the Country, excluding its conflicts of law rules, shall govern this Agreement and your use of the Application. Your use of the Application may also be subject to other local, state, national, or international laws. The Agreement constitutes the entire agreement between You and the Company regarding your use of the Application and supersedes all prior and contemporaneous written or oral agreements between You and the Company. You may be subject to additional terms and conditions that apply when You use or purchase other Company services, which the Company will provide to You at the time of such use or purchase. If you have any questions about this Agreement, You can contact Us at stelica.valianos@fau.de. Last updated on 28.09.2022.",
-  
+
   "menu.section.browse_community_by_volume": "By Volume Nr",
-  
+
   "menu.section.browse_community_by_docType": "By Document Type",
 
 "menu.section.browse_community_by_dateaccessioned": "By Date Accessioned",
 
-// "menu.section.browse_global": "All of DSpace",
+// "menu.section.browse_global": "All of FAU-Repositorium",
   "menu.section.browse_global": "All of  Repository",
-  
+
   // "nav.mydspace": "MyDSpace",
   "nav.mydspace": "My FAU Repository",
-  
-  //added Document-type badge instead of Item                                                                                                                                                                                         
-  "doctoralthesis.listelement.badge": "Doctoral thesis", 
 
-  "bachelorthesis.listelement.badge": "Bachelor thesis",                                                                                                                                                                              
+  //added Document-type badge instead of Item
+  "doctoralthesis.listelement.badge": "Doctoral thesis",
 
-  "workingpaper.listelement.badge": "Working paper",                                                                                                            
+  "bachelorthesis.listelement.badge": "Bachelor thesis",
 
-  "movingimage.listelement.badge": "Audio-visual Media",                      
+  "workingpaper.listelement.badge": "Working paper",
 
-  "conferenceobject.listelement.badge": "Conference object",                                                                                                             
+  "movingimage.listelement.badge": "Audio-visual Media",
+
+  "conferenceobject.listelement.badge": "Conference object",
 
   "coursematerial.listelement.badge": "Course Material",
 
@@ -4870,27 +4870,27 @@
 
   "masterthesis.listelement.badge": "Master thesis",
 
-  "article.listelement.badge": "Newspaper article",                                                                             
+  "article.listelement.badge": "Newspaper article",
 
-  "report.listelement.badge": "Report",                     
+  "report.listelement.badge": "Report",
 
-  "book.listelement.badge": "Book",                                                                                                                                            
+  "book.listelement.badge": "Book",
 
   "review.listelement.badge": "Review",
 
-  "bookpart.listelement.badge": "Book part",                             
+  "bookpart.listelement.badge": "Book part",
 
-  "dataset.listelement.badge": "Dataset",                                     
+  "dataset.listelement.badge": "Dataset",
 
-  "postprint.listelement.badge": "Postprint",                
+  "postprint.listelement.badge": "Postprint",
 
   "periodicalpart.listelement.badge": "Periodical part",
 
-  "preprint.listelement.badge": "Preprint",   
+  "preprint.listelement.badge": "Preprint",
 
-  "software.listelement.badge": "Software",   
+  "software.listelement.badge": "Software",
 
-  "studythesis.listelement.badge": "Study thesis",       
+  "studythesis.listelement.badge": "Study thesis",
 
   "other.listelement.badge": "Other document type",
 
@@ -4933,11 +4933,11 @@
   "software": "Software",
 
   "studythesis": "Study Thesis",
-  
-  "workingpaper": "Working Paper",
-  
 
-  
+  "workingpaper": "Working Paper",
+
+
+
    "info.chapter.general": "General ",
 
   "info.subchapter.openaccess":"What is Open Access? ",
@@ -4955,7 +4955,7 @@
   "info.subchapter.citing":"Citing electronic publications, URN ",
 
   "info.chapter.publishing":"Publishing with FAU-Repositoium",
-  
+
   "info.subchapter.publicationprocess":"The publication process",
 
   "info.subchapter.layoutrequirements":"Layout requirements",
@@ -5045,45 +5045,45 @@
   "info.paragraph.guidelines.p3":"The electronic documents are assigned permanent addresses (URNs) and are made accessible through national and international library catalogues, search engines and other reference tools. The German National Library performs the digital preservation of doctoral and postdoctoral theses.",
 
   "info.subchapter.guidelines.headline1":"Aim of FAU Repositorium",
-  
+
   "info.subchapter.guidelines.headline2":"Legal framework",
 
   "info.paragraph.guidelines.h2":"Rights and obligations of the contractual parties",
-  
+
   "info.paragraph.guidelines.h3":"By agreeing to the guidelines and signing the publication contract, the author grants the operator of the publication server licence for the following:",
- 
+
   "info.paragraph.guidelines.h4":"the permanent right to store electronically, especially in databases",
-  
+
   "info.paragraph.guidelines.h5":"the non-exclusive permanent right of use (Section 31 (2) German Copyright Act, UrhG) for the purpose of making the document available to the public in international data networks",
-  
+
   "info.paragraph.guidelines.h6":"the permanent right to convert the document for the purposes of digital preservation or visualisation while preserving the content (the document as originally archived is preserved)",
-  
+
   "info.paragraph.guidelines.h7":"the right to amend and/or complete the metadata provided by the author or editor where necessary",
-  
+
   "info.paragraph.guidelines.h8":"the right to give unlimited access to metadata and to make it usable",
-  
+
   "info.paragraph.guidelines.h9":["the right to disclose the document and the corresponding metadata to the German National Library as well as to document servers with the same aforementioned rights that fulfil geographical and technical requirements ","(see here)"],
 
   "info.paragraph.guidelines.h10":"The authors and editors shall bear all responsibility for the content of the documents. FAU shall assume no liability for the content of the provided publications and linked external sites. The author or editor shall guarantee that the document does not violate legal regulations, official decrees or the rights of any other third parties. The author or editor shall be obligated to determine and, where necessary, obtain the approval of any copyright or exploitation right holders. If the author or editor learns of the existence or development of legal barriers, they shall inform the University Library without delay. Copyright remains with the author. The University Library is merely granted non-exclusive right of use. This means that publication on OPUS FAU does not preclude further publication of the documents in journals or monographs as well as on other servers. According to the recommendations of the German Science Council regarding the provision of digital information by university libraries, all FAU researchers are advised to reserve the right to self-archive on OPUS FAU when entering into publishing contracts and to additionally publish the documents they authored - possibly after a retention period - on the publication server. The metadata of the documents published on the publication server may be stored and made available to third parties by anyone, if necessary in accumulated or selected form. Already published documents shall not be deleted from the server. However, the University Library shall have the right to exclude published documents from publication if this would be in violation of third-party rights, provisions of these guidelines and/or the publication contract.",
-  
+
   "info.subchapter.guidelines.headline3":"The electronic document",
 
   "info.paragraph.guidelines.h11":"General information on the electronic document",
 
   "info.paragraph.guidelines.h12":"The term electronic document as used in these guidelines shall be defined as a text- and graphics-based document that is stored in digital form on a storage medium and disseminated via computer networks. It can also mean a document that contains audio or video sequences. An electronic document to be published via OPUS FAU shall fulfil the following requirements:",
-  
+
   "info.paragraph.guidelines.h13":"It is intended for public dissemination.",
 
   "info.paragraph.guidelines.h14":"It is not a dynamic document. If amendments are necessary, the electronic document is stored as a new version.",
-  
+
   "info.paragraph.guidelines.h15":"If the electronic document is a publication (such as a preprint, newspaper or journal article, or book) it will primarily be released in PDF (portable document format) or PDF/A. Further accepted file formats include: DOC(X), XLS(X), ZIP, AVI, MP3 and MP4. The documents are described formally and in terms of content by the authors and published on FAU-Repositorium.",
-  
+
   "info.paragraph.guidelines.h16":"Long-term digital preservation",
 
   "info.paragraph.guidelines.h17":"The operator guarantees all original data will be preserved and made available for at least 5 years. However, it is planned that all data will be made available for an unlimited period of time in co-operation with the German National Library. This is known as long-term digital preservation. Digital preservation is dependent on the availability of the format, the viewing software as well as conversion options; the German National Library already performs the digital preservation of doctoral and postdoctoral theses. The final published documents sent to the German national library via the OAI interface may not be amended or deleted.",
-  
+
   "info.paragraph.guidelines.h18":"Indexing of electronic documents",
-  
+
   "info.paragraph.guidelines.h19":"All documents are indexed in terms of content by the authors themselves. This should be accomplished using standardised keywords, freely defined keywords and classification systems.",
 
   "info.paragraph.guidelines.h20":"Categories of documents collected by FAU-Repositorium",
@@ -5105,27 +5105,27 @@
   "info.subchapter.guidelines.headline4":"Organisational provisions",
 
   "info.paragraph.guidelines.h28":"The publication server is operated by the University Library Erlangen-Nürnberg. ",
-  
+
   "info.paragraph.guidelines.h29":"Electronic publication is free of charge for FAU members and generally also intended for them.",
 
   "info.paragraph.guidelines.h30":"Submission of electronic documents for dissemination through the document server is usually carried out using an online form.",
 
   "info.paragraph.guidelines.h31":"Additional work necessary for publication such as preparation of the electronic documents or conversion into other formats is supervised or carried out by University Library staff according to prior agreement.",
-  
+
   "info.paragraph.guidelines.h32":"All questions regarding the publication server are to be directed at the OPUS team at the University Library.",
 
   "info.paragraph.guidelines.h33":["The publication server OPUS (Online Publication Server) FAU lists, as comprehensively as possible, all qualified scientific publications authored by FAU members (students, lectures, researchers) according to the ","guidelines"],
 
   "info.paragraph.guidelines.h34":"In addition to current publications, older publications shall also be included at a later point. These include:",
-  
+
   "info.paragraph.guidelines.h35":"Monographs (partial or complete), series, conference transcripts and electronic versions of works released by publishers (post-prints).",
-  
+
   "info.paragraph.guidelines.h36":"Journal articles, essays from collected editions, full editions of journals, congress reports, reports, pre-prints, working papers, reviews, images, films, audio documents.",
-  
+
   "info.paragraph.guidelines.h37":"Doctoral and postdoctoral theses and particularly good final examination papers, e.g. Diplom, Magister, Bachelor's, and Master's theses but not written assignments or seminar papers. Please note the criteria for quality assurance according to the above guidelines.",
 
   "info.paragraph.guidelines.h38":["Documents of short-term importance such as course catalogues, announcements, invitations, etc., cannot be included. A complete description of the possible document types on OPUS FAU is available ","here"],
-  
+
   "info.paragraph.tipsbrowse39":"Search",
 
   "info.paragraph.tipsbrowse40":"In simple search, several search words are automatically connected with 'and'. For a more focused search, it is advisable to connect several search words using the Boolean operators AND, OR, and NOT. AND: All the search words must be part of the document. OR: Only one of the search words entered must be part of the document. This function expands the search area and is recommended when there are several terms for one subject. Example: Lorry OR truck. NOT: This function has an exclusive effect and can be used to narrow down the number of hits: documents that contain one of the search words may not contain the other. Example: Lorry NOT truck. The Boolean operators also work for advanced search. Here they can be used to combine different search words within one search field. For example, the following search for all documents of the author 'Mustermann' from 2002 up to and including 2003: Example: Author: Mustermann, Year: 2002 OR 2003",
@@ -5149,7 +5149,7 @@
   "info.paragraph.tipsbrowse49":"Subject classifications",
 
   "info.paragraph.citation.h50":"Publications on OPUS FAU are equivalent to conventional publications and thus also citable. Certain standards should be observed when citing, e.g. ISO 690. Further information on this subject is available on the Open Access server ",
-  
+
   "info.paragraph.citation.h51":"Example: Fritzsche, Eva Susanne Confidence in elementary school students: A measure for self-concept? [online] Erlangen-Nürnberg, Univ., Diss., 2012 http://www.opus.ub.uni-erlangen.de/opus/volltexte/2012/3407/ [cited 22 July 2012] Demir, Resit; Schmid, Axel; Hohenberger, Werner; Agaimy, Abbas Angiolipomatous mesenchymal hamartoma (angiolipomatosis) of the sigmoid mesocolon [online] Int. J. Clin. Exp. Pathol. 2011; 4(2): 210-214 http://www.opus.ub.uni-erlangen.de/opus/volltexte/2012/3181/ [cited 22 July 2012]",
 
   "info.paragraph.citation.h52":"All documents are assigned a Uniform Resource Name (URN). The purpose of the URN is to make your publication permanently identifiable and findable. The URL designates the (physical) storage location of the resource. The URN does not designate the location at which the data is stored but an entry at the URN resolver of the German National Library, where the URN and the corresponding (current) URL are stored. Advantage: the URN stays valid even if the physical storage location should change (e.g. due to a change of server). State the URN when citing your work. Unfortunately, URNs cannot be used directly in web browsers yet. They need to be translated into URLs first. The resolving service of the German National Library performs this service: ",
@@ -5189,7 +5189,7 @@
   "info.paragraph.publishing.h69":"If your work contains programmes, files, video sequences, audio documents or similar on a CD enclosure, they must be prepared for publication as a compressed zip file and uploaded as well.",
 
   "info.paragraph.publishing.h70":"In case of any technical difficulties in uploading your documents, please fill out the rest of the form as far as possible and send your files via e-mail to ",
-  
+
   "info.paragraph.publishing.h71":"Please submit text documents as PDF/A files if possible",
 
   "info.paragraph.publishing.h72":"Documents are usually published on OPUS in PDF format. In order to ensure digital preservation, the document must be saved in the standardised PDF/A format. PDF/A is an international standard that was developed especially for archiving documents. By storing documents in PDF/A format, the file's readability is ensured even when it is opened on computers on which the used fonts are not installed. In this format, all fonts and images used in the document are embedded and the metadata are stored in a standardised format.",
@@ -5249,7 +5249,7 @@
   "info.paragraph.regulationsprepostprint.h99":"Publication or pre- and post-prints is legally possible and desirable in many cases. Several studies have shown that Open Access secondary publications increase citation frequency. Studies on the subject of impact analysis may be found under 'The Open Citation Project - Reference Linking and Citation Analysis for Open Archives' ",
 
   "info.paragraph.regulationsprepostprint.h100":[" encourages the University's researchers not to grant publishers exclusive publication rights but to reserve the right to make a digital copy of their work available on the University's publication server after any retention periods have ended. More information on the respective retention periods of various publishers can, for instance, be found on the ","Please also pay attention to the information on the ", "publication process", " on OPUS FAU and its technical requirements."],
-  
+
   "info.paragraph.changedeletedoc.h101":"In order to guarantee the authenticity of the documents, they may not be amended or deleted, similar to print publications. If authors who have voluntarily published their work should desire a correction, they must re-publish the document. This is equivalent to the procedure of a new edition in print publishing. The individual versions can be linked.",
 
   "info.paragraph.vg.h102":["Authors can register documents they publish in FAU OPUS for dividends with the registry portal T.O.M from VG WORT "," You will need to register with T.O.M. for this. Please see the website for more information and the terms and conditions for dividends. When you register your document, you will need to provide the URL ","  as the domain. The direct link to the document or the OPUS FAU website "," will not be accepted by the system. If VG Wort performs a check to confirm your entitlement, deliver the exact path to your document. "],
@@ -5411,7 +5411,7 @@
   "info.paragraph.elementspublform.h180":"Approval of the guidelines and publication contract",
 
   "info.paragraph.elementspublform.h181":["Please approve of our guidelines and send a personally signed printout of the ","publication contract", " via email, post or fax to Doctoral thesis service Main Library. You may also submit the contract in person during our office hours "],
-  
+
   "info.paragraph.elementspublform.h182":"With this contract, you grant the University Library Erlangen-Nürnberg the right to store your document, make it electronically accessible to the public worldwide and, where necessary, to convert it into other file formats or create physical copies. This right shall also apply to the German National Library and, where necessary, to special collections libraries. Furthermore, you affirm that you have cleared all copyrights and that no third-party rights present a barrier to the electronic publication of your work. If you want to publish your work with a publisher in addition, the publisher must have agreed to the electronic publication of your work through the University Library. For doctoral theses, please ensure that the Doctoral Affairs Committee has approved the publication and that the electronic version is identical to the approved version in format and content.",
 
   "info.paragraph.copyright.h183":["Copyright law protects the creator in their intellectual and personal relationship to the work and the usage of the work. The full legal text is available at ","."],
@@ -5457,9 +5457,9 @@
   "info.paragraph.exclusionliability.h203": "JavaScript elements, like cookies, are used to manage the display of dynamic information. It is possible to access the website with JavaScript deactivated.",
 
   "menu.section.info_faq":"FAQ",
-  
+
   "menu.section.browse_global_by_volume":"By Volume-Nr",
-  
+
    "menu.section.browse_global_by_docType":"By Document Type",
 
 "menu.section.browse_global_by_dateaccessioned":"By Date Accessioned",
@@ -5473,9 +5473,9 @@
    "homenews-image-text-title":"FAU Repository",
 
    "homenews-image-text-p0":"Online publication system of Friedrich-Alexander-Universität Erlangen-Nürnberg",
-   
+
    "homenews-image-text-p1":"The online publication system FAU Repository is the central electronic archiving and publication platform for all members of Friedrich-Alexander University. Qualified scientific works from research and teaching may be published here free of charge. The full texts are thus permanently available to the global public and are searchable and citable via catalogues and search engines.",
-   
+
    "homenews-image-text-p2":"To search documents in FAU Repository, please select the Search menu; this will provide you with different research options. If you want to publish a document, please register and select the Publish menu. In only a few steps, you can submit your document. Please note our guidelines, the publication contract and FAQs.",
 
    "collection.form.enableViewAsSerie":"Show Volume Nr.",
@@ -5553,11 +5553,11 @@
    "privacy.h7.tools":"7. Plugins and Tools",
 
    "privacy.tools.p1":"The plugin sets a cookie if you have agreed to the message. This consent is valid as long as the cookie is not deleted.",
-  
+
   "info.feedback.info": "Thank you for the feedback! Your comments will be considered.",
-  
+
   "item.page.link.full": "Show Metadata",
-  
+
   "item.edit.identifiers.doi.status.1": "Queued for registration",
 
   "item.edit.identifiers.doi.status.2": "Queued for reservation",
@@ -5597,7 +5597,7 @@
   "item.edit.registerdoi.error": "Error registering DOI",
 
   "item.edit.registerdoi.to-update": "The following DOI has already been minted and will be queued for registration online",
-  
+
   "submission.sections.identifiers.info": "The following identifiers will be created for your item:",
 
   "submission.sections.identifiers.no_handle": "No handles have been minted for this item.",
@@ -5609,7 +5609,19 @@
   "submission.sections.identifiers.doi_label": "DOI: ",
 
   "submission.sections.identifiers.otherIdentifiers_label": "Other identifiers: ",
-  
+
   "submission.sections.submit.progressbar.identifiers": "Identifiers",
+
+   // "repository.title.prefix": "FAU-Repositorium Angular :: ",
+  "repository.title.prefix": "FAU :: ",
+
+  // "repository.title.prefixDSpace": "FAU-Repositorium Angular ::",
+  "repository.title.prefixDSpace": "FAU ::",
+
+  "browse.comcol.by.volume": "By Volume Nr",
+
+  "browse.comcol.by.docType": "By Document Type",
+
+  "browse.comcol.by.dateaccessioned": "By Date Accessioned",
 
 }

@@ -26,7 +26,6 @@ export class ItemPageRegisterDoiGuard extends DsoPageSingleFeatureGuard<Item> {
    * Check DOI registration authorization rights
    */
   getFeatureID(next: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<FeatureID> {
-    return observableOf(FeatureID.CanRegisterDOI); 
-    //return observableOf(FeatureID.CanManagePolicies);
+    return observableOf(FeatureID.CanRegisterDOI);
   }
 }

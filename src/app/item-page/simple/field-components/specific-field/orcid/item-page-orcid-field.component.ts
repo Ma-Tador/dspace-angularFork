@@ -61,14 +61,19 @@ export class ItemPageOrcidFieldComponent implements OnInit{
 
   deduplicatedAuthors: any;
 
+
   ngOnInit(): void {
+/*
         let metadataContributors = this.item.allMetadata(this.fields);
         this.deduplicatedAuthors = metadataContributors.filter((value, index, self) => { return self.findIndex(v => v.value === value.value) === index; });
         this.authority_id  =  this.deduplicatedAuthors.map( allMetadata => allMetadata.authority);
         //this.solr_rest_endpoint = 'http://repotest.ub.fau.de:8984/solr/authority/select?fq=authority_type%3Aorcid&fl=orcid_id&q.op=AND&q=id%3A' + this.authority_id;
         this.solr_rest_endpoint = 'https://repotest.ub.fau.de/solr/authority/select?fq=authority_type%3Aorcid&q=*%3A*&rows=10000';
         this.getOrcidsForAuthors();
+*/
   }
+
+
 
   getOrcidsForAuthors(){
    // this.orcid_query$ = httpClient.get<any>(this.solr_rest_endpoint), {headers})
