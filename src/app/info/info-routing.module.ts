@@ -50,17 +50,18 @@ const imports = [
         }
       ]));
   }
-  if (environment.info.enablePrivacyStatement) {
-    imports.push(
-      RouterModule.forChild([
-        {
-          path: PRIVACY_PATH,
-          component: ThemedPrivacyComponent,
-          resolve: { breadcrumb: I18nBreadcrumbResolver },
-          data: { title: 'info.privacy.title', breadcrumbKey: 'info.privacy' }
-        }
-      ]));
-  }
+  // privacy disabled as component, only footer link to ub.fau.de/datenschutz
+  // if (environment.info.enablePrivacyStatement) {
+  //   imports.push(
+  //     RouterModule.forChild([
+  //       {
+  //         path: PRIVACY_PATH,
+  //         component: ThemedPrivacyComponent,
+  //         resolve: { breadcrumb: I18nBreadcrumbResolver },
+  //         data: { title: 'info.privacy.title', breadcrumbKey: 'info.privacy' }
+  //       }
+  //     ]));
+  // }
 
 @NgModule({
   imports: [

@@ -22,7 +22,8 @@ export const GOOGLE_ANALYTICS_KLARO_KEY = 'google-analytics';
 export const klaroConfiguration: any = {
   storageName: ANONYMOUS_STORAGE_NAME_KLARO,
 
-  privacyPolicy: '/info/privacy',
+  //privacyPolicy: '/info/privacy', //org
+  privacyPolicy: 'https://ub.fau.de/datenschutz',
 
   /*
   Setting 'hideLearnMore' to 'true' will hide the "learn more / customize" link in
