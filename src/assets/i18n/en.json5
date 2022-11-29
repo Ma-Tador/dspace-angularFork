@@ -4940,9 +4940,11 @@
 
   "workingpaper": "Working Paper",
 
+   "info.faq.title": "FAQ",
 
+  "info.paragraph.intro":"Below is a compilation of the most commonly received questions and most important topics about this repository. Additional resource sites & contacts are provided below. If your question is not addressed here or in the other areas of this site, please email us at ",
 
-   "info.chapter.general": "General ",
+  "info.chapter.general": "General ",
 
   "info.subchapter.openaccess":"What is Open Access? ",
 
