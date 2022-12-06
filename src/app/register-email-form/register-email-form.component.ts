@@ -80,7 +80,8 @@ export class RegisterEmailFormComponent implements OnInit {
       email: new FormControl('', {
         validators: [Validators.required,
           //Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$')
-          Validators.pattern('^[a-z0-9._%+-]+@fau.de')
+          //allow emails only for domain @fau.de, @uk-erlangen.de and @uni-erlangen.de
+          Validators.pattern('^[a-z0-9._%+-]+@fau.de|^[a-z0-9._%+-]+@uni-erlangen.de|^[a-z0-9._%+-]+@uk-erlangen.de'),
         ],
       })
     });

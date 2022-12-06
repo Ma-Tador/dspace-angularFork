@@ -5668,11 +5668,11 @@
 
   "info.paragraph.advantagespublication.archiving":"Archivierung und Langzeitverfügbarkeit",
 
-  "info.paragraph.advantagespublication.p3":"Ihre elektronische Publikation wird auf OPUS dauerhaft als PDF-Datei gespeichert. Wir registrieren für Ihre Publikation einen Uniform Resource Name (URN) bei der Deutschen Nationalbibliothek. Unter dieser Adresse ist Ihre Publikation dauerhaft abrufbar, so dass sie problemlos zitiert werden kann. Darüber hinaus werden Dissertationen und Habilitationen an den Archivserver der Deutschen Nationalbibliothek weitergeleitet und dort langzeitarchiviert.",
+  "info.paragraph.advantagespublication.p3":"Ihre elektronische Publikation wird auf Opus dauerhaft als PDF-Datei gespeichert. Darüber hinaus werden Dissertationen und Habilitationen an den Archivserver der Deutschen Nationalbibliothek weitergeleitet und dort langzeitarchiviert.",
 
   "info.paragraph.advantagespublication.savingmoney":"Einsparung von Zeit und Geld",
 
-  "info.paragraph.advantagespublication.p4":"Der Dienst ist für Sie kostenlos. Ihr Dokument wird nach einer kurzen Prüfung durch Mitarbeiter der Universitätsbibliothek sofort online veröffentlicht und ist ab dann zitierfähig.",
+  "info.paragraph.advantagespublication.p4":"Der Dienst ist für Sie kostenlos. Ihr Dokument wird nach einer kurzen Prüfung durch Mitarbeiter der Universitätsbibliothek zeitnah online veröffentlicht und ist ab dann zitierfähig.",
 
   "info.paragraph.advantagespublication.highcitation":"Hohe Zitationsrate",
 
@@ -5696,7 +5696,7 @@
 
   "info.paragraph.guidelines.h2":"Rechte und Pflichten der Vertragspartner",
 
-  "info.paragraph.guidelines.h3":"Der Autor räumt dem Betreiber des Publikationsservers mit der Zustimmung zu den Leitlinien und dem Unterzeichnen des Veröffentlichungsvertrags folgende Nutzungsrechte ein:",
+  "info.paragraph.guidelines.h3":["Der Autor räumt dem Betreiber des Publikationsservers gemäß ", "Veröffentlichungsvertrag"," ein:"],
 
   "info.paragraph.guidelines.h4":"das dauerhafte Recht zur elektronischen Speicherung, insbesondere in Datenbanken",
 
@@ -5806,7 +5806,7 @@
 
   "info.paragraph.publishing.h55":"Ihre Publikation wird primär im Format PDF (Portable Document Format) veröffentlicht. Weitere akzeptierten Dateiformate sind u.a.: doc(x), xls(x), zip, avi, mp3 und mp4. Unter Veröffentlichen können Sie Ihr Dokument anmelden und hochladen. Ihre Angaben und die Volltexte werden in einen OPUS-Zwischenspeicher (Upload) geladen. Bitte tragen Sie in das Formular alle notwendigen Angaben zur inhaltlichen und formalen Beschreibung des Dokuments ein. Ihre elektronische Publikation wird dann nach einer formalen Überprüfung von Mitarbeitern der Universitätsbibliothek auf den OPUS-Server eingestellt und damit öffentlich zugänglich gemacht.",
 
-  "info.paragraph.publishing.h56":["Zusätzlich muss für jede Publikation ein","Veröffentlichungsvertrag","unterschrieben und eingereicht werden. In diesem bestätigen Sie,"],
+  "info.paragraph.publishing.h56":["Zusätzlich muss für jede Publikation ein ","Veröffentlichungsvertrag"," unterschrieben und eingereicht werden. In diesem bestätigen Sie, "],
 
   "info.paragraph.publishing.h57":"dass der Universitätsbibliothek Erlangen-Nürnberg das Recht übertragen wird, das Dokument zu speichern, in Datennetzen öffentlich zugänglich zu machen und, wenn notwendig, in andere Datenformate zu konvertieren,",
 
@@ -5826,7 +5826,7 @@
 
   "info.paragraph.publishing.h65":"OPUS unterstützt derzeit u.a. folgende Dokumenttypen: pdf, doc(x), xls(x), zip, avi, mp3 und mp4.",
 
-  "info.paragraph.publishing.h66":"Die Größe der Datei sollte -so klein wie möglich- sein. Das System akzeptiert beim Hochladen nur Dateien bis 30 MB. Lässt sich Ihre Datei nicht verkleinern, kontaktieren Sie bitte die Administration von OPUS FAU unter ",
+  "info.paragraph.publishing.h66":"Die Größe der Datei sollte -so klein wie möglich- sein. Das System akzeptiert beim Hochladen nur Dateien bis 60 MB. Lässt sich Ihre Datei nicht verkleinern, kontaktieren Sie bitte die Administration von OPUS FAU unter ",
 
   "info.paragraph.publishing.h67":"Als Dateinamen empfehlen wir eine einfache Benennung ohne Leer- und Sonderzeichen wie bspw. Unterstriche. Beispiel: Diss.pdf",
 
@@ -5886,7 +5886,7 @@
 
   "info.paragraph.publagreements.h95":"Veröffentlichungsvertrag",
 
-  "info.paragraph.publagreements.h96":["Der Veröffentlichungsvertrag regelt das Rechtsverhältnis zwischen Ihnen als Verfasser und der FAU, handelnd für diese die Universitätsbibliothek Erlangen-Nürnberg als Verleger. Sie finden den Veröffentlichungsvertrag hier: ","Eine englischsprachige Übersetzung finden sie hier: ","Es ist jedoch immer die deutsche Version zu unterzeichnen. Ihr Dokument kann erst veröffentlicht (d.h. in OPUS freigeschalten) werden, nachdem der unterschriebene Vertrag bei der Universitätsbibliothek vorliegt. Bitte denken sie daran, etwige Rechtsfragen vor der Unterzeichnung und Abgabe abzuklären (z.B. Bild- und Inhaltsrechte"],
+  "info.paragraph.publagreements.h96":["Der Veröffentlichungsvertrag regelt das Rechtsverhältnis zwischen Ihnen als Verfasser und der FAU, handelnd für diese die Universitätsbibliothek Erlangen-Nürnberg als Verleger. Sie finden den Veröffentlichungsvertrag ", "hier", ". Es gilt nur die deutsche Version des Vertrag. Ihr Dokument kann erst veröffentlicht (d.h. in OPUS freigeschalten) werden, nur wenn Sie das Vertrag akzeptieren. Bitte denken sie daran, etwige Rechtsfragen vor der Unterzeichnung und Abgabe abzuklären (z.B. Bild- und Inhaltsrechte"],
 
   "info.paragraph.publagreements.h97":"Sperrvermerk",
 
@@ -5896,7 +5896,7 @@
 
   "info.paragraph.regulationsprepostprint.h100":[" ermutigt explizit ihre Wissenschaftlerinnen und Wissenschaftler, Verlagen keine ausschließlichen Rechte für die Veröffentlichung einzuräumen, sondern sich das Recht vorzubehalten, eine digitale Kopie ihrer Publikationen nach eventuellen Wartefristen auf dem universitären Publikationsserver zugänglich zu machen. Informationen zu den jeweiligen Wartefristen der Verlage finden Sie bspw. in der ","Bitte beachten Sie darüber hinaus die Angaben zum ", "Publikationsprozess", "in OPUS FAU und dessen Technische Anforderungen."],
 
-  "info.paragraph.changedeletedoc.h101":"Um die Authentizität der Dokumente zu garantieren, können Dokumente vergleichbar mit gedruckten Publikationen nicht geändert oder gelöscht werden. Wünscht der Verfasser bei freiwilligen Veröffentlichungen eine Korrektur, so muss er das geänderte Dokument neu einbringen. Dies entspricht dem Vorgang einer Neuauflage bei gedruckten Publikationen. Die einzelnen Versionen können dabei untereinander verlinkt werden.",
+  "info.paragraph.changedeletedoc.h101":"Um die Authentizität der Dokumente zu garantieren, können Dokumente vergleichbar mit gedruckten Publikationen nicht geändert oder gelöscht werden. Wünscht der Verfasser bei freiwilligen Veröffentlichungen eine Korrektur, so muss er das geänderte Dokument neu einbringen. Dies entspricht dem Vorgang einer Neuauflage bei gedruckten Publikationen. Die einzelnen Versionen können dabei untereinander verlinkt werden. Die beim Upload eingegebenen Metadaten können jeder Zeit geändert werden.",
 
   "info.paragraph.vg.h102":["In OPUS FAU veröffentlichte Textdokumente können im Registrierungs- und Meldeportal T.O.M. der VG WORT "," durch den Autor zur Sonderausschüttung angemeldet werden. Hierfür ist eine Registrierung auf T.O.M. vonnöten. Bitte beachten Sie zudem die dortigen Bedingungen und Hinweise zur Sonderausschüttung. Als Domäne für Ihr Dokument ist bei der Anmeldung des Dokuments die URL "," anzugeben. Der direkte Pfad auf Ihr Dokument oder auch die Startseite von OPUS FAU "," wird vom System aufgrund technischer Vorgaben als URL nicht akzeptiert. Sollte zur Feststellung Ihrer Ansprüche eine Prüfung seitens VG Wort stattfinden, melden Sie hier den exakten Pfad auf Ihr Dokument nach. Der Einsatz von Zählmarken ist in OPUS FAU nicht möglich. "],
 
@@ -6068,7 +6068,7 @@
 
   "info.paragraph.copyright.h186":"Einfache Nutzungsrechte: Das einfache Nutzungsrecht berechtigt den Inhaber, das Werk auf die erlaubte Art zu nutzen, ohne dass eine Nutzung durch andere ausgeschlossen ist. Ausschließliche Nutzungsrechte: Das ausschließliche Nutzungsrecht berechtigt den Inhaber, das Werk unter Ausschluss aller anderen Personen auf die ihm erlaubte Art zu nutzen und Nutzungsrechte einzuräumen. Es kann bestimmt werden, dass die Nutzung durch den Urheber vorbehalten bleibt. Für Dokumente, die in elektronischer Form über Datennetze angeboten werden, gilt uneingeschränkt das Urheberrechtsgesetz (UrhG). Insbesondere gilt: Einzelne Vervielfältigungen, z.B. Kopien und Ausdrucke, dürfen nur zum privaten und sonstigen eigenen Gebrauch angefertigt werden (§53 Urheberrecht). Die Herstellung und Verbreitung von weiteren Reproduktionen ist nur mit ausdrücklicher Genehmigung des Urhebers gestattet. Der Benutzer ist für die Einhaltung der Rechtsvorschriften selbst verantwortlich und kann bei Missbrauch haftbar gemacht werden.",
 
-  "info.paragraph.publicationagreement.h187":["Der Veröffentlichungsvertrag regelt das Rechtsverhältnis zwischen Ihnen als Verfasser und der FAU, handelnd für diese die Universitätsbibliothek Erlangen-Nürnberg als Verleger. Sie finden den Veröffentlichungsvertrag hier: ","Eine englischsprachige Übersetzung finden sie hier: ", "Es ist jedoch immer die deutsche Version zu unterzeichnen. Ihr Dokument kann erst veröffentlicht (d.h. in OPUS freigeschalten) werden, nachdem der unterschriebene Vertrag bei der Universitätsbibliothek vorliegt. Mit diesem Vertrag übertragen Sie der Universitätsbibliothek Erlangen-Nürnberg das Recht, Ihr Dokument zu speichern, weltweit elektronisch öffentlich zugänglich zu machen und, wenn notwendig, in andere Datenformate zu konvertieren bzw. Papierkopien herzustellen. Dieses Recht gilt auch für die Deutsche Nationalbibliothek, für andere institutionelle und fachliche Repositorien und bei Bedarf für Sondersammelgebietsbibliotheken und Fachinformationsdienste für die Wissenschaft. Weiterhin versichern Sie, dass die Frage des Urheber- und Lizenzrechts (Copyright) von Ihnen geklärt worden ist und Rechte Dritter der elektronischen Veröffentlichung nicht im Wege stehen. Wenn Sie die Arbeit zusätzlich in einem Verlag veröffentlichen wollen, muss sich dieser mit der elektronischen Publikation durch die Universitätsbibliothek einverstanden erklärt haben. Bei Dissertationen erklären Sie außerdem, dass die Veröffentlichung vom Promotionsausschuss genehmigt ist und dass die elektronische Version mit der genehmigten Originalfassung in Form und Inhalt übereinstimmt."],
+  "info.paragraph.publicationagreement.h187":["Der Veröffentlichungsvertrag regelt das Rechtsverhältnis zwischen Ihnen als Verfasser und der FAU, handelnd für diese die Universitätsbibliothek Erlangen-Nürnberg als Verleger. Sie finden den Veröffentlichungsvertrag ", "hier", ". Es gilt immer nur die deutsche Version des Vertrag. Ihr Dokument kann erst veröffentlicht (d.h. in OPUS freigeschalten) werden, nachdem der unterschriebene Vertrag bei der Universitätsbibliothek vorliegt. Mit diesem Vertrag übertragen Sie der Universitätsbibliothek Erlangen-Nürnberg das Recht, Ihr Dokument zu speichern, weltweit elektronisch öffentlich zugänglich zu machen und, wenn notwendig, in andere Datenformate zu konvertieren bzw. Papierkopien herzustellen. Dieses Recht gilt auch für die Deutsche Nationalbibliothek, für andere institutionelle und fachliche Repositorien und bei Bedarf für Sondersammelgebietsbibliotheken und Fachinformationsdienste für die Wissenschaft. Weiterhin versichern Sie, dass die Frage des Urheber- und Lizenzrechts (Copyright) von Ihnen geklärt worden ist und Rechte Dritter der elektronischen Veröffentlichung nicht im Wege stehen. Wenn Sie die Arbeit zusätzlich in einem Verlag veröffentlichen wollen, muss sich dieser mit der elektronischen Publikation durch die Universitätsbibliothek einverstanden erklärt haben. Bei Dissertationen erklären Sie außerdem, dass die Veröffentlichung vom Promotionsausschuss genehmigt ist und dass die elektronische Version mit der genehmigten Originalfassung in Form und Inhalt übereinstimmt."],
 
   "info.paragraph.cclicense.h188":["Mit der Wahl Ihrer CC-Lizenz während des Publikationsprozesses entscheiden Sie einfach und dennoch für alle rechtlich bindend, unter welchen Konditionen die Öffentlichkeit Ihre Publikation nutzen und weiterverwenden darf. Zur Nutzung der CC-Lizenzen müssen die entsprechenden Rechte noch bei Ihnen liegen, d. h. Sie müssen vorab prüfen, ob Sie ausschließliche Rechte bspw. an einen Verlag abgetreten haben. Für ein persönliches, ausführliches Rechtsberatungsgespräch steht Ihnen unsere Justiziarin Frau Heermann zu ihren Bürozeiten Mittwochs/Donnerstags von 08.00 – 13.00 Uhr, sowie telefonisch unter +49 (0)9131 85-2 39 20 oder per E-Mail "," gerne zur Verfügung."],
 

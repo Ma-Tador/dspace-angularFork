@@ -5028,11 +5028,11 @@
 
   "info.paragraph.advantagespublication.archiving":"Archiving and long-term availability",
 
-  "info.paragraph.advantagespublication.p3":"Your electronic publication will be permanently saved on OPUS as a PDF file. We register a Uniform Resource Name (URN) for your publication with the German National Library. Your publication will be permanently available under this address, meaning it can be cited without problems. Furthermore, doctoral and postdoctoral theses are forwarded to the German National Library's archive server and digitally preserved there.",
+  "info.paragraph.advantagespublication.p3":"Your electronic publication will be permanently saved on OPUS as a PDF file. Furthermore, doctoral and postdoctoral theses are forwarded to the German National Library's archive server and digitally preserved there.",
 
   "info.paragraph.advantagespublication.savingmoney":"Saving money and time",
 
-  "info.paragraph.advantagespublication.p4":"The service is free of charge for you. Your document will be published online immediately after a brief check by University Library staff and can be cited from then on.",
+  "info.paragraph.advantagespublication.p4":"The service is free of charge for you. Your document will be published online as soon as possible after a brief check by University Library staff and can be cited from then on.",
 
   "info.paragraph.advantagespublication.highcitation":"High citation rate",
 
@@ -5056,7 +5056,7 @@
 
   "info.paragraph.guidelines.h2":"Rights and obligations of the contractual parties",
 
-  "info.paragraph.guidelines.h3":"By agreeing to the guidelines and signing the publication contract, the author grants the operator of the publication server licence for the following:",
+  "info.paragraph.guidelines.h3":["The author grants the operator of the publication server as stated in the ", "publication contract"," the following:"],
 
   "info.paragraph.guidelines.h4":"the permanent right to store electronically, especially in databases",
 
@@ -5166,9 +5166,9 @@
 
   "info.paragraph.publishing.h55":"Your publication will be primarily released in PDF (portable document format). Further accepted file formatsare amongst others DOC(X), XLS(X), ZIP, AVI, MP3 and MP4. Under Publish, you can register and upload your documents. The information provided by you and the full text are uploaded to OPUS temporary storage. Please fill out the form with all the information required for the formal and content-related description of the document. After a formal review by University Library staff, your electronic publication is uploaded to the OPUS server and thus made publicly accessible.",
 
-  "info.paragraph.publishing.h56":["Additionally a ","publication contract"," must be signed and submitted for each publication. With this contract, you confirm"],
+  "info.paragraph.publishing.h56":["Additionally a ","publication contract"," must be signed and submitted for each publication. With this contract, you confirm "],
 
-  "info.paragraph.publishing.h57":"that the University Library Erlangen-Nürnberg is granted licence to store the document, to make it publicly accessible in data networks and, where necessary, to convert it into other file formats,",
+  "info.paragraph.publishing.h57":"that the University Library Erlangen-Nürnberg is granted licence to store the document, to make it publicly accessible in data networks and, where necessary, to convert it into other file formats, ",
 
   "info.paragraph.publishing.h58":"that the publication of the document does not violate any third-party rights.",
 
@@ -5182,11 +5182,11 @@
 
   "info.paragraph.publishing.h63":"Technical requirements ",
 
-  "info.paragraph.publishing.h64":"Your publication should be submitted as an archivable PDF file. In order to allow for digital preservation, the files may not be password- or copy-protected. Files of a size up to 30 MB may be uploaded. For exceptions, for instance in the case of illustrated books with high resolution or contractual requirements from publishers which require copy protection, please contact us in advance.",
+  "info.paragraph.publishing.h64":"Your publication should be submitted as an archivable PDF file. In order to allow for digital preservation, the files may not be password- or copy-protected. Files of a size up to 60 MB may be uploaded. For exceptions, for instance in the case of illustrated books with high resolution or contractual requirements from publishers which require copy protection, please contact us in advance.",
 
   "info.paragraph.publishing.h65":"FAU-Repositorium currently supports e.g. the following file formats: PDF, DOC(X), XLS(X), ZIP, AVI, MP3 and MP4.",
 
-  "info.paragraph.publishing.h66":"The size of the file should be as small as possible. The system only accepts uploads of files of up to 30 MB size. If you need to publish larger files after consulting with us, skip the publication process when uploading the document and send us the document on a CD or DVD ",
+  "info.paragraph.publishing.h66":"The size of the file should be as small as possible. The system only accepts uploads of files of up to 60 MB size. If you need to publish larger files after consulting with us, skip the publication process when uploading the document and send us the document on a CD or DVD ",
 
   "info.paragraph.publishing.h67":"For the file name, we recommend a simple title without spaces or special characters such as underscores. Example: Diss.pdf",
 
@@ -5246,7 +5246,7 @@
 
   "info.paragraph.publagreements.h95":"Publication agreement",
 
-  "info.paragraph.publagreements.h96":["The publication contract governs the legal relationship between you as an author and FAU, with the University Library Erlangen-Nürnberg (Universitätsbibliothek Erlangen-Nürnberg) acting on its behalf. You can find the contract here:  ","The complete English translation: ","The translation is only for your information - please never sign the English translation, but the German version. Only the German version is the official version. Your document may only be published (i.e. made accessible on OPUS) after the signed contract has been received by the University Library. With this contract, you grant the University Library Erlangen-Nürnberg the right to store your document, make it electronically accessible to the public worldwide and, where necessary, to convert it into other file formats or create physical copies. This right shall also apply to the German National Library and, where necessary, to special collections libraries and scientific information services. Furthermore, you affirm that you have cleared all copyrights and that no third-party rights present a barrier to the electronic publication of your work. If you want to publish your work with a publisher in addition, the publisher must have agreed to the electronic publication of your work through the University Library. For doctoral theses, please ensure that the Doctoral Affairs Committee has approved the publication and that the electronic version is identical to the approved version in format and content."],
+  "info.paragraph.publagreements.h96":["The publication contract governs the legal relationship between you as an author and FAU, with the University Library Erlangen-Nürnberg (Universitätsbibliothek Erlangen-Nürnberg) acting on its behalf. You can find the contract ", "here", ". The translation is only for your information. Only the German version is the official version. Your document may only be published (i.e. made accessible on OPUS) after you accept the publication contract. With this contract, you grant the University Library Erlangen-Nürnberg the right to store your document, make it electronically accessible to the public worldwide and, where necessary, to convert it into other file formats or create physical copies. This right shall also apply to the German National Library and, where necessary, to special collections libraries and scientific information services. Furthermore, you affirm that you have cleared all copyrights and that no third-party rights present a barrier to the electronic publication of your work. If you want to publish your work with a publisher in addition, the publisher must have agreed to the electronic publication of your work through the University Library. For doctoral theses, please ensure that the Doctoral Affairs Committee has approved the publication and that the electronic version is identical to the approved version in format and content."],
 
   "info.paragraph.publagreements.h97":"Blocking notice (Embargo)",
 
@@ -5256,7 +5256,7 @@
 
   "info.paragraph.regulationsprepostprint.h100":[" encourages the University's researchers not to grant publishers exclusive publication rights but to reserve the right to make a digital copy of their work available on the University's publication server after any retention periods have ended. More information on the respective retention periods of various publishers can, for instance, be found on the ","Please also pay attention to the information on the ", "publication process", " on OPUS FAU and its technical requirements."],
 
-  "info.paragraph.changedeletedoc.h101":"In order to guarantee the authenticity of the documents, they may not be amended or deleted, similar to print publications. If authors who have voluntarily published their work should desire a correction, they must re-publish the document. This is equivalent to the procedure of a new edition in print publishing. The individual versions can be linked.",
+  "info.paragraph.changedeletedoc.h101":"In order to guarantee the authenticity of the documents, they may not be amended or deleted, similar to print publications. If authors who have voluntarily published their work should desire a correction, they must re-publish the document. This is equivalent to the procedure of a new edition in print publishing. The individual versions can be linked. The metadata information provided at upload of the document can be changed if needed.",
 
   "info.paragraph.vg.h102":["Authors can register documents they publish in FAU OPUS for dividends with the registry portal T.O.M from VG WORT "," You will need to register with T.O.M. for this. Please see the website for more information and the terms and conditions for dividends. When you register your document, you will need to provide the URL ","  as the domain. The direct link to the document or the OPUS FAU website "," will not be accepted by the system. If VG Wort performs a check to confirm your entitlement, deliver the exact path to your document. "],
 
@@ -5428,7 +5428,7 @@
 
   "info.paragraph.copyright.h186":"Non-exclusive usage rights: The non-exclusive right of use entitles the holder to use the work in the specified manner without excluding use through other parties. Exclusive usage rights: Exclusive right of use entitles the holder use of the work in the specified manner under exclusion of all other persons and to grant usage rights to others. The creator's right of use may be reserved. The German Copyright Act (Urherberrechtsgesetz, UrHG) applies without restriction to documents that are offered in electronic form via data networks. Please note: Individual reproductions, e.g. copies and printouts, may only be created for private and other personal use (Section 53, Copyright Act). The production and dissemination of further reproductions is only permitted with the copyright holders express approval. The user is personally responsible for the observation of legal regulations and may be held liable in case of violations.",
 
-  "info.paragraph.publicationagreement.h187":["The publication contract governs the legal relationship between you as an author and FAU, with the University Library Erlangen-Nürnberg (Universitätsbibliothek Erlangen-Nürnberg) acting on its behalf. You can find the contract here: ","The complete English translation: ", " The translation is only for your information - please never sign the English translation, but the German version. Only the German version is the official version. Your document may only be published (i.e. made accessible on OPUS) after the signed contract has been received by the University Library. With this contract, you grant the University Library Erlangen-Nürnberg the right to store your document, make it electronically accessible to the public worldwide and, where necessary, to convert it into other file formats or create physical copies. This right shall also apply to the German National Library and, where necessary, to special collections libraries and scientific information services. Furthermore, you affirm that you have cleared all copyrights and that no third-party rights present a barrier to the electronic publication of your work. If you want to publish your work with a publisher in addition, the publisher must have agreed to the electronic publication of your work through the University Library. For doctoral theses, please ensure that the Doctoral Affairs Committee has approved the publication and that the electronic version is identical to the approved version in format and content."],
+  "info.paragraph.publicationagreement.h187":["The publication contract governs the legal relationship between you as an author and FAU, with the University Library Erlangen-Nürnberg (Universitätsbibliothek Erlangen-Nürnberg) acting on its behalf. You can find the contract ", "here", ". The translation is only for your information. Only the German version is the official version. Your document may only be published (i.e. made accessible on OPUS) after the signed contract has been received by the University Library. With this contract, you grant the University Library Erlangen-Nürnberg the right to store your document, make it electronically accessible to the public worldwide and, where necessary, to convert it into other file formats or create physical copies. This right shall also apply to the German National Library and, where necessary, to special collections libraries and scientific information services. Furthermore, you affirm that you have cleared all copyrights and that no third-party rights present a barrier to the electronic publication of your work. If you want to publish your work with a publisher in addition, the publisher must have agreed to the electronic publication of your work through the University Library. For doctoral theses, please ensure that the Doctoral Affairs Committee has approved the publication and that the electronic version is identical to the approved version in format and content."],
 
   "info.paragraph.cclicense.h188":["By choosing a CC licence during the publication process, you can easily set legally binding conditions regarding the use and further use of your publication. You must hold the appropriate rights for the usage of CC licences, so you have to check if you have transferred exclusive rights e. g. to a publisher. If you need legal advice, you may contact our in-house counsel Petra Heermann during her office hours Wednesday/Thursday 8 a.m. - 1 p.m. at +49 (0)9131 85-2 39 20 or send an e-mail to ","."],
 
