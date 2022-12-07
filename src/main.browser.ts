@@ -20,11 +20,16 @@ const bootstrap = () => platformBrowserDynamic()
 const main = () => {
   // Load fonts async
   // https://github.com/typekit/webfontloader#configuration
-  loadWebFont({
-    google: {
-      families: ['Droid Sans']
-    }
-  });
+  //@Steli Can not use fonts from Google Fonts
+  // loadWebFont({
+  //   google: {
+  //     families: ['Droid Sans']
+  //   }
+  // });
+
+  if (environment.production){
+    console.log('hi');
+  }
 
   if (environment.production) {
     enableProdMode();
