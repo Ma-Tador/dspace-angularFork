@@ -15,6 +15,8 @@ import { FeedbackGuard } from '../core/feedback/feedback.guard';
 import { InformationComponent } from './information/information.component';
 import { NgbAccordionModule
  } from '@ng-bootstrap/ng-bootstrap';
+import { AccessibilityComponent } from './accessibility/accessibility.component';
+import { ImpressumComponent } from './impressum/impressum.component';
 
 const DECLARATIONS = [
   EndUserAgreementComponent,
@@ -26,7 +28,9 @@ const DECLARATIONS = [
   FeedbackComponent,
   FeedbackFormComponent,
   ThemedFeedbackComponent,
-  InformationComponent
+  InformationComponent,
+  AccessibilityComponent,
+  ImpressumComponent
 ];
 
 @NgModule({

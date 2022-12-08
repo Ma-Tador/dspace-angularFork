@@ -5698,4 +5698,106 @@
 
   "info.eula.p17":"These Terms of Use and any policies or operating rules posted by us on the Site or in respect to the Site constitute the entire agreement and understanding between you and us. Our failure to exercise or enforce any right or provision of these Terms of Use shall not operate as a waiver of such right or provision. These Terms of Use operate to the fullest extent permissible by law. We may assign any or all of our rights and obligations to others at any time. We shall not be responsible or liable for any loss, damage, delay, or failure to act caused by any cause beyond our reasonable control. If any provision or part of a provision of these Terms of Use is determined to be unlawful, void, or unenforceable, that provision or part of the provision is deemed severable from these Terms of Use and does not affect the validity and enforceability of any remaining provisions. There is no joint venture, partnership, employment or agency relationship created between you and us as a result of these Terms of Use or use of the Site. You agree that these Terms of Use will not be construed against us by virtue of having drafted them. You hereby waive any and all defenses you may have based on the electronic form of these Terms of Use and the lack of signing by the parties hereto to execute these Terms of Use.",
 
+  "footer.link.accessibility":"Accessibility",
+
+  "footer.link.impressum":"Legal Notice",
+
+  "info.impressum.title":"Legal Notice",
+
+  "info.accessibility.title":"Accessibility",
+
+  "info.impressum.breadcrumbs":"Legal Notice",
+
+  "info.accessibility.breadcrumbs":"Accessibility",
+
+    "impressum.h1":"Information provided according to Sec. 5 German TMG:",
+
+  "impressum.h2":"FAU University Library",
+
+  "impressum.p1":["Old University Library: Universitätsstrasse 4, 91054 Erlangen","Main Library: Schuhstrasse 1a, 91052 Erlangen","Post Address: Universitätsbibliothek Erlangen-Nürnberg, 91051 Erlangen"],
+
+  "impressum.h3":"Represented by:",
+
+  "impressum.p2":"The University Library is a central institution of the Friedrich-Alexander-University Erlangen-Nuremberg (FAU). It is legally represented by the President of the Friedrich-Alexander-University Erlangen-Nuremberg.",
+
+  "impressum.h4":"Contact",
+
+  "impressum.p3":["Administration", "FAU University Library Erlangen-Nürnberg, 91051 Erlangen","Telefon: +49 9131 85-22151", "Telefax: +49 9131 85-29309", "E-Mail: "],
+
+  "impressum.h5":"VAT",
+
+  "impressum.p4":["VAT Id number according to Sec. 27 a German Value Added Tax Act:","132507686"],
+
+  "impressum.h6":"EU Dispute Resolution",
+
+  "impressum.p5":"The EU provides the following website for online dispute resolution: ",
+
+  "impressum.p6":"Our E-Mail Address can be found in the upper part of this page.",
+
+  "impressum.h7":"Consumer dispute resolution / universal arbitration board",
+
+  "impressum.p7":"We do not take part in online dispute resolutions at consumer arbitration boards.",
+
+
+ "info.accessibility.breadcrumbs":"Barrierefreiheit",
+
+  "impressum.h1":"Angaben gemäß § 5 TMG:",
+
+  "impressum.h2":"Universitätsbibliothek Erlangen-Nürnberg (UB)",
+
+  "impressum.p1":["Alte Universitätsbibliothek: Universitätsstrasse 4, 91054 Erlangen","Hauptbibliothek: Schuhstrasse 1a, 91052 Erlangen","Postanschrift: Universitätsbibliothek Erlangen-Nürnberg, 91051 Erlangen"],
+
+  "impressum.h3":"Vertreten durch:",
+
+  "impressum.p2":"Die UB ist eine zentrale Einrichtung der Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU). Sie wird durch den Präsidenten der Friedrich-Alexander-Universität Erlangen-Nürnberg gesetzlich vertreten.",
+
+  "impressum.h4":"Kontakt",
+
+  "impressum.p3":["Direktion", "Universitätsbibliothek Erlangen-Nürnberg, 91051 Erlangen","Telefon: +49 9131 85-22151", "Telefax: +49 9131 85-29309", "E-Mail: "],
+
+  "impressum.h5":"Umsatzsteuer-ID",
+
+  "impressum.p4":["Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:","132507686"],
+
+  "impressum.h6":"EU-Streitschlichtung",
+
+  "impressum.p5":"Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: ",
+
+  "impressum.p6":"Unsere E-Mail-Adresse finden Sie oben im Impressum.",
+
+  "impressum.h7":"Verbraucherstreitbeilegung / Universalschlichtungsstelle",
+
+  "impressum.p7":"Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.",
+
+  "accessibility.p1":["The provider of this website (University Library Erlangen-Nürnberg) makes every effort to provide barrier-free access in accordance with ", "current legislation", ".", "This Accessibility Statement applies to the websites and applications available at this website."],
+
+  "accessibility.h1":"Status of compatibility with the requirements (“conformity status”)",
+
+  "accessibility.p2":"Partially compliant: Some parts of the content do not fully comply with the accessibility standard",
+
+  "accessibility.p3":["Audit methodology: Self-evaluation", "Creation Date: 01. Dec. 2022", "Last check: 01. Dec. 2022"],
+
+  "accessibility.h2":"Known accessibility problems",
+
+  "accessibility.p4":"Listing and explanation of the problems encountered in implementing the accessibility of this website.",
+
+  "accessibility.h3":"Non-accessible content",
+
+  "accessibility.p5":"PDF documents created before September 23, 2018 could not yet be converted to a barrier-free format.",
+
+  "accessibility.h4":"Alternative ways of access",
+
+  "accessibility.p6":["If you need access to PDF files that are not yet accessible, or if you need a video with subtitles, please contact the ", "Webteam of the University Library"],
+
+  "accessibility.h5":"Help and contact if problems occur",
+
+  "accessibility.p7":"You can report any lack of compliance with accessibility requirements and request a accessible version of information that does not have to be presented accessible.",
+
+  "accessibility.h6":"Contact",
+
+  "accessibility.p8":"Webteam of the University Library",
+
+  "accessibility.h7":"Enforcement procedure",
+
+  "accessibility.p9":["If a request for contact remains unanswered in whole or in part within six weeks, the responsible regulatory authority shall, at the request of the user, examine whether measures are necessary as part of the monitoring process regarding the obligated party.", "Contact information of the authority responsible for the enforcement process:"],
 }

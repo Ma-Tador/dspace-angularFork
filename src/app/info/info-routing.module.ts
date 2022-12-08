@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { I18nBreadcrumbResolver } from '../core/breadcrumbs/i18n-breadcrumb.resolver';
-import { PRIVACY_PATH, END_USER_AGREEMENT_PATH, FEEDBACK_PATH, FAQ_PATH } from './info-routing-paths';
+import { PRIVACY_PATH, END_USER_AGREEMENT_PATH, FEEDBACK_PATH, FAQ_PATH, ACCESSIBILITY_PATH, IMPRESSUM_PATH } from './info-routing-paths';
 import { ThemedEndUserAgreementComponent } from './end-user-agreement/themed-end-user-agreement.component';
 import { ThemedPrivacyComponent } from './privacy/themed-privacy.component';
 import { ThemedFeedbackComponent } from './feedback/themed-feedback.component';
 import { FeedbackGuard } from '../core/feedback/feedback.guard';
 import { environment } from '../../environments/environment';
 import { InformationComponent } from './information/information.component';
+import { ImpressumComponent } from './impressum/impressum.component';
+import { AccessibilityComponent } from './accessibility/accessibility.component';
 
 
 const imports = [
@@ -17,6 +19,26 @@ const imports = [
       component: ThemedFeedbackComponent,
       resolve: { breadcrumb: I18nBreadcrumbResolver },
       data: { title: 'info.feedback.title', breadcrumbKey: 'info.feedback' },
+      canActivate: [FeedbackGuard]
+    }
+  ]),
+
+  RouterModule.forChild([
+    {
+      path: IMPRESSUM_PATH,
+      component: ImpressumComponent,
+      resolve: { breadcrumb: I18nBreadcrumbResolver },
+      data: { title: 'info.impressum.title', breadcrumbKey: 'info.impressum' },
+      canActivate: [FeedbackGuard]
+    }
+  ]),
+
+  RouterModule.forChild([
+    {
+      path: ACCESSIBILITY_PATH,
+      component: AccessibilityComponent,
+      resolve: { breadcrumb: I18nBreadcrumbResolver },
+      data: { title: 'info.accessibility.title', breadcrumbKey: 'info.accessibility' },
       canActivate: [FeedbackGuard]
     }
   ]),

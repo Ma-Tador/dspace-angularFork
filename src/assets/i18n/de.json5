@@ -6342,5 +6342,77 @@
 
   "info.eula.p17":"These Terms of Use and any policies or operating rules posted by us on the Site or in respect to the Site constitute the entire agreement and understanding between you and us. Our failure to exercise or enforce any right or provision of these Terms of Use shall not operate as a waiver of such right or provision. These Terms of Use operate to the fullest extent permissible by law. We may assign any or all of our rights and obligations to others at any time. We shall not be responsible or liable for any loss, damage, delay, or failure to act caused by any cause beyond our reasonable control. If any provision or part of a provision of these Terms of Use is determined to be unlawful, void, or unenforceable, that provision or part of the provision is deemed severable from these Terms of Use and does not affect the validity and enforceability of any remaining provisions. There is no joint venture, partnership, employment or agency relationship created between you and us as a result of these Terms of Use or use of the Site. You agree that these Terms of Use will not be construed against us by virtue of having drafted them. You hereby waive any and all defenses you may have based on the electronic form of these Terms of Use and the lack of signing by the parties hereto to execute these Terms of Use.",
 
+  "footer.link.accessibility":"Barrierefreiheit",
+
+  "footer.link.impressum":"Impressum",
+
+  "info.impressum.title":"Impressum",
+
+  "info.accessibility.title":"Barrierefreiheit",
+
+  "info.impressum.breadcrumbs":"Impressum",
+
+  "info.accessibility.breadcrumbs":"Barrierefreiheit",
+
+  "impressum.h1":"Angaben gemäß § 5 TMG:",
+
+  "impressum.h2":"Universitätsbibliothek Erlangen-Nürnberg (UB)",
+
+  "impressum.p1":["Alte Universitätsbibliothek: Universitätsstrasse 4, 91054 Erlangen","Hauptbibliothek: Schuhstrasse 1a, 91052 Erlangen","Postanschrift: Universitätsbibliothek Erlangen-Nürnberg, 91051 Erlangen"],
+
+  "impressum.h3":"Vertreten durch:",
+
+  "impressum.p2":"Die UB ist eine zentrale Einrichtung der Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU). Sie wird durch den Präsidenten der Friedrich-Alexander-Universität Erlangen-Nürnberg gesetzlich vertreten.",
+
+  "impressum.h4":"Kontakt",
+
+  "impressum.p3":["Direktion", "Universitätsbibliothek Erlangen-Nürnberg, 91051 Erlangen","Telefon: +49 9131 85-22151", "Telefax: +49 9131 85-29309", "E-Mail: "],
+
+  "impressum.h5":"Umsatzsteuer-ID",
+
+  "impressum.p4":["Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:","132507686"],
+
+  "impressum.h6":"EU-Streitschlichtung",
+
+  "impressum.p5":"Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: ",
+
+  "impressum.p6":"Unsere E-Mail-Adresse finden Sie oben im Impressum.",
+
+  "impressum.h7":"Verbraucherstreitbeilegung / Universalschlichtungsstelle",
+
+  "impressum.p7":"Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.",
+
+  "accessibility.p1":["Der Anbieter dieses Webangebots (Universitätsbibliothek Erlangen-Nürnberg) ist bemüht, das Angebot im Einklang mi der ", "gültigen Gesetzgebung", " barrierefrei zugänglich zu machen.", "Diese Erklärung zur Barrierefreiheit gilt für die Webauftritte und Anwendungen, die unter diese Webseite verfügbar sind."],
+
+  "accessibility.h1":"Stand der Vereinbarkeit mit den Anforderungen (“Konformitätsstatus”)",
+
+  "accessibility.p2":"Teilweise konform: Einige Teile des Inhalts entsprechen nicht vollständig dem Standard für Barrierefreiheit.",
+
+  "accessibility.p3":["Methodik der Prüfung: Selbstbewertung", "Erstellungsdatum: 01. Dezember 2022", "Letzte Überprüfung: 01. Dezember 2022"],
+
+  "accessibility.h2":"Bekannte Probleme bei der Barrierefreiheit",
+
+  "accessibility.p4":"Auflistung und Erläuterung der Probleme bei der Umsetzung der Barrierefreiheit dieses Webauftritts",
+
+  "accessibility.h3":"Nicht barrierefrei zugängliche Inhalte",
+
+  "accessibility.p5":"PDF-Dokumente konnten noch nicht auf ein barrierefreies Format umgestellt werden.",
+
+  "accessibility.h4":"Alternative Zugangswege",
+
+  "accessibility.p6":["Sollten Sie Zugang zu PDF-Dateien benötigen, die noch nicht barrierefrei sind, oder benötigen Sie ein Video mit Untertiteln, wenden Sie sich bitte an das ", "Webteam der Universitätsbibliothek"],
+
+  "accessibility.h5":"Hilfe und Kontaktaufnahme bei Problemen",
+
+  "accessibility.p7":"Sie können Mängel bei der Einhaltung der Anforderungen an die Barrierefreiheit mitteilen oder Informationen, die nicht barrierefrei dargestellt werden müssen, barrierefrei anfordern.",
+
+  "accessibility.h6":"Kontaktperson",
+
+  "accessibility.p8":"Webteam der Universitätsbibliothek",
+
+  "accessibility.h7":"Durchsetzungsverfahren",
+
+  "accessibility.p9":["Bleibt eine Anfrage über die Kontaktmöglichkeit innerhalb von sechs Wochen ganz oder teilweise unbeantwortet, prüft die zuständige Aufsichtsbehörde auf Antrag des Nutzers, ob im Rahmen der Überwachung gegenüber dem Verpflichteten Maßnahmen erforderlich sind.", "Kontaktinformation der für das Durchsetzungsverfahren zuständigen Aufsicht:"],
+
 
 }
