@@ -5800,4 +5800,14 @@
   "accessibility.h7":"Enforcement procedure",
 
   "accessibility.p9":["If a request for contact remains unanswered in whole or in part within six weeks, the responsible regulatory authority shall, at the request of the user, examine whether measures are necessary as part of the monitoring process regarding the obligated party.", "Contact information of the authority responsible for the enforcement process:"],
+
+  "item.page.isPartOf":"Source Title",
+
+  "item.page.volume":"Volume",
+
+  "item.page.issue":"Issue",
+
+
+
+
 }

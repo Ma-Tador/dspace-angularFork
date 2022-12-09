@@ -6414,5 +6414,11 @@
 
   "accessibility.p9":["Bleibt eine Anfrage über die Kontaktmöglichkeit innerhalb von sechs Wochen ganz oder teilweise unbeantwortet, prüft die zuständige Aufsichtsbehörde auf Antrag des Nutzers, ob im Rahmen der Überwachung gegenüber dem Verpflichteten Maßnahmen erforderlich sind.", "Kontaktinformation der für das Durchsetzungsverfahren zuständigen Aufsicht:"],
 
+  "item.page.isPartOf":"Übergeordnete Werke",
+
+  "item.page.volume":"Jahrgang",
+
+  "item.page.issue":"Ausgabe",
+
 
 }

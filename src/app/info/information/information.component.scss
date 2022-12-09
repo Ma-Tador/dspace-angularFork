@@ -36,8 +36,6 @@ a.link-alike:hover {
 
 // }
 
-// [data-toggle="collapse"].collapsed:after {
-//   font-family: "Font Awesome 5 Free";
-//   font-weight: 900;
-//   content: "\f107";
-// }
+[data-toggle="collapse"].collapsed:after {
+  background-color: salmon;
+ }

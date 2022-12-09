@@ -4,12 +4,6 @@ import { TranslateService } from '@ngx-translate/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 
-@Component({
-  selector: 'ds-information',
-  templateUrl: './information.component.html',
-  styleUrls: ['./information.component.scss']
-})
-export class InformationComponent implements AfterViewInit, OnDestroy {
 
   //install bootstrap dependencies if not present in node_modules: npm install --save jquery (if dependency error, use --force)
   //in angular.json, add dependencies for bootstrap, in order for the accordion to collapse
@@ -18,79 +12,81 @@ export class InformationComponent implements AfterViewInit, OnDestroy {
   //   "node_modules/popper.js/dist/umd/popper.min.js",
   //   "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
   // ],
- 
+
+@Component({
+  selector: 'ds-information',
+  templateUrl: './information.component.html',
+  styleUrls: ['./information.component.scss']
+})
+export class InformationComponent implements AfterViewInit, OnDestroy {
+
   selectedFaqId = '';
-  selectedFaqTab;
+  selectedFaqTab: any;
   subs: Subscription[] = [];
 
   constructor(
     protected translate: TranslateService,
     protected router: Router,
     protected route: ActivatedRoute
-    ) 
-  {   
-    this.subs.push( route.params.subscribe(params => {
-      console.log('Params is: ', params)
-
-      //get from path the accordion's tab id    
-      if(params.faqId){
+    ) {
+      this.subs.push( route.params.subscribe(params => {
+      //get from path the accordion's tab id
+      if (params.faqId){
         this.selectedFaqId = params.faqId;
         //get HtmlTab to open
         setTimeout(
            () => {
               this.selectedFaqTab = document.getElementById(this.selectedFaqId);
           }
-        )
+        );
       }
-      
       //on back/fwr, open the accordion defined in URL
-      var perfEntries = performance.getEntriesByType("navigation");
-      for (var i = 0; i < perfEntries.length; i++) {  
-          //alert('wow')
-          this.goToTab()
+      let perfEntries = performance.getEntriesByType('navigation');
+      for (let i = 0; i < perfEntries.length; i++) {
+          this.goToTab();
         }
      })
-    )
+    );
   }
 
 
   //on toggle tab, reload page to open the tab
   onToggle(selectedId: string): void {
     //if(this.selectedFaqTab.className == "collapse"){
-       this.router.navigateByUrl('/', {skipLocationChange: true}).then(() => {
+    this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
           this.router.navigate(['./info/faq', selectedId]);
     });
     //}
   }
-                 
-
-  ngAfterViewInit(): void {
-    //this.scrollToAnchor();
-    this.goToTab();
-  } 
 
 
   goToTab(): void{
     try {
-      if(this.selectedFaqId != null || this.selectedFaqId != undefined  || this.selectedFaqId != '' ){
+      if (this.selectedFaqId) {
         setTimeout(
           () => {
             this.selectedFaqTab = document.getElementById(this.selectedFaqId);
-            if(this.selectedFaqTab != null || this.selectedFaqTab != undefined){
-              this.selectedFaqTab.className = "collapse show"; 
-              this.selectedFaqTab.scrollIntoView({behavior: "smooth"});
+            if (this.selectedFaqTab != null || this.selectedFaqTab !== undefined){
+              this.selectedFaqTab.className = 'collapse show';
+              this.selectedFaqTab.scrollIntoView({behavior: 'smooth'});
             }
           }
-        )
+        );
       }
-    }catch(e){
-        console.error('Oops...something went wrong in goToTab().')
+    } catch (e){
+        console.error('Oops...something went wrong in goToTab().');
     }
   }
 
+
+  ngAfterViewInit(): void {
+    //this.scrollToAnchor();
+    this.goToTab();
+  }
+
   ngOnDestroy(): void {
-    if(this.subs != null || this.subs != undefined){
-      this.subs.forEach( sub => sub.unsubscribe() )
+    if (this.subs != null || this.subs !== undefined){
+      this.subs.forEach( sub => sub.unsubscribe() );
     }
   }
 
@@ -102,7 +98,7 @@ export class InformationComponent implements AfterViewInit, OnDestroy {
   //       let accordionTab = document.getElementById(this.fragment); //document.querySelector('#' + this.fragment);
   //       if(accordionTab != null){
   //         //open accordion
-  //         accordionTab.className = "collapse show"; 
+  //         accordionTab.className = "collapse show";
   //         //in app.module added RouterModule.forRoot(routes, {anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled'} )
   //         //after page loads, jump to reference accordion body
   //         setTimeout(
@@ -111,39 +107,13 @@ export class InformationComponent implements AfterViewInit, OnDestroy {
   //           }
   //         )
   //     }
-      
+
   //     }
-  //   } catch (e) { 
+  //   } catch (e) {
   //       console.error('Something went wrong with the fragment.')
   //   }
   //  }
 
-
-  // Javascript way
-  // scrollToAnchor(){
-  //   var anchor = window.location.hash;  //get fragment from URL as #policy
-  //   let element = document.getElementById(anchor.substring(1));
-
-  //   if(element != null){
-  //     //open accordion
-  //     element.className = "collapse show"; 
-  //     //in app.module added RouterModule.forRoot(routes, {anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled'} )
-  //     //after page loads, jump to reference accordion body
-  //     setTimeout(
-  //       () => {
-  //         element.scrollIntoView({behavior: "smooth"});
-  //       }
-  //     )
-  //   }
-  // }
-
-
-   // getUrlWithoutFragment(){
-  //   let urlTree = this.router.parseUrl(this.router.url);
-  //   //urlTree.queryParams = {}; 
-  //   urlTree.fragment = null; // optional
-  //   return urlTree.toString();
-  // }
 
 }
 
