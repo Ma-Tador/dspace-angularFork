@@ -25,9 +25,15 @@
       <span class="text-muted">
       <ds-truncatable-part [id]="dso.id" [minLines]="1">
         <ng-container *ngIf="dso.firstMetadataValue('dc.publisher') || dso.firstMetadataValue('dc.date.issued')">
+          <!-- <span *ngIf="dso.firstMetadataValue('local.series.name')"
+          class="text-info">{{ 'item.search.list.series' | translate }}: {{firstMetadataValue('local.series.name')}}</span>
+          <span *ngIf="dso.firstMetadataValue('local.series.number')"
+          class="text-info">{{ 'item.search.list.volumeNr' | translate }}: {{firstMetadataValue('local.series.number')}}</span> -->
 
-          <span *ngIf="(dso.firstMetadataValue('local.series.number') && ((showVolumeNr$ | async) == 'yes'))"
-          class="text-info">{{ 'item.search.list.volumeNr' | translate }}: {{firstMetadataValue('local.series.number')}}</span>
+          <span *ngIf="dso.firstMetadataValue('local.series.name')"
+          class="text-info">{{ firstMetadataValue('local.series.name') + ' : '}}</span>
+          <span *ngIf="dso.firstMetadataValue('local.series.number')"
+          class="text-info"> {{ firstMetadataValue('local.series.number') + ', '}}</span>
 
           (<span *ngIf="dso.firstMetadataValue('dc.publisher')" class="item-list-publisher" [innerHTML]="firstMetadataValue('dc.publisher') + ', '"></span>
           <span *ngIf="dso.firstMetadataValue('dc.date.issued')" class="item-list-date" [innerHTML]="firstMetadataValue('dc.date.issued')"></span>)

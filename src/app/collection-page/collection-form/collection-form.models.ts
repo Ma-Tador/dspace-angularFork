@@ -43,8 +43,8 @@ export const collectionFormModels: DynamicFormControlModel[] = [
     id: 'license',
     name: 'dc.rights.license',
   }),
-  new DynamicInputModel({
-    id: 'enableViewAsSerie',
-    name: 'local.series.showVolNr',
-  })
+  //new DynamicInputModel({
+  //  id: 'enableViewAsSerie',
+  //  name: 'local.series.showVolNr',
+  //})
 ];
