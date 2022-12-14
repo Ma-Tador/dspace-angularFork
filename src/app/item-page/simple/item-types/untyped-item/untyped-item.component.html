@@ -59,11 +59,19 @@
       [label]="'item.page.description'">
     </ds-generic-item-page-field>
 
-    <ds-generic-item-page-field [item]="object"
+    <!-- <ds-generic-item-page-field [item]="object"
       [fields]="['dc.subject']"
       [separator]="','"
       [label]="'item.page.subject'">
-    </ds-generic-item-page-field>
+    </ds-generic-item-page-field> -->
+
+    <ds-metadata-representation-list class="ds-item-page-mixed-author-field"
+      [parentItem]="object"
+      [itemType]="'Item'"
+      [metadataFields]="['dc.subject']"
+      [label]="'item.page.subject' | translate">
+    </ds-metadata-representation-list>
+
     <ds-generic-item-page-field [item]="object"
       [fields]="['dc.identifier.citation']"
       [label]="'item.page.citation'">
