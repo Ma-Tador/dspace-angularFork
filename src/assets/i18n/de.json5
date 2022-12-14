@@ -2420,5 +2420,5 @@
   'info.feedback.page_help':'Die Seite, die sich auf Ihr Feedback bezieht',
   'info.feedback.send':'Senden',
   'item.page.journaltitle':'Titel des übergeordneten Werks',
-
+  'info.feedback.message.instructions':'Sie sollen die FAU Email-Addresse, Uhrzeit, Wesbseite, Webbrowser und Betriebssystem eingeben, um die Fehler so gut wie möglich zu Identifizieren.',
 }

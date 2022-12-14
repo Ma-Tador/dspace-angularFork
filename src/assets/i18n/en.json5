@@ -2967,5 +2967,6 @@
   'contact.openaccess':'Open Access',
   'info.contact.breadcrumbs':'Contact',
   'item.page.journaltitle':'Journal Title',
+  'info.feedback.message.instructions':'You should provide the FAU Email-Address, Time, Wesbseite, Web-Browser and Operating-System, in order to help us to identify and solve the error.',
 
 }
