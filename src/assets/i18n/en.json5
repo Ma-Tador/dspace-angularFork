@@ -834,7 +834,7 @@
   'info.feedback.error.email.required': 'A valid email address is required',
   'info.feedback.error.message.required': 'A comment is required',
   'info.feedback.page-label': 'Page',
-  'info.feedback.page_help': 'Tha page related to your feedback',
+  'info.feedback.page_help': 'The page related to your feedback',
   'item.alerts.private': 'This item is non-discoverable',
   'item.alerts.withdrawn': 'This item has been withdrawn',
   'item.edit.authorizations.heading': 'With this editor you can view and alter the policies of an item, plus alter policies of individual item components: bundles and bitstreams. Briefly, an item is a container of bundles, and bundles are containers of bitstreams. Containers usually have ADD/REMOVE/READ/WRITE policies, while bitstreams only have READ/WRITE policies.',
@@ -1046,7 +1046,7 @@
   'item.page.collections': 'Collections',
   'item.page.collections.loading': 'Loading...',
   'item.page.collections.load-more': 'Load more',
-  'item.page.date': 'Date',
+  'item.page.date': 'Issue Date',
   'item.page.edit': 'Edit this item',
   'item.page.files': 'Files',
   'item.page.filesection.description': 'Description:',
@@ -2966,5 +2966,6 @@
   'contact.dataprotection':'Data protection',
   'contact.openaccess':'Open Access',
   'info.contact.breadcrumbs':'Contact',
+  'item.page.journaltitle':'Journal Title',
 
 }
