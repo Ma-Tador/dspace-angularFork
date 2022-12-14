@@ -10,14 +10,14 @@
       <div class="row">
 
         <div class="col-md-3 mb-3 mb-md-0 mt-md-5">
-          <a routerLink="/home">
+          <a href="https://www.fau.de/">
             <img src="../../assets/images/fau_img/FAULogoWhite.svg" class="footer-img mt-3" [attr.alt]="'menu.header.image.logo' | translate" />
           </a>
         </div>
 
 
+	<!--
         <div class="col-md-3 mb-3 mb-md-0 mt-md-5">
-        <!-- <h5 class="text-uppercase">Footer Content</h5> -->
         <p class="text-white text-left mt-3">
           Universitätsbibliothek<br/>
           Erlangen-Nürnberg<br/>
@@ -25,9 +25,14 @@
           91054 Erlangen
         </p>
         </div>
+	-->
+	<div class="col-md-3 mb-3 mb-md-0 mt-md-5">
+	</div>
 
-
+	<div class="col-md-3 mb-3 mb-md-0 mt-md-5">
+	<!--
         <div class="col-md-2 mb-3 mb-md-0 offset-2 mt-md-5">
+	-->
           <!-- <p class="m-0">
             <a class="text-red" href="http://www.dspace.org/">{{ 'footer.link.dspace' | translate}}</a>
             {{ 'footer.copyright' | translate:{year: dateObj | date:'y'} }}
@@ -52,8 +57,10 @@
         </div>
 
         <!--Grid column-->
+	  <div class="col-md-3 mb-3 mb-md-0 mt-md-5">
+	  <!--
           <div class="col-md-2 mb-3 mb-md-0 mt-md-5">
-          <!-- <h5 class="text-uppercase">Footer Content</h5> -->
+          -->
           <ul class="list-unstyled mb-0 text-left mt-3">
             <li>
               <a class="text-white" routerLink="info/impressum">{{ 'footer.link.impressum' | translate}}</a>
@@ -62,14 +69,13 @@
               <a class="text-white" routerLink="info/accessibility">{{ 'footer.link.accessibility' | translate}}</a>
             </li>
             <li>
-              <a href="https://ub.fau.de/" class="text-white">FAU Universitätsbibliothek</a>
+              <a class="text-white" href="https://ub.fau.de/">Universitätsbibliothek</a>
             </li>
             <li>
-              <a href="https://www.fau.de/" class="text-white">Friedrich-Alexander-Universität</a>
+              <a class="text-white" routerLink="info/contact">{{'info.contact' | translate}}</a>
             </li>
           </ul>
         </div>
-
       </div>
       <!--Grid row-->
     </div>

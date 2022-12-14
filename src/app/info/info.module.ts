@@ -17,6 +17,8 @@ import { NgbAccordionModule
  } from '@ng-bootstrap/ng-bootstrap';
 import { AccessibilityComponent } from './accessibility/accessibility.component';
 import { ImpressumComponent } from './impressum/impressum.component';
+import { ContactComponent } from './contact/contact.component';
+
 
 const DECLARATIONS = [
   EndUserAgreementComponent,
@@ -30,7 +32,8 @@ const DECLARATIONS = [
   ThemedFeedbackComponent,
   InformationComponent,
   AccessibilityComponent,
-  ImpressumComponent
+  ImpressumComponent,
+  ContactComponent
 ];
 
 @NgModule({

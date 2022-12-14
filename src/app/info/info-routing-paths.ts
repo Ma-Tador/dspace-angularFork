@@ -6,6 +6,7 @@ export const FEEDBACK_PATH = 'feedback';
 export const FAQ_PATH = 'faq';
 export const ACCESSIBILITY_PATH = 'accessibility';
 export const IMPRESSUM_PATH = 'impressum';
+export const CONTACT_PATH = 'contact';
 
 
 export function getEndUserAgreementPath() {
