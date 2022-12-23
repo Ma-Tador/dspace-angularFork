@@ -47,6 +47,7 @@ import { NgbAccordionModule } from '@ng-bootstrap/ng-bootstrap';
 import { OrcidSyncSettingsComponent } from './orcid-page/orcid-sync-settings/orcid-sync-settings.component';
 import { OrcidQueueComponent } from './orcid-page/orcid-queue/orcid-queue.component';
 import { ItemPageOrcidFieldComponent } from './simple/field-components/specific-field/orcid/item-page-orcid-field.component';
+import { ItemPageUriConfigurableFieldComponent } from './simple/field-components/specific-field/uri-configurable/item-page-uri-configurable-field.component';
 
 
 const ENTRY_COMPONENTS = [
@@ -83,7 +84,8 @@ const DECLARATIONS = [
   OrcidAuthComponent,
   OrcidSyncSettingsComponent,
   OrcidQueueComponent,
-  ItemPageOrcidFieldComponent
+  ItemPageOrcidFieldComponent,
+  ItemPageUriConfigurableFieldComponent,
 ];
 
 @NgModule({

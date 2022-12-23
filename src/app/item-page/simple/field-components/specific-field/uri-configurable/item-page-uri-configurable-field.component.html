@@ -1,0 +1,33 @@
+<div class="item-page-field">
+  
+  <ds-metadata-field-wrapper [label]="label | translate">
+    <div *ngFor="let mdValue of item?.allMetadata(fields); let last=last;">
+      
+     <div *ngIf="isDoiWithoutDomain(mdValue.value)">
+      <a class="dont-break-out"  [href]="'https://doi.org/' + mdValue.value" target="_blank">
+        {{'https://doi.org/' + mdValue.value }}<span *ngIf="!last" [innerHTML]="separator"></span>
+      </a>
+    </div>
+
+    <div *ngIf="isUrnWithoutDomain(mdValue.value)">
+      <a class="dont-break-out"  [href]="'https://nbn-resolving.org/' + mdValue.value" target="_blank">
+        {{'https://nbn-resolving.org/' + mdValue.value }}<span *ngIf="!last" [innerHTML]="separator"></span>
+     </a>
+    </div>
+
+    <div *ngIf="domain">
+      <a class="dont-break-out"  [href]="domain + mdValue.value" target="_blank">
+        {{domain + mdValue.value }}<span *ngIf="!last" [innerHTML]="separator"></span>
+     </a>
+    </div>
+
+    <div *ngIf="!domain && !isUrnWithoutDomain(mdValue.value) && !isDoiWithoutDomain(mdValue.value)">
+      <a class="dont-break-out"  [href]="mdValue.value" target="_blank">
+        {{ mdValue.value }}<span *ngIf="!last" [innerHTML]="separator"></span>
+     </a>
+    </div>
+  </div>
+    
+</ds-metadata-field-wrapper>
+
+</div>
