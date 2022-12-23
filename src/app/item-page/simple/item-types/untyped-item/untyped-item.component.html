@@ -8,7 +8,8 @@
   </div>
 </div>
 <div class="d-flex flex-row">
-  <ds-item-page-title-field [item]="object" class="mr-auto">
+  <ds-item-page-title-field
+    [item]="object" class="mr-auto">
   </ds-item-page-title-field>
   <div class="pl-2 space-children-mr">
     <ds-dso-page-version-button (newVersionEvent)="onCreateNewVersion()" [dso]="object"
@@ -17,6 +18,16 @@
     <ds-dso-page-edit-button [pageRoute]="itemPageRoute" [dso]="object" [tooltipMsg]="'item.page.edit'"></ds-dso-page-edit-button>
   </div>
 </div>
+<!-- subtitle row after main title @Steli  OR in the right row as normal metadata
+<div class="d-flex flex-row">
+  <ds-generic-item-page-field [item]="object"
+    [fields]="['local.title.subtitle']"
+    [label]="''">
+  </ds-generic-item-page-field>
+</div>
+-->
+
+<!-- left row in simple view -->
 <div class="row">
   <div class="col-xs-12 col-md-4">
     <ng-container *ngIf="!mediaViewer.image">
@@ -28,61 +39,94 @@
       <ds-media-viewer [item]="object" [videoOptions]="mediaViewer.video"></ds-media-viewer>
     </ng-container>
     <ds-themed-item-page-file-section [item]="object"></ds-themed-item-page-file-section>
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.language.iso']"
+      [label]="'item.page.language'">
+    </ds-generic-item-page-field>
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.type']"
+      [label]="'item.page.docType'">
+    </ds-generic-item-page-field>
+    <!-- granting institution / Titel verleihende Institution -->
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.provenance']"
+      [label]="'item.page.provenance'">
+    </ds-generic-item-page-field>
+    <!-- dc.date.issued -->
     <ds-item-page-date-field [item]="object"></ds-item-page-date-field>
+    <!-- here add dc.date.created and local.date.prevpublished-->
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['local.date.prevpublished']"
+      [label]="'item.page.prevpublished'">
+    </ds-generic-item-page-field>
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.date.created']"
+      [label]="'item.page.created'">
+    </ds-generic-item-page-field>
+
     <ds-metadata-representation-list class="ds-item-page-mixed-author-field"
       [parentItem]="object"
       [itemType]="'Person'"
       [metadataFields]="['dc.contributor.author', 'dc.creator']"
       [label]="'relationships.isAuthorOf' | translate">
     </ds-metadata-representation-list>
-    <ds-generic-item-page-field [item]="object"
-      [fields]="['journal.title']"
-      [label]="'item.page.journal-title'">
-    </ds-generic-item-page-field>
-    <ds-generic-item-page-field [item]="object"
-      [fields]="['journal.identifier.issn']"
-      [label]="'item.page.journal-issn'">
-    </ds-generic-item-page-field>
-    <ds-generic-item-page-field [item]="object"
-      [fields]="['journalvolume.identifier.name']"
-      [label]="'item.page.volume-title'">
-    </ds-generic-item-page-field>
+    <! Editor/ Herausgeber -->
+    <ds-metadata-representation-list class="ds-item-page-mixed-author-field"
+      [parentItem]="object"
+      [itemType]="'Person'"
+      [metadataFields]="['dc.contributor.editor']"
+      [label]="'item.page.editor' | translate">
+    </ds-metadata-representation-list>
     <ds-generic-item-page-field [item]="object"
       [fields]="['dc.publisher']"
       [label]="'item.page.publisher'">
     </ds-generic-item-page-field>
-  </div>
-  <div class="col-xs-12 col-md-6">
-    <ds-item-page-abstract-field [item]="object"></ds-item-page-abstract-field>
     <ds-generic-item-page-field [item]="object"
-      [fields]="['dc.description']"
-      [label]="'item.page.description'">
+      [fields]="['local.document.edition']"
+      [label]="'item.page.edition'">
+    </ds-generic-item-page-field>
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.identifier.isbn']"
+      [label]="'item.page.isbn'">
+    </ds-generic-item-page-field>
+  </div>
+  <!-- right row in simple view -->
+  <div class="col-xs-12 col-md-6">
+    <!-- or under the main title see ^ -->
+    <ds-generic-item-page-field [item]="object"
+    [fields]="['local.title.subtitle']"
+    [label]="'item.page.subtitle'">
     </ds-generic-item-page-field>
 
-    <!-- <ds-generic-item-page-field [item]="object"
+    <ds-item-page-abstract-field
+      [item]="object">
+    </ds-item-page-abstract-field>
+    <!-- ORG
+    <ds-generic-item-page-field [item]="object"
       [fields]="['dc.subject']"
       [separator]="','"
       [label]="'item.page.subject'">
     </ds-generic-item-page-field> -->
 
+    <!-- add Author-like show more for more than 6 keywords
     <ds-metadata-representation-list class="ds-item-page-mixed-author-field"
       [parentItem]="object"
       [itemType]="'Item'"
       [metadataFields]="['dc.subject']"
       [label]="'item.page.subject' | translate">
     </ds-metadata-representation-list>
-
+  -->
     <ds-generic-item-page-field [item]="object"
-      [fields]="['dc.identifier.citation']"
-      [label]="'item.page.citation'">
+      [fields]="['local.series.name']"
+      [label]="'item.page.series'">
     </ds-generic-item-page-field>
     <ds-generic-item-page-field [item]="object"
-      [fields]="['dcterms.isPartOf']"
-      [label]="'item.page.isPartOf'">
+      [fields]="['local.series.number']"
+      [label]="'item.page.seriesnr'">
     </ds-generic-item-page-field>
     <ds-generic-item-page-field [item]="object"
       [fields]="['local.journal.title']"
-      [label]="'item.page.title'">
+      [label]="'item.page.journaltitle'">
     </ds-generic-item-page-field>
     <ds-generic-item-page-field [item]="object"
       [fields]="['local.journal.volume']"
@@ -93,36 +137,36 @@
       [label]="'item.page.issue'">
     </ds-generic-item-page-field>
     <ds-generic-item-page-field [item]="object"
-      [fields]="['local.series.name']"
-      [label]="'item.page.series'">
+      [fields]="['dc.identifier.citation']"
+      [label]="'item.page.citation'">
     </ds-generic-item-page-field>
     <ds-generic-item-page-field [item]="object"
-      [fields]="['local.series.number']"
-      [label]="'item.page.seriesnr'">
+      [fields]="['dc.description']"
+      [label]="'item.page.description'">
     </ds-generic-item-page-field>
     <ds-item-page-uri-field [item]="object"
       [fields]="['dc.identifier.uri']"
       [label]="'item.page.uri'">
     </ds-item-page-uri-field>
-    <ds-item-page-collections [item]="object"></ds-item-page-collections>
-
-    <ds-item-page-uri-field [item]="object" [fields]="['dc.rights.uri']" [label]="'item.page.rightsuri'">
+    <ds-item-page-uri-field
+      [item]="object" [fields]="['dc.identifier.doi', 'dc.identifier.doi']"
+      [label]="'item.page.doi'">
     </ds-item-page-uri-field>
-
-    <ds-item-page-uri-field [item]="object" [fields]="['dc.identifier.urn']" [label]="'item.page.urn'">
+    <ds-item-page-uri-field
+      [item]="object" [fields]="['dc.identifier.urn']"
+      [label]="'item.page.urn'">
     </ds-item-page-uri-field>
-
-    <ds-item-page-uri-field [item]="object" [fields]="['dc.identifier.doi', 'dc.identifier.doi']" [label]="'item.page.doi'">
+    <ds-item-page-uri-field
+      [item]="object" [fields]="['dc.rights.uri']"
+      [label]="'item.page.rightsuri'">
     </ds-item-page-uri-field>
+    <ds-item-page-collections
+      [item]="object">
+    </ds-item-page-collections>
 
-    <ds-item-page-uri-field [item]="object" [fields]="['dc.identifier.url']" [label]="'item.page.url'">
-    </ds-item-page-uri-field>
-
-    <ds-item-page-uri-field [item]="object" [fields]="['dc.identifier.cris-link']" [label]="'item.page.crislink'">
-    </ds-item-page-uri-field>
-
+    <!-- to enable when ORCID works, to display ORCIDs of all contributors related to this document
     <ds-item-page-orcid-field [item]="object" [fields]="['dc.contributor.author', 'dc.contributor.other', 'dc.contributor.advisor', 'dc.contributor']" [label]="'item.page.orcid'">
-    </ds-item-page-orcid-field>
+    </ds-item-page-orcid-field> -->
 
     <div>
       <a class="btn btn-outline-primary" [routerLink]="[itemPageRoute + '/full']" role="button">
