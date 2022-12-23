@@ -16,8 +16,13 @@
         <ng-container #componentViewContainer></ng-container>
       </div>
 
-      <small *ngIf="hasHint && ((!model.repeatable && (isRelationship === false || value?.value === null)) || (model.repeatable === true && context?.index === context?.context?.groups?.length - 1)) && (!showErrorMessages || errorMessages.length === 0)"
-             class="text-muted ds-hint" [innerHTML]="model.hint | translate" [ngClass]="getClass('element', 'hint')"></small>
+      <!-- <small *ngIf="hasHint && ((!model.repeatable && (isRelationship === false || value?.value === null)) || (model.repeatable === true && context?.index === context?.context?.groups?.length - 1)) && (!showErrorMessages || errorMessages.length === 0)" class="text-muted ds-hint" [innerHTML]="model.hint | translate" [ngClass]="getClass('element', 'hint')"></small> -->
+
+      <small *ngIf="hasHint && ((!model.repeatable && (isRelationship === false || value?.value === null)) || (model.repeatable === true && context?.index === context?.context?.groups?.length - 1)) && (!showErrorMessages || errorMessages.length === 0)" class="text-muted ds-hint" [ngClass]="getClass('element', 'hint')">
+        <span *ngIf="hintHasLink()">{{hintWithoutLink}}<a [href]="hintLink" target="_blank">{{hintLink}}</a>.</span>
+        <span *ngIf="!hintHasLink()">{{model.hint | translate}}</span>
+      </small>
+
       <!-- In case of repeatable fields show empty space for all elements except the first -->
       <div *ngIf="context?.index !== null
               && (!showErrorMessages || errorMessages.length === 0)" class="clearfix w-100 mb-2"></div>
@@ -74,8 +79,11 @@
       [relationshipOptions]="model.relationship"
     >
     </ds-existing-relation-list-element>
+
     <small *ngIf="hasHint && (model.repeatable === false || context?.index === context?.context?.groups?.length - 1) && (!showErrorMessages || errorMessages.length === 0)"
            class="text-muted ds-hint" [innerHTML]="model.hint | translate" [ngClass]="getClass('element', 'hint')"></small>
+
+
     <div class="clearfix w-100 mb-2"></div>
   </ng-container>
   <ng-content></ng-content>

@@ -216,6 +216,9 @@ export class DsDynamicFormControlContainerComponent extends DynamicFormControlCo
   listId: string;
   searchConfig: string;
   value: MetadataValue;
+
+  hintLink: string;
+  hintWithoutLink: string;
   /**
    * List of subscriptions to unsubscribe from
    */
@@ -483,6 +486,20 @@ export class DsDynamicFormControlContainerComponent extends DynamicFormControlCo
 
   get hasHint(): boolean {
     return isNotEmpty(this.model.hint) && this.model.hint !== '&nbsp;';
+  }
+
+  hintHasLink(): boolean {
+    if (String(this.model.hint).includes('https://')){
+      let indexLinkStart = String(this.model.hint).indexOf('https://');
+
+      this.hintLink = String(this.model.hint).substring(indexLinkStart, String(this.model.hint).length - 1);
+      console.log('Link is ' + this.hintLink);
+      this.hintWithoutLink = String(this.model.hint).substring(0, indexLinkStart);
+      console.log('Hint wout link is' + this.hintWithoutLink);
+      return true;
+    } else {
+      return false;
+    }
   }
 
   /**
