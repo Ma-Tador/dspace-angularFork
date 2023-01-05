@@ -12,6 +12,11 @@ import { NavbarModule } from '../../app/navbar/navbar.module';
 // when new Components are themed, we need to import and declare them here @Steli
 import { FooterComponent } from './app/footer/footer.component';
 import { LoginPageComponent } from './app/login-page/login-page.component';
+import { HomePageComponent } from './app/home-page/home-page.component';
+import { RecentItemListComponent } from '../../app/home-page/recent-item-list/recent-item-list.component';
+
+import { HomePageModule } from '../../app/home-page/home-page.module';
+import { StatisticsModule } from '../../app/statistics/statistics.module';
 
 /**
  * Add components that use a custom decorator to ENTRY_COMPONENTS as well as DECLARATIONS.
@@ -27,7 +32,11 @@ const DECLARATIONS = [
   HeaderNavbarWrapperComponent,
   NavbarComponent,
   FooterComponent,
-  LoginPageComponent
+  LoginPageComponent,
+
+  HomePageComponent,
+
+
 ];
 
 @NgModule({
@@ -38,6 +47,9 @@ const DECLARATIONS = [
     FormsModule,
     RootModule,
     NavbarModule,
+
+    HomePageModule,
+    StatisticsModule,
   ],
   declarations: DECLARATIONS,
   providers: [
