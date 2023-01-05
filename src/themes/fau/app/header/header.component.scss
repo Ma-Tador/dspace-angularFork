@@ -4,6 +4,7 @@
   }
   .header {
     background-color: var(--ds-header-bg);
+    position: fixed;
   }
 }
 
@@ -14,13 +15,6 @@
   //color: var(--bs-link-color);
   color: #04316a
 }
-
-// org
-// .navbar-brand img {
-//   @media screen and (max-width: map-get($grid-breakpoints, md)) {
-//     height: var(--ds-header-logo-height-xs);
-//   }
-// }
 
 .navbar-brand img {
   @media screen and (max-width: map-get($grid-breakpoints, md)) {
