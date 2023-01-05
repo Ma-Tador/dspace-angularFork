@@ -1,14 +1,12 @@
-<div class="background-image-container">
-  
+<div class="background-image-container">  
   <picture class="background-image">
-    <img alt="" [src]="'../../assets/images/fau_img/Kollegienhaus.jpg'"/><!-- without the []="''" Firefox downloads both the fallback and the resolved image -->
+    <!-- without the []="''" Firefox downloads both the fallback and the resolved image -->
+    <img alt="" [src]="'../../assets/images/fau_img/Kollegienhaus.jpg'"/>
     <small class="credits">Photo by ©FAU/Erich Malter</small>
   </picture>
-
 </div>
 
-<div class="container">
-  <div class="jumbotron jumbotron-fluid">
+  <div class="jumbotron">
     <div class="d-flex flex-wrap">
       <div>
         <h1 class="display-3">
@@ -19,7 +17,6 @@
         </p>
       </div>
     </div>
-
     <p>
       {{ "homenews-image-text-p1" | translate }}
     </p>
@@ -28,4 +25,4 @@
       {{"homenews-image-text-p2" | translate}}
     </p>
   </div>
-</div>
+
