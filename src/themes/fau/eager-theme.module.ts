@@ -14,6 +14,7 @@ import { FooterComponent } from './app/footer/footer.component';
 import { LoginPageComponent } from './app/login-page/login-page.component';
 import { HomePageComponent } from './app/home-page/home-page.component';
 import { RecentItemListComponent } from '../../app/home-page/recent-item-list/recent-item-list.component';
+import { RootComponent } from './app/root/root.component';
 
 import { HomePageModule } from '../../app/home-page/home-page.module';
 import { StatisticsModule } from '../../app/statistics/statistics.module';
@@ -33,9 +34,8 @@ const DECLARATIONS = [
   NavbarComponent,
   FooterComponent,
   LoginPageComponent,
-
   HomePageComponent,
-
+  RootComponent,
 
 ];
 
