@@ -27,9 +27,6 @@ const main = () => {
   //   }
   // });
 
-  if (environment.production){
-    console.log('hi');
-  }
 
   if (environment.production) {
     enableProdMode();

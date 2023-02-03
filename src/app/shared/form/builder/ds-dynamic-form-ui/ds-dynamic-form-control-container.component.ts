@@ -493,9 +493,9 @@ export class DsDynamicFormControlContainerComponent extends DynamicFormControlCo
       let indexLinkStart = String(this.model.hint).indexOf('https://');
 
       this.hintLink = String(this.model.hint).substring(indexLinkStart, String(this.model.hint).length - 1);
-      console.log('Link is ' + this.hintLink);
+      //console.log('Link is ' + this.hintLink);
       this.hintWithoutLink = String(this.model.hint).substring(0, indexLinkStart);
-      console.log('Hint wout link is' + this.hintWithoutLink);
+      //console.log('Hint without link is' + this.hintWithoutLink);
       return true;
     } else {
       return false;
