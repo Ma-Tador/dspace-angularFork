@@ -1750,7 +1750,7 @@
   'item.page.isbn':'ISBN',
   'item.page.subtitle':'Untertitel',
   'item.page.prevpublished':'Erstmal verröffentlicht',
-  'item.page.created':'Erstellt',
+  'item.page.created':'Erscheinungsjahr',
   'item.page.language':'Sprache',
 
   'browse.metadata.volume': 'Bandnummer',

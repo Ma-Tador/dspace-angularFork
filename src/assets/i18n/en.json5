@@ -1039,7 +1039,7 @@
   'item.page.isbn':'ISBN',
   'item.page.subtitle':'Subtitle',
   'item.page.prevpublished':'First published',
-  'item.page.created':'Created',
+  'item.page.created':'Issue Year',
   'item.page.language':'Language',
 
   'item.page.journal-issn': 'Journal ISSN',
