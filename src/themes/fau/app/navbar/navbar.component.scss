@@ -5,14 +5,6 @@ nav.navbar {
   color: var(--ds-header-icon-color);
 }
 
-.fixed {
-  background: #fff;
-  box-shadow: 0 3px 12px 0 rgba(0,0,0,.08);
-  // top: 0;
-  height: 80px;
-  width: 100%;
-  position: fixed;
-}
 
 /** Mobile menu styling **/
 @media screen and (max-width: map-get($grid-breakpoints, md)) {
