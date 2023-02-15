@@ -1,9 +1,11 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
 import { fadeIn, fadeInOut } from '../../../shared/animations/fade';
 import { Item } from '../../../core/shared/item.model';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ItemOperation } from '../item-operation/itemOperation.model';
-import {distinctUntilChanged, first, map, mergeMap, startWith, switchMap, toArray} from 'rxjs/operators';
+import {distinctUntilChanged, first, map, mergeMap, startWith, switchMap, toArray, filter} from 'rxjs/operators';
 import {BehaviorSubject, Observable, from as observableFrom, Subscription, combineLatest, of} from 'rxjs';
 import { RemoteData } from '../../../core/data/remote-data';
 import { getItemEditRoute, getItemPageRoute } from '../../item-page-routing-paths';
@@ -20,6 +22,10 @@ import {IdentifierData} from '../../../shared/object-list/identifier-data/identi
 import {Identifier} from '../../../shared/object-list/identifier-data/identifier.model';
 import {ConfigurationProperty} from '../../../core/shared/configuration-property.model';
 import {ConfigurationDataService} from '../../../core/data/configuration-data.service';
+import { NotificationsService } from 'src/app/shared/notifications/notifications.service';
+import { ItemDataService } from 'src/app/core/data/item-data.service';
+import { TranslateService } from '@ngx-translate/core';
+import { findSuccessfulAccordingTo } from '../edit-item-operators';
 
 @Component({
   selector: 'ds-item-status',
@@ -76,10 +82,29 @@ export class ItemStatusComponent implements OnInit {
    */
   itemPageRoute$: Observable<string>;
 
+
+   //Current list of identifiers (handles, DOIs) to display in Item's status.
+   ids: any;
+
+   //Current item for which we display status.
+   item: Item;
+   
+   //Show Edit button, in order to Edit the DOI
+   editMode = false;
+
+   //Disable Update button until the response is received from the server
+   processing = false;
+
+
   constructor(private route: ActivatedRoute,
               private authorizationService: AuthorizationDataService,
               private identifierDataService: IdentifierDataService,
               private configurationService: ConfigurationDataService,
+
+              protected router?: Router,
+              protected notificationsService?: NotificationsService,
+              protected itemDataService?: ItemDataService,
+              protected translateService?: TranslateService,
   ) {
   }
 
@@ -92,6 +117,9 @@ export class ItemStatusComponent implements OnInit {
       first(),
       map((data: RemoteData<Item>) => data.payload)
     ).subscribe((item: Item) => {
+
+      //steli
+      this.item = item;
       this.statusData = Object.assign({
         id: item.id,
         handle: item.handle,
@@ -109,7 +137,13 @@ export class ItemStatusComponent implements OnInit {
           }
         }),
       );
-
+        //Get the list of identifiers (handles, DOIs) for the current item.
+      this.subs.push( this.identifiers$
+      .subscribe( 
+        ids => { 
+          this.ids = ids;
+        }
+      ))
       // Observable for configuration determining whether the Register DOI feature is enabled
       let registerConfigEnabled$: Observable<boolean> = this.configurationService.findByPropertyName('identifiers.item-status.register').pipe(
         map((enabled: RemoteData<ConfigurationProperty>) => {
@@ -128,8 +162,7 @@ export class ItemStatusComponent implements OnInit {
       );
 
       /*
-        The key is used to build messages
-          i18n example: 'item.edit.tabs.status.buttons.<key>.label'
+        The key is used to build messages i18n example: 'item.edit.tabs.status.buttons.<key>.label'
         The value is supposed to be a href for the button
       */
       const operations = [];
@@ -182,7 +215,7 @@ export class ItemStatusComponent implements OnInit {
         let tmp_operations = [...operations];
         if (show) {
           // Push the new Register DOI item operation
-          tmp_operations.push(new ItemOperation('registerDOI', this.getCurrentUrl(item) + '/registerdoi', FeatureID.CanRegisterDOI));
+          tmp_operations.push(new ItemOperation('registerDOI', this.getCurrentUrl(item) + '/registerdoi', FeatureID.CanRegisterDOI));    
         }
         // Check authorisations and merge into new operations list
         observableFrom(tmp_operations).pipe(
@@ -219,6 +252,38 @@ export class ItemStatusComponent implements OnInit {
 
   trackOperation(index: number, operation: ItemOperation) {
     return hasValue(operation) ? operation.operationKey : undefined;
+  }
+
+
+  onEdit(){
+    this.editMode = true;
+  }
+ 
+  // Update registered DOI (not online-registered, but locally in DB)  of the current item from Edit->Status->Register DOI->Edit DOI
+  onUpdate(inputDoi, index){   
+    this.editMode = false;
+    this.processing = true;
+    this.identifierDataService.updateDOI(this.item.id ,inputDoi.value).pipe(getFirstCompletedRemoteData())
+    .subscribe(
+      (response: RemoteData<Item>) => {
+        this.processRestResponse(response);
+      }
+    )
+  }
+
+  //Process the response from server for DOI update, and return Success or Error updating DOI
+  processRestResponse(response: RemoteData<any>) {
+    this.processing = false;
+    //console.log('In processRestRequest with response: ' + JSON.stringify(response))
+    if (response.hasSucceeded) {
+      this.itemDataService.findById(this.item.id).subscribe(() => {
+        this.notificationsService.success(this.translateService.get('item.edit.registerdoi.success'));
+        this.router.navigate([getItemEditRoute(this.item)]);
+      });
+    } else {
+      this.notificationsService.error(this.translateService.get('item.edit.registerdoi.error'));
+      this.router.navigate([getItemEditRoute(this.item)]);
+    }
   }
 
   ngOnDestroy(): void {

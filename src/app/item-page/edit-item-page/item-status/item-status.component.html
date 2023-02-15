@@ -9,15 +9,24 @@
     </div>
   </div>
   
-  <div *ngFor="let identifier of (identifiers$ | async)" class="w-100">
-    <div *ngIf="(identifier.identifierType=='doi')">
+
+  <!-- <div *ngFor="let identifier of (identifiers$ | async)" class="w-100"> -->
+<div *ngFor="let id of ids; let i = index;" class="w-100">
+  <div *ngIf="(id.identifierType=='doi')">
       <div class="col-3 float-left status-label">
-        {{identifier.identifierType.toLocaleUpperCase()}}
+        <!-- {{identifier.identifierType.toLocaleUpperCase()}}  -->
+        DOI:
       </div>
-      <div class="col-9 float-left status-label">{{identifier.value}}
-        ({{"item.edit.identifiers.doi.status."+identifier.identifierStatus|translate}})</div>
-    </div>
-  </div>
+      <div *ngIf="!processing && !editMode" class="col-9 float-left status-label">
+        {{id.value}} ({{"item.edit.identifiers.doi.status."+id.identifierStatus|translate}})
+        <button *ngIf="(id.identifierStatus == 1) && !editMode" class="btn btn-sm btn-info ml-2" (click)="onEdit()">Edit DOI</button>
+      </div>
+      <div *ngIf="editMode" class="col-9 float-left status-label">
+          <input type="text" class="w-50" [value]="id.value" #inputDoi/>
+          <button class="btn btn-sm btn-success ml-3" (click)="onUpdate(inputDoi, i)" [disabled]="processing">Update</button>
+      </div> 
+    </div> 
+  </div> 
   
   <div class="col-3 float-left status-label">
     {{'item.edit.tabs.status.labels.itemPage' | translate}}:
