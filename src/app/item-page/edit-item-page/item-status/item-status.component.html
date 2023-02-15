@@ -19,7 +19,9 @@
       </div>
       <div *ngIf="!processing && !editMode" class="col-9 float-left status-label">
         {{id.value}} ({{"item.edit.identifiers.doi.status."+id.identifierStatus|translate}})
-        <button *ngIf="(id.identifierStatus == 1) && !editMode" class="btn btn-sm btn-info ml-2" (click)="onEdit()">Edit DOI</button>
+        <!-- For items with DOI in state local to_be_reserved/to_be_registered/update_before_registration/pending/minted -->
+        <button *ngIf="((id.identifierStatus == 1 || id.identifierStatus == 2 || id.identifierStatus == 7 || id.identifierStatus == 10 || id.identifierStatus == 11) && !editMode)" 
+          class="btn btn-sm btn-info ml-2" (click)="onEdit()">Edit DOI</button>
       </div>
       <div *ngIf="editMode" class="col-9 float-left status-label">
           <input type="text" class="w-50" [value]="id.value" #inputDoi/>
