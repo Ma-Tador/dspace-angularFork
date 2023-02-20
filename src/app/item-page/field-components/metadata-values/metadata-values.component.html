@@ -21,11 +21,12 @@
 
 <div *ngFor="let mdValue of mdValues; let last=last;">
   <ds-truncatable-metadata-field-wrapper [label]="label | translate" >
-    <span>{{mdValue.value | translate}}<span *ngIf="!last" [innerHTML]="separator"></span>
+    <span *ngIf="!renderMarkdown">{{mdValue.value | translate}}
+    </span> 
+    <span *ngIf="renderMarkdown" [innerHTML]="mdValue.value | dsMarkdown | async">
     </span>
+    <span class="separator" *ngIf="!last" [innerHTML]="separator"></span>
   </ds-truncatable-metadata-field-wrapper>
 </div>
-
-
 
 
