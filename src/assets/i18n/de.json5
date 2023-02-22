@@ -1444,6 +1444,7 @@
   'search.sidebar.close': 'Zurück zu den Ergebnissen',
   'search.sidebar.filters.title': 'Filter',
   'search.sidebar.open': 'Suchwerkzeuge',
+  'item.page.notes':'Anmerkungen',
   'search.sidebar.results': 'Ergebnisse',
   'search.sidebar.settings.rpp': 'Ergebnisse pro Seite',
   'search.sidebar.settings.sort-by': 'Sortieren nach',
@@ -1752,7 +1753,7 @@
   'item.page.edition':'Auflage',
   'item.page.isbn':'ISBN',
   'item.page.subtitle':'Untertitel',
-  'item.page.prevpublished':'Erstmal verröffentlicht',
+  'item.page.prevpublished':'Erstverröffentlichung',
   'item.page.created':'Erscheinungsjahr',
   'item.page.language':'Sprache',
 
