@@ -144,6 +144,10 @@
       [fields]="['dc.description']"
       [label]="'item.page.description'">
     </ds-generic-item-page-field>
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['local.notesOpus']"
+      [label]="'item.page.notes'">
+    </ds-generic-item-page-field>
     <ds-item-page-uri-configurable-field [item]="object"
       [fields]="['dc.identifier.uri']"
       [label]="'item.page.uri'">
