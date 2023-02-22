@@ -1,5 +1,5 @@
-<span class="mb-5" [innerHTML]="licenseText$ | async"></span>
-<br> <br>
+<div class="mb-5" style="height: 400px; overflow: scroll" [innerHTML]="licenseText$ | async"></div>
+<br>
 <ds-form *ngIf="formModel" #formRef="formComponent"
          [formId]="formId"
          [formModel]="formModel"
