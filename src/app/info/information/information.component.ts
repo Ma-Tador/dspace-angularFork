@@ -22,6 +22,7 @@ export class InformationComponent implements AfterViewInit, OnDestroy {
 
   selectedFaqId = '';
   selectedFaqTab: any;
+  currentLanguage;
   subs: Subscription[] = [];
 
   constructor(
@@ -29,6 +30,7 @@ export class InformationComponent implements AfterViewInit, OnDestroy {
     protected router: Router,
     protected route: ActivatedRoute
     ) {
+      this.currentLanguage = this.translate.currentLang;
       this.subs.push( route.params.subscribe(params => {
       //get from path the accordion's tab id
       if (params.faqId){
@@ -49,16 +51,12 @@ export class InformationComponent implements AfterViewInit, OnDestroy {
     );
   }
 
-
   //on toggle tab, reload page to open the tab
   onToggle(selectedId: string): void {
-    //if(this.selectedFaqTab.className == "collapse"){
     this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
           this.router.navigate(['./info/faq', selectedId]);
     });
-    //}
   }
-
 
   goToTab(): void{
     try {
@@ -80,7 +78,6 @@ export class InformationComponent implements AfterViewInit, OnDestroy {
 
 
   ngAfterViewInit(): void {
-    //this.scrollToAnchor();
     this.goToTab();
   }
 
@@ -89,31 +86,6 @@ export class InformationComponent implements AfterViewInit, OnDestroy {
       this.subs.forEach( sub => sub.unsubscribe() );
     }
   }
-
-
-  //angular way
-  // scrollToAnchor(){
-  //   try {
-  //     if(this.fragment != null || this.fragment != undefined){
-  //       let accordionTab = document.getElementById(this.fragment); //document.querySelector('#' + this.fragment);
-  //       if(accordionTab != null){
-  //         //open accordion
-  //         accordionTab.className = "collapse show";
-  //         //in app.module added RouterModule.forRoot(routes, {anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled'} )
-  //         //after page loads, jump to reference accordion body
-  //         setTimeout(
-  //           () => {
-  //             accordionTab.scrollIntoView({behavior: "smooth"});
-  //           }
-  //         )
-  //     }
-
-  //     }
-  //   } catch (e) {
-  //       console.error('Something went wrong with the fragment.')
-  //   }
-  //  }
-
 
 }
 
