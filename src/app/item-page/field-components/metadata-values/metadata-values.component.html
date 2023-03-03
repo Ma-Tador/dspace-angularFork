@@ -21,8 +21,8 @@
 
 <div *ngFor="let mdValue of mdValues; let last=last;">
   <ds-truncatable-metadata-field-wrapper [label]="label | translate">
-    <!-- convert dc.language.iso field into a flag (map en to gb, because en has no flag associated)-->
-    <span *ngIf="isLanguageField" [class]="'fi fis fi-' + ((mdValue.value == 'en') ? 'gb' : mdValue.value)"></span>
+    <!-- convert dc.language.iso field into a flag (map en to gb, because en has no flag associated). Display also the text of language, in case no flag supports than language-->
+    <span *ngIf="isLanguageField">{{mdValue.value}}</span><span *ngIf="isLanguageField" [class]="'fi fis fi-' + ((mdValue.value == 'en') ? 'gb' : mdValue.value)"></span>
     <!-- if not the language field dc.language.iso, but another field (ex.abstract), display the flag for the language attributed to that metadata field-->
     <span *ngIf="showLanguage && !isLanguageField" [class]="'fi fis fi-' + ((mdValue.language == 'en') ? 'gb' : mdValue.language)"></span>
     <!-- if a normal metadata field, withour markdown, just translate the field (for ex for dc.type) or display as is if no translation available-->
@@ -33,12 +33,5 @@
     <span class="separator" *ngIf="!last"{{separator}}></span>
   </ds-truncatable-metadata-field-wrapper>
 </div>
-
-<!--  Put ^ to convert dc.language.iso into a flag
-   <div *ngIf="isLanguageField">
-  <div *ngFor="let mdValue of mdValues; let last=last;">
-    <span [class]="'fi fis fi-' + ((mdValue.value == 'en') ? 'gb' : mdValue.value)"></span>
-  </div>
-</div> -->
 
 
