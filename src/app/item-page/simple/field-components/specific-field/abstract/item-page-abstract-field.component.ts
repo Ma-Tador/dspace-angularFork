@@ -40,4 +40,5 @@ export class ItemPageAbstractFieldComponent extends ItemPageFieldComponent {
      * Use the {@link MarkdownPipe} to render dc.description.abstract values
      */
     enableMarkdown = true;
+
 }

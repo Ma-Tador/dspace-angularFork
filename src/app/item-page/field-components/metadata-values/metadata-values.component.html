@@ -20,13 +20,25 @@
 -->
 
 <div *ngFor="let mdValue of mdValues; let last=last;">
-  <ds-truncatable-metadata-field-wrapper [label]="label | translate" >
-    <span *ngIf="!renderMarkdown">{{mdValue.value | translate}}
-    </span> 
-    <span *ngIf="renderMarkdown" [innerHTML]="mdValue.value | dsMarkdown | async">
-    </span>
-    <span class="separator" *ngIf="!last" [innerHTML]="separator"></span>
+  <ds-truncatable-metadata-field-wrapper [label]="label | translate">
+    <!-- convert dc.language.iso field into a flag (map en to gb, because en has no flag associated)-->
+    <span *ngIf="isLanguageField" [class]="'fi fis fi-' + ((mdValue.value == 'en') ? 'gb' : mdValue.value)"></span>
+    <!-- if not the language field dc.language.iso, but another field (ex.abstract), display the flag for the language attributed to that metadata field-->
+    <span *ngIf="showLanguage && !isLanguageField" [class]="'fi fis fi-' + ((mdValue.language == 'en') ? 'gb' : mdValue.language)"></span>
+    <!-- if a normal metadata field, withour markdown, just translate the field (for ex for dc.type) or display as is if no translation available-->
+    <span *ngIf="!renderMarkdown && !isLanguageField">{{mdValue.value | translate}}</span> 
+    <!-- if markdown enabled (for ex for abstract), process the text via markdown and display it transformed-->
+    <span *ngIf="renderMarkdown && !isLanguageField" [innerHTML]="mdValue.value | dsMarkdown | async"></span>
+    <!--if it is not the last value for metadata field, put a ',' or other separator-->
+    <span class="separator" *ngIf="!last"{{separator}}></span>
   </ds-truncatable-metadata-field-wrapper>
 </div>
+
+<!--  Put ^ to convert dc.language.iso into a flag
+   <div *ngIf="isLanguageField">
+  <div *ngFor="let mdValue of mdValues; let last=last;">
+    <span [class]="'fi fis fi-' + ((mdValue.value == 'en') ? 'gb' : mdValue.value)"></span>
+  </div>
+</div> -->
 
 

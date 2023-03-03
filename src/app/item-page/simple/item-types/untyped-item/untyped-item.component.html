@@ -41,7 +41,8 @@
     <ds-themed-item-page-file-section [item]="object"></ds-themed-item-page-file-section>
     <ds-generic-item-page-field [item]="object"
       [fields]="['dc.language.iso']"
-      [label]="'item.page.language'">
+      [label]="'item.page.language'"
+      [isLangField]="'true'">
     </ds-generic-item-page-field>
     <ds-generic-item-page-field [item]="object"
       [fields]="['dc.type']"
@@ -99,7 +100,8 @@
     </ds-generic-item-page-field>
 
     <ds-item-page-abstract-field
-      [item]="object">
+      [item]="object"
+      [showLang]="'true'">
     </ds-item-page-abstract-field>
     <!-- ORG
     <ds-generic-item-page-field [item]="object"

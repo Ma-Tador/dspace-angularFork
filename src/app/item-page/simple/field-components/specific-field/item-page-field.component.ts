@@ -38,4 +38,12 @@ export class ItemPageFieldComponent {
      */
     separator = '<br/>';
 
+    //Show the language for the metadata value
+    @Input() showLang? = false;
+
+    /*
+  Wheter the field is the language field. If so, display instead of value the flag only
+  */
+  @Input() isLangField? = false;
+
 }

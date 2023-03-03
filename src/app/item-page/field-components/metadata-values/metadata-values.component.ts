@@ -40,6 +40,16 @@ export class MetadataValuesComponent implements OnChanges {
    */
   @Input() enableMarkdown = false;
 
+  /*
+  Whether the language should be displayed for the metadata value
+  */
+  @Input() showLanguage? = false;
+
+  /*
+  Wheter the field is the language field. If so, display instead of value the flag only
+  */
+  @Input() isLanguageField? = false;
+
   /**
    * This variable will be true if both {@link environment.markdown.enabled} and {@link enableMarkdown} are true.
    */
