@@ -1430,7 +1430,7 @@
   'search.filters.discoverable.false': 'Ja',
   'search.filters.withdrawn.true': 'Ja',
   'search.filters.withdrawn.false': 'Nein',
-  'search.filters.head': 'Filter',
+  'search.filters.head': 'Weitere Filtern',
   'search.filters.reset': 'Filter zurücksetzen',
   'search.form.search': 'Suche',
   'search.form.search_dspace': 'Suche in OPEN FAU',
@@ -1910,7 +1910,8 @@
   'info.paragraph.regulationsdoctoral.h96': [
     'Über den Vertrag mit ProQuest Dissertations and Theses (PQDT) bietet ProQuest zum einen ein Indexing & Abstracting in einer renommierten Fachdatenbank, zum anderen einen Druck- und Printvertriebsservice für die ansonsten rein digital vorhandenen OPEN FAU-Dissertationsveröffentlichungen. FAU Promovierende haben in solchen Fällen Anspruch auf eine Lizenzgebühr, die auf den Verkäufen und der Nutzung ihrer Dissertation basiert, vorausgesetzt, sie wenden sich an ',
     ' und richten ein Konto für diese Zwecke ein. Die Lizenzgebührensätze sind derzeit auf 10 % der Nettoeinnahmen festgelegt. Es ist auch jederzeit möglich, die Dissertation wieder aus PQDT entfernen zu lassen, sollten die o. g. Services nicht gewünscht sein. Bitte informieren Sie in solchen Fällen ebenfalls ',
-    ' und setzen im Kopie ',
+    ' und setzen ', 
+    ' im Kopie',
   ],
   'info.paragraph.regulationsdoctoral.h97': [
     'Als zusätzlichen Vorteil kann PQDT Ihnen hochwertige Printexemplare Ihrer Dissertation in Archivqualität zu einem ermäßigten Preis drucken. Bestellen Sie Ihr Exemplar unter ',
