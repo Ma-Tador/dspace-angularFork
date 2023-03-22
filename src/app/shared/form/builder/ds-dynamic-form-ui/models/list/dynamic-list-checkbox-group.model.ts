@@ -2,6 +2,7 @@ import { Subject } from 'rxjs';
 import {
   DynamicCheckboxGroupModel,
   DynamicFormControlLayout,
+  DynamicFormControlRelation,
   DynamicFormGroupModelConfig,
   serializable
 } from '@ng-dynamic-forms/core';
@@ -17,6 +18,10 @@ export interface DynamicListCheckboxGroupModelConfig extends DynamicFormGroupMod
   value?: VocabularyEntry[];
   required?: boolean;
   hint?: string;
+// =======
+//   value?: any;
+//   typeBindRelations?: DynamicFormControlRelation[];
+// >>>>>>> pulledd
 }
 
 export class DynamicListCheckboxGroupModel extends DynamicCheckboxGroupModel {
@@ -27,6 +32,9 @@ export class DynamicListCheckboxGroupModel extends DynamicCheckboxGroupModel {
   @serializable() _value: VocabularyEntry[];
   @serializable() required: boolean;
   @serializable() hint: string;
+// =======
+//   @serializable() typeBindRelations: DynamicFormControlRelation[];
+// >>>>>>> pulledd
   isListGroup = true;
   valueUpdates: Subject<any>;
 
@@ -43,6 +51,7 @@ export class DynamicListCheckboxGroupModel extends DynamicCheckboxGroupModel {
     this.valueUpdates = new Subject<any>();
     this.valueUpdates.subscribe((value: VocabularyEntry | VocabularyEntry[]) => this.value = value);
     this.valueUpdates.next(config.value);
+    this.typeBindRelations = config.typeBindRelations ? config.typeBindRelations : [];
   }
 
   get hasAuthority(): boolean {

@@ -82,6 +82,11 @@ export class RegisterEmailFormComponent implements OnInit {
           //Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$')
           //allow emails only for domain @fau.de, @uk-erlangen.de and @uni-erlangen.de
           Validators.pattern('^[a-z0-9._%+-]+@fau.de|^[a-z0-9._%+-]+@uni-erlangen.de|^[a-z0-9._%+-]+@uk-erlangen.de|^[a-z0-9._%+-]+@alumni.fau.de'),
+// =======
+          // Regex pattern borrowed from HTML5 specs for a valid email address:
+          // https://html.spec.whatwg.org/multipage/input.html#valid-e-mail-address
+          // Validators.pattern('^[a-zA-Z0-9.!#$%&\'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$')
+// >>>>>>> pulledd
         ],
       })
     });

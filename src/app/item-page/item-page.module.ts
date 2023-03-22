@@ -48,6 +48,8 @@ import { OrcidSyncSettingsComponent } from './orcid-page/orcid-sync-settings/orc
 import { OrcidQueueComponent } from './orcid-page/orcid-queue/orcid-queue.component';
 import { ItemPageOrcidFieldComponent } from './simple/field-components/specific-field/orcid/item-page-orcid-field.component';
 import { ItemPageUriConfigurableFieldComponent } from './simple/field-components/specific-field/uri-configurable/item-page-uri-configurable-field.component';
+// pulled <<<<<<<<<<<<
+import { UploadModule } from '../shared/upload/upload.module';
 
 
 const ENTRY_COMPONENTS = [
@@ -98,7 +100,8 @@ const DECLARATIONS = [
     JournalEntitiesModule.withEntryComponents(),
     ResearchEntitiesModule.withEntryComponents(),
     NgxGalleryModule,
-    NgbAccordionModule
+    NgbAccordionModule,
+    UploadModule,
   ],
   declarations: [
     ...DECLARATIONS,
