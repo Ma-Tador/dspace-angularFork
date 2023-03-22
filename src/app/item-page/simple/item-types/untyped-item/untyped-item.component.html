@@ -104,6 +104,7 @@
       [showLang]="'true'">
     </ds-item-page-abstract-field>
     <!-- ORG
+
     <ds-generic-item-page-field [item]="object"
       [fields]="['dc.subject']"
       [separator]="','"
@@ -174,6 +175,11 @@
     <ds-item-page-orcid-field [item]="object" [fields]="['dc.contributor.author', 'dc.contributor.other', 'dc.contributor.advisor', 'dc.contributor']" [label]="'item.page.orcid'">
     </ds-item-page-orcid-field> -->
 
+    <ds-item-page-uri-field [item]="object"
+      [fields]="['dc.identifier.uri']"
+      [label]="'item.page.uri'">
+    </ds-item-page-uri-field>
+    <ds-item-page-collections [item]="object"></ds-item-page-collections>
     <div>
       <a class="btn btn-outline-primary" [routerLink]="[itemPageRoute + '/full']" role="button">
         <i class="fas fa-info-circle"></i> {{"item.page.link.full" | translate}}

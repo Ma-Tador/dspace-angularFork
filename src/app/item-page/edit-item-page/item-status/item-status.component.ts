@@ -162,7 +162,8 @@ export class ItemStatusComponent implements OnInit {
       );
 
       /*
-        The key is used to build messages i18n example: 'item.edit.tabs.status.buttons.<key>.label'
+        The key is used to build messages
+          i18n example: 'item.edit.tabs.status.buttons.<key>.label'
         The value is supposed to be a href for the button
       */
       const operations = [];
@@ -239,7 +240,6 @@ export class ItemStatusComponent implements OnInit {
       getAllSucceededRemoteDataPayload(),
       map((item) => getItemPageRoute(item))
     );
-
   }
 
   /**
